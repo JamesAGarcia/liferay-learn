@@ -14,8 +14,16 @@
 {{ super() }}
 {% endblock %}
 
+{% macro getLanguageLabel(language_code) -%}
+    {% if language_code == 'ja' %}
+        {% trans %}Japanese{% endtrans %}
+    {% else %}
+        {% trans %}English{% endtrans %}
+    {% endif %}
+{%- endmacro %}
+
 {% block content %}
-<div class="container-fluid search-page">
+<div class="container search-page">
     <div class="row">
         <div class="admonition col-md-12 warning" id="fallback">
             <script type="text/javascript">$('#fallback').hide();</script>
@@ -32,7 +40,7 @@
             </div>
         </div>
 
-        <div class="col-md-2 offset-md-2">
+        <div class="col-md-4">
             <div class="search-filter-container">
                 <div class="search-filters">
                     <h3>
@@ -48,26 +56,75 @@
                     <h4>{% trans %}Product{% endtrans %}</h4>
 
                     <div class="filter-input-container">
-                        <label>
-                            <input class="filter-input" name="productName" type="radio" value="dxp">
-                            <span class="filter-input-label">{% trans %}DXP{% endtrans %}</span>
-                        </label>
+                        <div class="custom-control custom-radio">
+                            <label>
+                                <input
+                                    aria-label="{{ getLanguageLabel(language_code) }}"
+                                    class="custom-control-input"
+                                    name="productName"
+                                    type="radio"
+                                    value="dxp"
+                                />
 
-                        <label>
-                            <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
-                            <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
-                        </label>
+                                <span class="custom-control-label">{% trans %}DXP{% endtrans %}</span>
+                            </label>
+                        </div>
 
-                        <label>
-                            <input class="filter-input" name="productName" type="radio" value="commerce">
-                            <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
-                        </label>
+                        <div class="custom-control custom-radio">
+                            <label>
+                                <input
+                                    aria-label="{{ getLanguageLabel(language_code) }}"
+                                    class="custom-control-input"
+                                    name="productName"
+                                    type="radio"
+                                    value="dxp-cloud"
+                                />
+
+                                <span class="custom-control-label">{% trans %}DXP Cloud{% endtrans %}</span>
+                            </label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                            <label>
+                                <input
+                                    aria-label="{{ getLanguageLabel(language_code) }}"
+                                    class="custom-control-input"
+                                    name="productName"
+                                    type="radio"
+                                    value="commerce"
+                                />
+
+                                <span class="custom-control-label">{% trans %}Commerce{% endtrans %}</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-filters">
+                    <h4>{% trans %}Language{% endtrans %}</h4>
+
+                    <div class="filter-input-container">
+                        {% for language_code in available_languages %}
+                        <div class="custom-control custom-radio">
+                            <label>
+                                <input
+                                    aria-label="{{ getLanguageLabel(language_code) }}"
+                                    class="custom-control-input"
+                                    name="language"
+                                    type="radio"
+                                    value="{{ language_code }}"
+                                />
+
+                                <span class="custom-control-label">{{ getLanguageLabel(language_code) }}</span>
+                            </label>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6 search-results-wrapper">
+        <div class="col-md-8 search-results-wrapper">
             <div class="no-results">
                 {% include "no-results.html" %}
 
@@ -97,15 +154,15 @@
     const docProducts = [
         {
             name: 'commerce',
-            pathname: '/commerce-2.x/search.html'
+            pathname: '/commerce/2.x/en/search.html'
         },
         {
             name: 'dxp',
-            pathname: '/dxp-7.x/search.html'
+            pathname: '/dxp/7.x/en/search.html'
         },
         {
             name: 'dxp-cloud',
-            pathname: '/dxp-cloud-latest/search.html'
+            pathname: '/dxp-cloud/latest/en/search.html'
         }
     ];
 
@@ -136,6 +193,24 @@
                 pathname = docProducts.filter(product => product.name == selectedDocProduct)[0].pathname;
 
                 window.location.pathname = pathname;
+            }
+        });
+    });
+
+    // Add event listeners to navigate to the selected language site
+
+    const languageSelect = document.querySelectorAll('[name="language"]');
+
+    languageSelect.forEach(languageElement => {
+		if (languageElement.value === '{{ language }}') {
+            languageElement.checked = true;
+        }
+
+        languageElement.addEventListener('click', event => {
+            const selectedValue = event.currentTarget.value;
+
+            if (selectedValue !== '{{ language }}') {
+                window.location.pathname = '{{ product_name }}/{{ product_version }}/' + selectedValue + '/search.html';
             }
         });
     });

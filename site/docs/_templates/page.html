@@ -2,7 +2,7 @@
 
 {% macro githubEdit() -%}
     {%- if parents|length > 1 %}
-        {% set product = parents[0].title.lower() %}
+        {% set product = parents[0].title.lower().replace(' ', '-') %}
 
         {# hardcode version values for now #}
         {% if product == "commerce" %}
@@ -30,6 +30,14 @@
             </svg>
         </a>
     {%- endif %}
+{%- endmacro %}
+
+{% macro getLanguageLabel(language_code) -%}
+	{% if language_code == 'ja' %}
+		{% trans %}Japanese{% endtrans %}
+	{% else %}
+		{% trans %}English{% endtrans %}
+	{% endif %}
 {%- endmacro %}
 
 {% block content %}
@@ -75,7 +83,30 @@
                     {% block sidebar1 %}
                         {{ toctree(titles_only=True) }}
                     {% endblock %}
-                </div>
+				</div>
+
+				<div class="doc-nav-footer">
+					<div class="dropdown dropdown-action">
+						<button aria-expanded="false" aria-haspopup="true" class="btn btn-unstyled" data-toggle="dropdown"
+							id="languageSelector" type="button">
+							<svg class="lexicon-icon" focusable="false" role="presentation" viewBox="0 0 512 512">
+								<use xlink:href="#language" />
+							</svg>
+
+							<span>{{ getLanguageLabel(language) }}</span>
+						</button>
+
+						<ul aria-labelledby="languageSelector" class="dropdown-menu">
+							{% for language_code in available_languages %}
+							<li>
+								<a class="dropdown-item" href="/{{ product_name }}/{{ product_version }}/{{ language_code }}/index.html">
+									{{ getLanguageLabel(language_code) }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
             </div>
         </div>
 
@@ -208,16 +239,16 @@
 
         // Route user to the selected documentation landing page
 
-        productDocumentationSelector.addEventListener('click', event => {
+        productDocumentationSelector.addEventListener('change', event => {
             const target = event.target.value;
 
             if (target !== currentDocProductValue) {
                 if (target === 'commerce') {
-                    window.location.pathname = '/commerce-2.x/index.html';
+                    window.location.pathname = '/commerce/2.x/en/index.html';
                 } else if (target === 'dxp-cloud') {
-                    window.location.pathname = '/dxp-cloud-latest/index.html';
+                    window.location.pathname = '/dxp-cloud/latest/en/index.html';
                 } else {
-                    window.location.pathname = '/dxp-7.x/index.html';
+                    window.location.pathname = '/dxp/7.x/en/index.html';
                 }
             }
         });
