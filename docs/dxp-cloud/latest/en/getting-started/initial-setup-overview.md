@@ -1,6 +1,8 @@
 # Initial Setup Overview
 
-To get started with Liferay DXP Cloud, verify all essential provisions (i.e., Environments, Services, and related accounts) are in place and ready for development.
+Launch your projects with Liferay DXP Cloud, an enterprise cloud platform that simplifies project management, deployment, and evolution, so you can deliver amazing applications with Liferay DXP.
+
+To get started, verify all essential provisions (i.e., Environments, Services, and related accounts) are in place and ready for development.
 
 - [Initial Setup Emails:](#initial-setup-emails) Check the email account associated with your DXP Cloud subscription for initial setup emails.
 - [Logging in:](#logging-in) Log into Liferay DXP Cloud, GitHub, and Jenkins.
@@ -22,9 +24,9 @@ Liferay DXP Cloud functionalities depend on users logging into the DXP Cloud Con
 
 Returning users can [log into the DXP Cloud Console](https://console.liferay.cloud/login) using their existing accounts. New users will need to [create an account on DXP Cloud](https://console.liferay.cloud/signup?undefined) using the email account associated with the DXP Cloud subscription.
 
-After logging in, users will be brought to the DXP Cloud Console [home page](https://console.liferay.cloud/projects). From here, users can manage Environments and Deployments.
+After logging in, users are directed to the DXP Cloud Console [home page](https://console.liferay.cloud/projects). From here, users can manage Environments and Deployments.
 
-<!-- 01.png FIND IMAGE -->
+![Figure 1: DXP Cloud Console home page.](./initial-setup-overview/images/01.png)
 
 Administrators can also invite other team members to project Environments. See [Team Collaboration & Access Control](https://learn.liferay.com/dxp-cloud-latest/manage-and-optimize/team-collaboration-and-access-control.html) for more information.
 
@@ -75,7 +77,7 @@ Environments hold all the necessary components, or Services, needed to run DXP i
 
 ![Figure 4: See Provisioned Environments in the DXP Cloud Console.](./initial-setup-overview/images/04.png)
 
-If any Environments are missing, consider adding it back using the *Add Environment* option or contact Support. <!-- Why would I choose one or the other? -->
+If any Environments are missing after all invitations have been accepted, please contact the Liferay Support team.
 
 ![Figure 5: Add Environments.](./initial-setup-overview/images/05.png)
 
@@ -90,7 +92,7 @@ The Environment location can be found in either the Environment *Overview* page,
 ![Figure 6: Environment location in the Overview page.](./initial-setup-overview/images/06.png)
 
 ```important::
-   If the Environment location does not match the location requested by your team, please contact Support.
+   If the Environment location does not match the location requested by your team, please contact the Liferay Support team.
 ```
 
 ### Verifying Cloud Stack Services
