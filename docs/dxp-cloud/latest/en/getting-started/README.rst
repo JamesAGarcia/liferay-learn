@@ -2,6 +2,7 @@ Getting Started
 ===============
 
 -  :doc:`/getting-started/introduction-to-dxp-cloud`
+-  :doc:`/getting-started/initial-setup-overview.md`
 -  :doc:`/getting-started/development-requirements`
 -  :doc:`/getting-started/configuring-your-github-repository`
 -  :doc:`/getting-started/configuring-your-bitbucket-repository`
