@@ -5,7 +5,7 @@ Before beginning development in Liferay DXP Cloud, ensure all accounts, Environm
 - [Check Setup Emails](#check-setup-emails)
 - [Access the DXP Cloud Console](#access-the-dxp-cloud-console)
 - [Access the Provisioned Project Source Code](#access-the-provisioned-project-source-code)
-- [Log in to Your CI and DXP Services](#Log-in-to-Your-CI-and-DXP-Services)
+- [Log in to Your CI and DXP Services](#log-in-to-your-ci-and-dxp-services)
 - [Verify Setup](#verifying-setup)
 
 ## Check Setup Emails
