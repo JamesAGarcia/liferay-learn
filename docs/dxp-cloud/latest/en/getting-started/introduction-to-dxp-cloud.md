@@ -26,7 +26,7 @@ DXP Cloud is designed with security in mind. Build and deploy mission-critical s
 
 ![Figure 3: DXP Cloud's backup service preserves and protects your data.](./introduction-to-dxp-cloud/images/01.png)
 
-Out-of-the-box [role and team administration](../manage-and-optimize/team-collaboration-and-access-control.md) allows administrators to deliver maximum productivity and security by adding or removing people from teams and managing permissions per project environment.
+Out-of-the-box [role and team administration](../manage-and-optimize/environment-teams-and-roles.md) allows administrators to deliver maximum productivity and security by adding or removing people from teams and managing permissions per project environment.
 
 ![Figure 4: Manage your project's team members, including their permissions.](./introduction-to-dxp-cloud/images/02.png)
 

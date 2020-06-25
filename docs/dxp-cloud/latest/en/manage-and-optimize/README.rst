@@ -16,5 +16,5 @@ Managing Usage
 Account and Team Management
 ---------------------------
 
--  :doc:`/manage-and-optimize/team-collaboration-and-access-control`
+-  :doc:`/manage-and-optimize/environment-teams-and-roles`
 -  :doc:`/manage-and-optimize/team-activities`

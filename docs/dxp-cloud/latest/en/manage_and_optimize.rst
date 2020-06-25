@@ -8,7 +8,7 @@ Manage and Optimize
    manage-and-optimize/application-metrics.md
    manage-and-optimize/real-time-alerts.md
    manage-and-optimize/quotas.md
-   manage-and-optimize/team-collaboration-and-access-control.md
+   manage-and-optimize/environment-teams-and-roles.md
    manage-and-optimize/team-activities.md
 
 
