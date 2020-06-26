@@ -6,5 +6,3 @@ Reference
 -  :doc:`/reference/dxp-cloud-project-changes-in-version-4`
 -  :doc:`/reference/command-line-tool`
 -  :doc:`/reference/defining-environment-variables`
--  :doc:`/reference/support-access`
--  :doc:`/reference/tracking-dxp-cloud-status-and-getting-help`
