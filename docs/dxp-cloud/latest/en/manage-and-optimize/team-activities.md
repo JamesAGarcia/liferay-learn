@@ -36,27 +36,9 @@ This page lists all activities that have occurred on the DXP Cloud instance.
 
 ![Figure 2: View extended environment activities from the Activities page.](./team-activities/images/02.png)
 
-## Viewing All Project Builds and Deployments
-
-You can view and manage build and deployment activities across all project environments via the *Builds* and *Deployments* pages:
-
-1. Navigate to a project environment.
-
-1. Click on *Builds* or *Deployments* at the top-right of the console navigation bar.
-
-The following information is listed for each build and deployment activity: Status, Services, Build ID, Branch, Commit, Message, Environment, Time, and Member.
-
-### Builds Page
-
-The Builds page lists the full history of project builds across all project environments. For information about the build process, see [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
-
-![Figure 3: The Builds page lists all project builds.](./team-activities/images/03.png)
-
-### Deployments Page
-
-The Deployment page lists the latest deployments for each environment, followed by the full history of project deployments across all project environments. For information about the deployment process, see [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
-
-![Figure 4: The Deployments page lists all project deployments.](./team-activities/images/04.png)
+```note::
+   You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See `Overview of the DXP Cloud Deployment Workflow <../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md>`_ for more information about these pages.
+```
 
 ## Additional Information
 
