@@ -7,5 +7,5 @@ Troubleshooting
 -  :doc:`/troubleshooting/configuring-cross-region-disaster-recovery`
 -  :doc:`/troubleshooting/self-healing`
 -  :doc:`/troubleshooting/support-access`
--  :doc:`/troubleshooting/tracking-dxp-cloud-status-and-getting-help`
+-  :doc:`/troubleshooting/liferay-cloud-platform-status`
 
