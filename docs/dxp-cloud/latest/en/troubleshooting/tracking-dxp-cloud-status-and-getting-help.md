@@ -1,40 +1,50 @@
-# Tracking DXP Cloud Status and Getting Help
+# Liferay Cloud Platform Status
 
-Liferay is committed to providing an excellent customer experience. Every 
-Liferay DXP Cloud customer has access to the our Support Knowledge Base, 
-ticketing support on 
-[Help Center](https://liferay-support.zendesk.com/agent/dashboard), 
-and 
-[phone support](https://help.liferay.com/hc/en-us/articles/360017784212).
+The Liferay Cloud Platform is comprised of multiple systems. Users can view the status of Liferay Cloud Platform systems, incident history, and planned maintenance windows via the [Liferay Cloud Platform](https://status.liferay.cloud/) status page.
 
-```note::
-   Details are subject to your legal agreement with Liferay. 
-```
+## Access the Status Page via the DXP Cloud Console
 
-For more detailed information about legal agreements and services, see 
-[liferay.com/legal](https://www.liferay.com/legal). 
+Users can access the Liferay Cloud Platform status page via the DXP Cloud console:
 
-## Status Page
+1. Click on the *Help* icon at the top right of the console page.
 
-For real-time updates on the status of the Liferay Cloud Platform, all customers 
-should subscribe to the 
-[Liferay Cloud Status](https://status.liferay.cloud/) 
-page. Click on *Subscribe to Updates* and select the type of notification that 
-is most convenient for you. 
+1. Click on *Uptime status*.
 
-![Status.Liferay.Com page](./tracking-dxp-cloud-status-and-getting-help/images/01.png)
+![Figure 1: Click Uptime status to view the Liferay Cloud Platform Status page.](./tracking-dxp-cloud-status-and-getting-help/images/01.png)
 
-The Status page lists the following services: 
+## View the Status of Cloud Platform Systems
 
-- Infrastructure Services
-- Database Services
-- Storage Services
-- Monitoring and Logging Services
-- Networking Services
-- Liferay Cloud Console
-- Liferay Cloud API
-- Past Incidents & Descriptions
+The Liferay Cloud Platform status page lists the current status of the following systems:
 
-## Related Topics
+* Infrastructure Services
+* Database Services
+* Storage Services
+* Monitoring and Logging Services
+* Networking Services
+* Liferay Cloud Console
+* Liferay Cloud API
 
-[DXP Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
+![Figure 2: View the status of Liferay Cloud Platform systems.](tracking-dxp-cloud-status-and-getting-help/images/02.png)
+
+## Subscribe to Updates
+
+Users can *Subscribe to Updates* to receive the latest notifications of any service status changes.
+
+Click on *Subscribe to Updates*, and select the method of notification that is most convenient for you.
+
+![Figure 3: Subscribe to receive updates regarding the status of the Liferay Cloud Platform.](./tracking-dxp-cloud-status-and-getting-help/images/03.png)
+
+## Incident History and Planned Maintenance
+
+Users can view past incidents and planned maintenance windows from the Liferay Cloud Platform status page.
+
+Scroll down the Liferay Cloud Platform status page to see recent incidents.
+
+Click *Incident History* at the bottom of the page to see extended records.
+
+![Figure 4: View past incidents and planned maintenance windows.](./tracking-dxp-cloud-status-and-getting-help/images/04.png)
+
+## Additional Information
+
+* [Troubleshooting Tools and Resources](./troubleshooting/troubleshooting-tools-and-resources.md)
+* [DXP Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
