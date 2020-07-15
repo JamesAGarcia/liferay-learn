@@ -1,6 +1,7 @@
 Troubleshooting
 ===============
 
+-  :doc:`/troubleshooting/troubleshooting-tools-and-resources`
 -  :doc:`/troubleshooting/log-management`
 -  :doc:`/troubleshooting/shell-access`
 -  :doc:`/troubleshooting/disaster-recovery-overview`

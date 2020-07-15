@@ -4,6 +4,7 @@ Troubleshooting
 .. toctree::
    :maxdepth: 1
 
+   troubleshooting/troubleshooting-tools-and-resources.md
    troubleshooting/log-management.md
    troubleshooting/shell-access.md
    troubleshooting/disaster-recovery-overview.md
