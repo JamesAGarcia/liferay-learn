@@ -28,7 +28,7 @@ The Liferay Cloud Platform status page lists the current status of the following
 
 ## Subscribe to Updates
 
-Users can *Subscribe to Updates* to receive the latest notifications of any service status changes.
+Users can *Subscribe to Updates* to receive real-time notifications of any platform status changes.
 
 Click on *Subscribe to Updates*, and select the method of notification that is most convenient for you.
 
