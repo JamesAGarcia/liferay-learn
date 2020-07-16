@@ -26,23 +26,23 @@ The Liferay Cloud Platform status page lists the current status of the following
 
 ![Figure 2: View the current status of Liferay Cloud Platform systems.](./liferay-cloud-platform-status/images/02.png)
 
+## View Incident History and Scheduled Maintenance Windows
+
+Users can view past incidents and scheduled maintenance windows from the Liferay Cloud Platform status page.
+
+Scroll down the Liferay Cloud Platform status page to see recent incidents.
+
+Click *Incident History* at the bottom of the page to see extended records.
+
+![Figure 3: View past incidents and planned maintenance windows.](./liferay-cloud-platform-status/images/03.png)
+
 ## Subscribe to Updates
 
 Users can *Subscribe to Updates* to receive real-time notifications of any platform status changes.
 
 Click on *Subscribe to Updates*, and select the method of notification that is most convenient for you.
 
-![Figure 3: Subscribe to receive updates regarding the status of the Liferay Cloud Platform.](./liferay-cloud-platform-status/images/03.png)
-
-## Incident History and Planned Maintenance
-
-Users can view past incidents and planned maintenance windows from the Liferay Cloud Platform status page.
-
-Scroll down the Liferay Cloud Platform status page to see recent incidents.
-
-Click *Incident History* at the bottom of the page to see extended records.
-
-![Figure 4: View past incidents and planned maintenance windows.](./liferay-cloud-platform-status/images/04.png)
+![Figure 4: Subscribe to receive updates regarding the status of the Liferay Cloud Platform.](./liferay-cloud-platform-status/images/04.png)
 
 ## Additional Information
 
