@@ -82,7 +82,7 @@ You can also view an environment's location by navigating to its *Overview* page
 
 ![Figure 4: View the environment's location in the Overview page.](./initial-setup-overview/images/04.png)
 
-If the environment location does not match the location requested by your team, please [contact the Liferay Support team](../troubleshooting/tracking-dxp-cloud-status-and-getting-help.md).
+If the environment location does not match the location requested by your team, please [contact the Liferay Support team](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview).
 
 ### Verifying Cloud Stack Services
 

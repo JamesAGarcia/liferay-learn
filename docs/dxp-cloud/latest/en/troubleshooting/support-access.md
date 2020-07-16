@@ -42,6 +42,6 @@ DXP Cloud also sends an email to all team members when the Support Access settin
 
 ## Additional Information
 
+* [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)
 * [Help Center](https://help.liferay.com/hc/en-us)
-* [Tracking DXP Cloud Status and Getting Help](./tracking-dxp-cloud-status-and-getting-help.md)
 * [Log Management](./log-management.md)
