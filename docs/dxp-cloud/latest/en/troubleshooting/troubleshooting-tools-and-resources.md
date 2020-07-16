@@ -1,4 +1,4 @@
-# Tracking DXP Cloud Status and Getting Help
+# Troubleshooting Tools and Resources
 
 The ability to quickly diagnose and resolve technical issues is vital. Familiarize yourself with available tools and resources for troubleshooting problems pre- and post-launch in your Liferay DXP Cloud projects:
 
@@ -64,7 +64,7 @@ Application, status, and build logs are provided for each DXP Cloud Service:
 * **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
 * **Build Logs**: These logs list build information generated as the application boots up.
 
-![Figure 4: View logs via the Logs page in the DXP Cloud console](./troubleshooting-tools-and-resources/04.png)
+![Figure 4: View logs via the Logs page in the DXP Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
 See [Log Management](./log-management.md) for more information.
 
@@ -109,11 +109,11 @@ See [Disaster Recovery Overview](./disaster-recovery-overview.md) to learn more 
 
 ## Liferay Cloud Platform Status
 
-Users can view the status of Liferay Cloud Platform systems, planned maintenance windows, and incident history from the [Liferay Cloud Platform](https://status.liferay.cloud/) status page. 
+Users can view the status of Liferay Cloud Platform systems, planned maintenance windows, and incident history from the [Liferay Cloud Platform](https://status.liferay.cloud/) status page.
 
 You can also *Subscribe to Updates* to receive the latest notifications of any service status changes.
 
-![Figure 7: View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/07.png)
+![Figure 6: View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/images/06.png)
 
 See [Liferay Cloud Platform Status](./liferay-cloud-platform-status) for more information.
 
@@ -133,7 +133,7 @@ Liferay DXP Cloud notifications are only distributed to customers with an active
 
 If you have questions not answered by DXP Cloud [Documentation](https://learn.liferay.com/dxp-cloud-latest/) or would like to report an issue, sign in to the Liferay [Help Center](https://help.liferay.com/) to view subscription-only resources or submit a ticket.
 
-![Figure 10: View subscription-only resources or submit a ticket via the Liferay Help Center page](./tracking-dxp-cloud-status-and-getting-help/images/10.png)
+![Figure 07: View subscription-only resources or submit a ticket via the Liferay Help Center page](./troubleshooting-tools-and-resources/images/07.png)
 
 From here, you can access the DXP Cloud [Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872), [Product Support](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview), and [Announcements](https://help.liferay.com/hc/en-us/categories/360001192512).
 
