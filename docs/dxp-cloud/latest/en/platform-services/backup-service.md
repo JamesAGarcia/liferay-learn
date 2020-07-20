@@ -1,244 +1,151 @@
 # Backup Service
 
-The backup service creates regular backups of your Liferay DXP database and Document Library. These backups include both the database and the full contents of the Liferay image's `LIFERAY_HOME/data` folder.
+Maintaining regular backups is vital to protecting your project's data. The DXP Cloud backup service stores iterations of environment data that can be used to restore your environments if needed.
 
-Here, you'll learn how to use and configure the backup service to your needs:
+These backups include both the Liferay DXP Database and the full contents of the Liferay image's `LIFERAY_HOME/data` folder.
 
-* [Downloading a Backup](#downloading-a-backup)
-* [Scheduling](#scheduling)
-* [Backup APIs](#backup-apis)
+From the Backups page in `prd` environments, you can create backups, view or download retained backups, and restore an environment from a backup.
+
+You can also configure the backup service to meet your project's needs via the DXP Cloud console or the backup service's `LCP.json` file.
+
+* [The Backups Page](#the-backups-page)
+* [Configuring the Backup Service](#configuring-the-backup-service)
 * [Environment Variables Reference](#environment-variables-reference)
-
-For instructions on creating and restoring backups manually, see 
-[Backup and Restore](./backup-and-restore.md). 
 
 ![Figure 1: The backup service is one of several services available in DXP Cloud.](./backup-service/images/01.png)
 
-## Downloading a Backup
+## The Backups Page
 
-The _Backups_ page of a production environment is the primary method of downloading a backup in DXP Cloud. This includes a backup of both the database, and the data volume (including the document library and other files from the Liferay image's file system).
-
-Follow these steps to download a backup of your production instance:
-
-1. Log into the DXP Cloud console, and navigate to a production environment.
-
-1. Click _Backups_ from the menu on the left.
-
-    ![Click Backups from the menu on the left from your production environment.](./backup-service/images/02.png)
-
-1. Click the Actions menu for any of the backups listed, then click _Download_.
-
-    ![Choose a backup from the list, and click Download.](./backup-service/images/03.png)
-
-1. From the options that appear, click to download both options to download both the database and the data volume as zip archives, respectively.
-
-    ![Download both the database and the data volume for your chosen backup.](./backup-service/images/04.png)
-
-The two downloaded `.tgz` archives comprise the backup. You can now extract and import these into a local Liferay environment.
-
-You can also download a backup using the download API. See [this section](#download-database-api) for more information.
-
-## Scheduling
-
-You can customize the backup service's scheduling via 
-[cron scheduling syntax](https://crontab.guru/). 
-Scheduling can be used for these variables: 
-
-* `LCP_BACKUP_CREATE_SCHEDULE`
-* `LCP_BACKUP_CLEANUP_SCHEDULE`
-
-### Customizing Scheduling
-
-Use this syntax to create a customized schedule: 
-
-    * * * * *
-    ┬ ┬ ┬ ┬ ┬
-    │ │ │ │ │
-    │ │ │ │ └ day of week (0 - 7) (0 or 7 is Sun)
-    │ │ │ └───── month (1 - 12)
-    │ │ └────────── day of month (1 - 31)
-    │ └─────────────── hour (0 - 23)
-    └──────────────────── minute (0 - 59)
-
-For example, the following runs a backup every 12 hours (12AM and 12PM): 
-
-    0 0,12 * * *
-
-### Scheduling Syntax Shorthand
-
-Use the following shorthand syntax for common use cases: 
-
-`@yearly`: Run at the start of every year. 
-
-`@monthly`: Run at the start of every month. 
-
-`@weekly`: Run at the start of every week. 
-
-`@daily`: Run at the start of every day. 
-
-`@hourly`: Run at the start of every hour. 
-
-## Backup APIs
-
-The backup service has APIs that you can use to download and upload backups. You 
-can invoke these APIs using a command line tool such as `curl`. 
-
-### Getting the Host Name
-
-To invoke the backup APIs, you must have the backup service's host name, which you can find on the Services page:
-
-![Backup service's host name](./backup-service/images/05.png)
-
-The service name, project name, and environment name combine to make up the host name. 
-
-Consider this example: 
-
-* Service name: `backup`
-* Project name: `lfrjoebloggs`
-* Environment name: `prd`
-* Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
-
-### Authentication
-
-You can authenticate your request with basic authentication or a user access 
-token. Note that token authentication is required if SSO is enabled. You can 
-retrieve this token from the cookie `access_token` and use it with the 
-`dxpcloud-authorization` header. 
-
-Here's an example that uses token authentication with the upload API: 
-
-```bash
-curl -X POST \
-  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
-  -H 'Content-Type: multipart/form-data' \
-  -H 'dxpcloud-authorization: Bearer <USER_TOKEN>' \
-  -F 'database=@/my-folder/database.tgz' \
-  -F 'volume=@/my-folder/volume.tgz'
-```
+From the Backups page in `prd` environments, you can view backup service information and retained backups, create manual backups, download backups, or restore environments from backups.
 
 ```note::
-   Passing the user token in the header ``dxpcloud-authorization`` only works for versions ``3.2.0`` or greater of the backup service. Previous versions should be upgraded to at least ``3.2.0``. Requests to earlier versions must use the header ``Authorization: Bearer <PROJECT_MASTER_TOKEN>``. You can find the project master token by running the command ``env | grep LCP_PROJECT_MASTER_TOKEN`` in any shell in the Liferay DXP Cloud console.
+   The Backups page is only available in production environments.
 ```
 
-### Download Database API
+Follow these steps to access the Backups page:
 
-The API for downloading a database contains an endpoint that returns a TGZ file. 
-The `id` parameter represents the backup ID, which you can find on the Backups 
-page. This ID is comprised of three strings separated by two dashes (e.g., 
-`dxpcloud-lqgqnewltbexuewymq-201910031723`). 
+1. Navigate to your project's `prd` environment.
 
-#### Parameters
+1. Click on *Backups* in the environment menu.
 
-Name | Type     | Required |
----- | -------- | -------- |
-`id` | `String` | Yes      |
+   ![Figure 2: View backup history, create manual backups, and more from the Backups page in prd environments.](./backup-service/images/02.png)
 
-#### curl Example
+From here, you can perform the following tasks:
 
-```bash
-curl -X GET \
-  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/database/id \
-  -u user@domain.com:password \
-  --output database.tgz
+**View Backup Info**: You can quickly view backup service information for the `prd` environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
+
+**View Backup History**: You can view the name, size, and time of creation for each backup retained in the `prd` environment under *Backup history*.
+
+**Create Manual Backups**: You can manually create a backup of the `prd` environment. See [Performing a Manual Backup](#performing-a-manual-backup) for more information.
+
+**Download Backups**: You can manually download both `.tgz` archives that comprise a backup from the Backups page. Simply click on the *Actions* button ( ⋮ ) for the backup you want to download, and select *Download*. See [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information and instructions on how to use backup service APIs to download or upload backups.
+
+**Restore Environments from Backups**: You can restore an environment from one of the backups retained in the `prd` environment. Simply click on the *Actions* button ( ⋮ ) for the backup you want to use, and select *Restore To...*. You can also apply custom SQL scripts with a data restore. See [Restoring Data](./restoring-data.md) for more information.
+
+```note::
+   Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
 ```
 
-### Download Data Volume API
+### Performing a Manual Backup
 
-The API for downloading a data volume contains an endpoint that returns a TGZ file. 
-The `id` parameter represents the backup ID, which you can find on the Backups 
-page. This ID is comprised of three strings separated by two dashes (e.g., 
-`dxpcloud-lqgqnewltbexuewymq-201910031723`). 
+To manually backup your `prd` environment from the Backups page, simply click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
 
-#### Parameters
+Once started, the backup service icon will indicate a backup is in progress, and a new backup will appear in the *Backup history*.
 
-Name | Type     | Required |
----- | -------- | -------- |
-`id` | `String` | Yes      |
+![Figure 3: The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service/images/03.png)
 
-#### curl Example
+Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page. See [Log Management](../troubleshooting/log-management.md) for more information about viewing service logs.
 
-```bash
-curl -X GET \
-  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/volume/id \
-  -u user@domain.com:password \
-  --output volume.tgz
+## Configuring the Backup Service
+
+You can configure the backup service to meet your project's needs via the DXP Cloud console or the backup service's `LCP.json` file.
+
+See [Environment Variables Reference](#environment-variables-reference) for a list of variables you can use to configure the backup service.
+
+```important::
+   Whenever the backup service is reconfigured, the backup service will restart and may stop receiving requests for some minutes or behave differently depending on the regular variable values.
 ```
 
-### Upload Backup API
+### Configuring the Backup Service via the DXP Cloud Console
 
-The upload backup API lets you upload a backup to DXP Cloud. To upload a backup, 
-you must follow these steps: 
+Follow these steps to configure the backup service via the DXP Cloud Console:
 
-1. [Create the database file](#creating-the-database-file). 
-1. [Create the volume file](#creating-the-volume-file). 
-1. [Invoke the backup API](#invoking-the-backup-api) 
-    with the database and volume files. 
+1. Navigate to an environment where the backup service is installed.
 
-#### Creating the Database File
+1. Click on *Services* in the environment menu.
 
-To create a MySQL dump and compress it into a `.tgz` archive, run the following commands: 
+1. Click on the *Backup* service.
 
-```bash
-mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
+1. Click on the *Environment Variables* tab.
+
+   ![Figure 4: Navigate to the backup service's variables tab in your production environment.](./backup-service/images/04.png)
+
+   You can also access the backup service's page by clicking on *Backup* in the environment Overview page.
+
+1. Add variables from the [Environment Variables Reference](#environment-variables-reference) list to configure the backup service.
+
+1. Click on *Save Changes*.
+
+Besides *Regular variables*, you can also set *Secret Variables* via the DXP Cloud console, see [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
+
+### Configuring the Backup Service via the Backup `LCP.json` File
+
+Follow these steps to configure the backup service via its `LCP.json` file:
+
+1. Use a text editor to open the backup `LCP.json` file located at the following path: `/{your_project_name}/lcp/backup/LCP.json`.
+
+1. Scroll down to the environment section.
+
+   ```
+    "env": {
+      "LCP_BACKUP_FOLDER": "/opt/liferay/data",
+      "LCP_DATABASE_SERVICE": "database",
+      "LCP_MASTER_USER_PASSWORD": "           "
+    },
+   ```
+
+1. Add variables from the [Environment Variables Reference](#environment-variables-reference) list to configure the backup service.
+
+1. Save the file and deploy to your project to implement the configuration.
+
+See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) for more information about configuring environment services via their `LCP.json` files.
+
+### Scheduling Automated Backups and Cleanups
+
+Determining how frequently backups are created and removed is vital to protecting your data and optimizing storage.
+
+Use the following variables to set when backups are created and removed:
+
+* **Automated Backups**: Add the `LCP_BACKUP_CREATE_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backups.
+* **Automated Cleanups**: Add the `LCP_BACKUP_CLEANUP_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backup cleanups.
+* **Retention Period**: Add the `LCP_BACKUP_RETENTION_PERIOD` variable with a numerical value (between 1-30) to set the number of days backups are retained before being removed by automated cleanups. By default, the retention period is set to 30 days.
+
+```note::
+   Both standard and non-standard `cron scheduling syntax<https://crontab.guru/>`_ are based on the UTC±00 time zone. When using non-standard cron syntax, automated backups and cleanups run at the start of the specified value. For example, @daily runs backups every day at 00:00 UTC.
 ```
 
-```bash
-tar zcvf database.tgz database.gz
+The following `LCP.json` example creates backups every 12 hours (i.e., 00:00 and 12:00 UTC) and performs monthly cleanups that remove backups over 30 days old:
+
 ```
-
-The `databases` and `add-drop-database` options are necessary for backup 
-restoration to work correctly (you can also use the `/backup/download` API to 
-see how the backup service creates its MySQL dump file). With these options, the 
-resulting dump file contains the following code just before the create table 
-statements. 
-
-```sql
---
--- Current Database: `lportal`
---
-
-/*!40000 DROP DATABASE IF EXISTS `lportal`*/;
-
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `lportal` /*!40100 DEFAULT CHARACTER SET utf8 */;
-
-USE `lportal`;
-```
-
-#### Creating the Volume File
-
-Run this command to compress the data volume: 
-
-```bash
-cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
-```
-
-#### Invoking the Backup API
-
-**Parameters**
-
-Name       | Type   | Required |
----------- | ------ | -------- |
-`database` | `File` | Yes      |
-`volume`   | `File` | Yes      |
-
-**curl Example**
-
-```bash
-curl -X POST \
-  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'database=@/my-folder/database.tgz' \
-  -F 'volume=@/my-folder/volume.tgz' \
-  -u user@domain.com:password
+ "env": {
+   "LCP_BACKUP_FOLDER": "/opt/liferay/data",
+   "LCP_DATABASE_SERVICE": "database",
+   "LCP_MASTER_USER_PASSWORD": "           ",
+   "LCP_BACKUP_CREATE_SCHEDULE": "0 0,12 * * *",
+   "LCP_BACKUP_CLEANUP_SCHEDULE": "@monthly",
+   "LCP_BACKUP_RETENTION_PERIOD": "30"
+ },
 ```
 
 ## Environment Variables Reference
 
 Name                          | Default Value              | Description |
 ----------------------------- | -------------------------- | ----------- |
-`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | The cron schedule for creating a backup. In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
+`LCP_BACKUP_CLEANUP_SCHEDULE` | <!--n/a????--> | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). |
+`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
 `LCP_BACKUP_FOLDER`           | `/opt/liferay/data`        | The Liferay folder to back up. |
-`LCP_BACKUP_RETENTION_PERIOD` | `30`                       | The number of days to retain your backups. The maximum retention period is 30 days, even if you set this to a longer period of time. |
+`LCP_BACKUP_RESTORE_SCHEDULE` | <!--n/a????--> | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). |
+`LCP_BACKUP_RETENTION_PERIOD` | `30`                       | This variable determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days. |
 `LCP_DATABASE_SERVICE`        | `database`                 | The database service's ID. |
 `LCP_DBNAME`                  | `lportal`                  | The database name. |
 `LCP_MASTER_USER_NAME`        | `dxpcloud`                 | The master username. |
@@ -246,4 +153,6 @@ Name                          | Default Value              | Description |
 
 ## Additional Information
 
+* [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
+* [Restoring Data](./restoring-data.md)
 * [Configuration via LCP JSON](../reference/configuration-via-lcp-json.md)
