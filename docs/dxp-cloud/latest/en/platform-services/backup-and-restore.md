@@ -1,70 +1,106 @@
-# Backup and Restore
+# Restoring Data from a Backup
 
-It's important for production applications' data to be safe. DXP Cloud can backup and restore data. All backups save a dump of the database, environment volumes, and the Documents and Media folder. Here, you'll learn how to create and restore backups manually via the DXP Cloud web console:
+During project development, there may be times when administrators need to restore data or roll back the project to an earlier state.
 
-* [Creating a Manual Backup](#creating-a-manual-backup)
-* [Restoring from a Backup](#restoring-from-a-backup)
-* [Applying Custom SQL Scripts with a Data Restore](#applying-custom-sql-scripts-with-a-data-restore)
+Production (`prd`) environment administrators can do this from the Backups page in the DXP Cloud console.
 
-For instructions on configuring the backup service, including automatic backups,
-see [Backup Service](./backup-service.md).
+They can also use custom SQL scripts to perform additional updates to a database as part of the data restore.
 
 ```note::
-   The Backups tab is only available on *production* environments. From this tab, you can restore backups to any environment that a user has access to.
+   The Backups page is only available in production environments.
 ```
 
-## Creating a Manual Backup
+See [Backup Service](./backup-service.md) and [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information about the Backups page.
 
-Follow these steps to create a manual backup:
+## Restoring an Environment from the Backups Page
 
-1. On your production environment's page, select the *Backups* tab in the left menu.
+Follow these steps to restore an environment from a backup:
 
-1. Click *Backup Now*.
+1. Navigate to your project's `prd` environment.
 
-    ![Figure 1: You can create backups in DXP Cloud.](./backup-and-restore/images/01.png)
+1. Click on *Backups* in the environment menu.
 
-## Restoring from a Backup
+Follow these steps to restore an environment from the *Backups* page in your `prd` environment:
 
-The Backups tab contains a table that shows each backup in the environment. The table displays each backup's name, size, and creation date and time. To restore from a backup, click that backup's *Actions* button (![Actions](./backup-and-restore/images/02.png)) in the table and select *Restore*.
+1. Click on the *Actions* button ( ⋮ ) for the backup you want to use to restore a project environment.
 
-![Figure 2: You can restore from a backup in DXP Cloud.](./backup-and-restore/images/03.png)
+1. Click on *Restore to...*
+
+   ![Figure 1: Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
+
+1. Click the drop-down *Environment* menu in the *Restore to...* page, and select the environment you want to restore.
+
+   ![Figure 2: Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
+
+   ```note::
+      Production environment administrators can only restore environments to which they have access.
+   ```
+
+1. Click all *checkboxes* to confirm the restore.
+
+1. Click on *Restore to Environment* to start the restore process.
+
+   ![Figure 3: Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
+
+During the restore process, the target environment's services will restart.
+
+You can track the status of the restore in the backup service's *Logs* and the *General* section of the Activities page.
 
 ## Applying Custom SQL Scripts with a Data Restore
 
 You can also use custom SQL scripts to perform additional updates to your database with a normal data restore. This approach is ideal for sanitizing sensitive data, since it allows you to apply the scripts to separately maintained database backups.
 
 ```note::
-   Your backup service must be at least at version 3.0.7 (using at least the Docker image: liferaycloud/backup:3.0.7) to use this feature.
+   Using this feature requires version 3.0.7 or newer of the backup service's Docker image.
 ```
 
 ### Preparing SQL Scripts
 
 The following formats are supported for SQL scripts:
 
-* `.sql` for individual scripts
-* `.zip`, `.tgz`, or `.gz` for multiple scripts within a compressed file
+* `.sql` is used for individual scripts.
+* `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
 
 Note that scripts are run in alphanumerical order when they are executed. SQL scripts must also reference the exact database to run on (for example, with `USE lportal;` or `lportal.User_`).
 
-Place the scripts into the appropriate, environment-specific `backup/configs/{ENV}/scripts/` folder.
+Follow these steps to prepare your SQL script(s):
 
-```note::
-   If you are using version 3.x.x services, then SQL scripts instead belong in the appropriate ``lcp/backup/script/{ENV}/`` folder.
-```
+1. Navigate to the `lcp` folder.
+
+1. Click on the *Backup* folder.
+
+1. Click on the *Script* folder.
+
+1. Place the SQL script(s) into the appropriate environment subfolder within `lcp/backup/script/`:
+
+   ```
+   lcp
+   └── backup
+      ├── LCP.json
+      └── script
+         ├── common
+         ├── dev
+         ├── local
+         ├── prd
+         └── uat
+   ```
 
 ### Performing the Data Restore
 
-Once you have prepared your SQL script(s), [deploy your service](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) so that these are included in your backup service online.
+Once you have prepared your SQL script(s), follow these steps to apply your custom SQL script(s) with a data restore:
 
-Then, navigate to your production environment's page, and click _Backups_ from the menu on the left.
+1. [Deploy your backup service](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) to include the custom SQL script(s) online.
 
-![The Backups page for a production environment.](./backup-and-restore/images/04.png)
+1. Follow the instructions listed above for [Restoring an Environment from the Backups Page](#restoring-an-environment-from-the-backups-page)
 
-Restore from any of the shown backups by clicking the Actions menu and clicking _Restore_.
-
-Choose which environment to restore to, and then click _Restore Backup and Make it the Current Version_. Once the database has been restored, the SQL scripts from your backup service's `script` folder will run:
+Once the database has been restored, the SQL scripts from your backup service's `script` folder will run:
 
 ```bash
 Jun 20 14:46:41.795 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeOrg.sql
 Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUsers.sql
 ```
+
+## Additional Information
+
+* [Backup Service](./backup-service.md)
+* [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
