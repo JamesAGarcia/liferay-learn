@@ -40,7 +40,7 @@ From here, you can perform the following tasks:
 
 **Download Backups**: You can manually download both `.tgz` archives that comprise a backup from the Backups page. Simply click on the *Actions* button ( ⋮ ) for the backup you want to download, and select *Download*. See [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information and instructions on how to use backup service APIs to download or upload backups.
 
-**Restore Environments from Backups**: You can restore an environment from one of the backups retained in the `prd` environment. Simply click on the *Actions* button ( ⋮ ) for the backup you want to use, and select *Restore To...*. You can also apply custom SQL scripts with a data restore. See [Restoring Data](./restoring-data.md) for more information.
+**Restore Environments from Backups**: You can restore an environment from one of the backups retained in the `prd` environment. Simply click on the *Actions* button ( ⋮ ) for the backup you want to use, and select *Restore To...*. You can also apply custom SQL scripts with a data restore. See [Restoring Data from a Backup](./restoring-data-from-a-backup.md) for more information.
 
 ```note::
    Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
@@ -154,5 +154,5 @@ Name                          | Default Value              | Description |
 ## Additional Information
 
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
-* [Restoring Data](./restoring-data.md)
+* [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
 * [Configuration via LCP JSON](../reference/configuration-via-lcp-json.md)

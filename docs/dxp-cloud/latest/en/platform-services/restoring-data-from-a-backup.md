@@ -51,7 +51,7 @@ You can track the status of the restore in the backup service's *Logs* and the *
 You can also use custom SQL scripts to perform additional updates to your database with a normal data restore. This approach is ideal for sanitizing sensitive data, since it allows you to apply the scripts to separately maintained database backups.
 
 ```note::
-   Using this feature requires version 3.0.7 or newer of the backup service's Docker image.
+   Using this feature requires version 3.0.7 or newer of the backup service.
 ```
 
 ### Preparing SQL Scripts

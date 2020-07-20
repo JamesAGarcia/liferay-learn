@@ -2,7 +2,8 @@ Platform Services
 =================
 
 -  :doc:`/platform-services/backup-service`
--  :doc:`/platform-services/backup-and-restore`
+-  :doc:`/platform-services/downloading-and-uploading-backups`
+-  :doc:`/platform-services/restoring-data-from-a-backup`
 -  :doc:`/platform-services/continuous-integration`
 -  :doc:`/platform-services/database-service`
 -  :doc:`/platform-services/changing-your-database-password`
