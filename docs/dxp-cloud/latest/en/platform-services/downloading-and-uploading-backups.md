@@ -168,3 +168,4 @@ curl -X POST \
 
 * [Backup Service](./backup-service.md)
 * [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
+* [Database Service (MySQL)](./database-service.md)

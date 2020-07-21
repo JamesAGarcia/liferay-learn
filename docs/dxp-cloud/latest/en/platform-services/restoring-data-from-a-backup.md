@@ -20,15 +20,13 @@ Follow these steps to restore an environment from a backup:
 
 1. Click on *Backups* in the environment menu.
 
-Follow these steps to restore an environment from the *Backups* page in your `prd` environment:
-
 1. Click on the *Actions* button ( ⋮ ) for the backup you want to use to restore a project environment.
 
 1. Click on *Restore to...*
 
    ![Figure 1: Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
 
-1. Click the drop-down *Environment* menu in the *Restore to...* page, and select the environment you want to restore.
+1. Click the drop-down *Environment* menu, and select the environment you want to restore.
 
    ![Figure 2: Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
 
@@ -104,3 +102,4 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 * [Backup Service](./backup-service.md)
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
+* [Database Service (MySQL)](./database-service.md)
