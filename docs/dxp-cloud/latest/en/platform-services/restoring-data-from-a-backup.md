@@ -1,8 +1,8 @@
 # Restoring Data from a Backup
 
-During project development, there may be times when administrators need to restore data or roll back the project to an earlier state.
+During project development, there may be times when you need to restore data or roll back the project to an earlier state.
 
-Production (`prd`) environment administrators can do this from the Backups page in the DXP Cloud console.
+Only production (`prd`) environment administrators can manually restore environments via the DXP Cloud console.
 
 They can also use custom SQL scripts to perform additional updates to a database as part of the data restore.
 
@@ -61,27 +61,11 @@ The following formats are supported for SQL scripts:
 
 Note that scripts are run in alphanumerical order when they are executed. SQL scripts must also reference the exact database to run on (for example, with `USE lportal;` or `lportal.User_`).
 
-Follow these steps to prepare your SQL script(s):
+Place SQL scripts into the appropriate, environment-specific `backup/configs/{ENV}/scripts/` folder.
 
-1. Navigate to the `lcp` folder.
-
-1. Click on the *Backup* folder.
-
-1. Click on the *Script* folder.
-
-1. Place the SQL script(s) into the appropriate environment subfolder within `lcp/backup/script/`:
-
-   ```
-   lcp
-   └── backup
-      ├── LCP.json
-      └── script
-         ├── common
-         ├── dev
-         ├── local
-         ├── prd
-         └── uat
-   ```
+```note::
+   If you are using version 3.x.x services, then SQL scripts instead belong in the appropriate ``lcp/backup/script/{ENV}/`` folder. See `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for more information on checking the version.
+```
 
 ### Performing the Data Restore
 
@@ -91,7 +75,7 @@ Once you have prepared your SQL script(s), follow these steps to apply your cust
 
 1. Follow the instructions listed above for [Restoring an Environment from the Backups Page](#restoring-an-environment-from-the-backups-page)
 
-Once the database has been restored, the SQL scripts from your backup service's `script` folder will run:
+Once the database has been restored, the SQL script(s) from your backup service's `scripts` folder will run:
 
 ```bash
 Jun 20 14:46:41.795 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeOrg.sql

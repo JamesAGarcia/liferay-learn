@@ -17,7 +17,7 @@ You can also configure the backup service to meet your project's needs via the D
 
 ## The Backups Page
 
-From the Backups page in `prd` environments, you can view backup service information and retained backups, create manual backups, download backups, or restore environments from backups.
+From the Backups page in `prd` environments, you can view backup service information and retained backups, create manual backups, and more.
 
 ```note::
    The Backups page is only available in production environments.
@@ -33,19 +33,19 @@ Follow these steps to access the Backups page:
 
 From here, you can perform the following tasks:
 
-**View Backup Info**: You can quickly view backup service information for the `prd` environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
-
-**View Backup History**: You can view the full list of retained backups in the `prd` environment. Each entry lists the backup's name, size, and time of creation.
-
-**Create Manual Backups**: You can manually create a backup of the `prd` environment. See [Performing a Manual Backup](#performing-a-manual-backup) for more information.
-
-**Download Backups**: You can download retained backups. See [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information and instructions on how to use backup service APIs to download or upload backups.
-
-**Restore Environments from Backups**: You can restore environments from retained backups. See [Restoring Data from a Backup](./restoring-data-from-a-backup.md) for more information and instructions on how to apply custom SQL scripts with a data restore.
+* **View Backup Info**: You can quickly view backup service information for the `prd` environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
+* **View Backup History**: You can view the full list of retained backups in the `prd` environment. Each entry lists the backup's name, size, and time of creation.
+* **Create Manual Backups**: You can manually create a backup of the `prd` environment. See [Performing a Manual Backup](#performing-a-manual-backup) for more information.
 
 ```note::
    Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
 ```
+
+From the Backups page, environment administrators also have access to the Actions button (⋮) and can download retained backups or restore environments.
+
+For more information and instructions on how to perform these actions, see [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) and [Restoring Data from a Backup](./restoring-data-from-a-backup.md).
+
+![Figure 3: Production environment administrators can download backups or restore an environment from the Backups page.](./backup-service/images/03.png)
 
 ## Creating a Manual Backup
 
@@ -53,7 +53,7 @@ To manually backup your `prd` environment from the Backups page, simply click on
 
 Once started, the backup service icon will indicate a backup is in progress, and a new backup will appear in the *Backup history*.
 
-![Figure 3: The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service/images/03.png)
+![Figure 4: The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service/images/04.png)
 
 Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page.
 
@@ -81,7 +81,7 @@ Follow these steps to configure the backup service via the DXP Cloud Console:
 
 1. Click on the *Environment Variables* tab.
 
-   ![Figure 4: Navigate to the backup service's variables tab in your production environment.](./backup-service/images/04.png)
+   ![Figure 5: Navigate to the backup service's variables tab in your production environment.](./backup-service/images/05.png)
 
    You can also access the backup service's page by clicking on *Backup* in the environment Overview page.
 
@@ -115,7 +115,7 @@ See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) for
 
 ### Scheduling Automated Backups and Cleanups
 
-Determining how frequently backups are created and removed is vital to protecting your data and optimizing storage.
+Determining how frequently backups are created and removed can help protect your data and optimize storage.
 
 Use the following variables to customize when backups are created and removed:
 
@@ -160,4 +160,3 @@ Name                          | Default Value              | Description |
 * [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
 * [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
 * [Database Service (MySQL)](./database-service.md)
-

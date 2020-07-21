@@ -18,7 +18,11 @@ Follow these steps to download a backup from the *Backups* page in your `prd` en
 
 1. Click on the *Database* or *Liferay* `.tgz` file to start downloading. Together, these zip archives comprise the environment backup.
 
-    ![Figure 2: Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+   ![Figure 2: Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+
+```note::
+   Only production environment administrators can download backups from the Backups page.
+```
 
 ## Backup Service APIs
 
