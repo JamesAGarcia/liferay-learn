@@ -22,7 +22,7 @@ Every DXP Cloud project comes with:
 
 DXP Cloud is designed with security in mind. Build and deploy mission-critical sites with confidence knowing that DXP Cloud is **ISO 27001** and **AICPA SOC2** certified. See our [security policy](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Cloud+Data+Security+and+Protection.pdf/78ce7065-9787-1fb2-9c7b-6d7c13f4a3e6?t=1564674972483) for more information.
 
-[Automated backups](../platform-services/backup-service.md) ensure that data and documents are protected and ready for restoration in case of data corruption or failure. Encryption at rest ensures that sensitive data saved on disks isn't readable by any user or application without a valid key.
+[Automated backups](../platform-services/backup-service-overview.md) ensure that data and documents are protected and ready for restoration in case of data corruption or failure. Encryption at rest ensures that sensitive data saved on disks isn't readable by any user or application without a valid key.
 
 ![Figure 3: DXP Cloud's backup service preserves and protects your data.](./introduction-to-dxp-cloud/images/01.png)
 

@@ -10,7 +10,7 @@ They can also use custom SQL scripts to perform additional updates to a database
    The Backups page is only available in production environments.
 ```
 
-See [Backup Service](./backup-service.md) and [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information about the Backups page.
+See [Backup Service](./backup-service-overview.md) and [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information about the Backups page.
 
 ## Restoring an Environment from the Backups Page
 
@@ -84,6 +84,6 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 ## Additional Information
 
-* [Backup Service](./backup-service.md)
+* [Backup Service](./backup-service-overview.md)
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
 * [Database Service (MySQL)](./database-service.md)

@@ -1,4 +1,4 @@
-# Backup Service
+# Backup Service Overview
 
 Maintaining regular backups is vital to protecting your project's data. The DXP Cloud backup service stores iterations of environment data that can be used to restore your environments if needed.
 
@@ -13,7 +13,7 @@ You can also configure the backup service to meet your project's needs via the D
 * [Configuring the Backup Service](#configuring-the-backup-service)
 * [Environment Variables Reference](#environment-variables-reference)
 
-![Figure 1: The backup service is one of several services available in DXP Cloud.](./backup-service/images/01.png)
+![Figure 1: The backup service is one of several services available in DXP Cloud.](./backup-service-overview/images/01.png)
 
 ## The Backups Page
 
@@ -29,7 +29,7 @@ Follow these steps to access the Backups page:
 
 1. Click on *Backups* in the environment menu.
 
-![Figure 2: View backup history, create manual backups, and more from the Backups page in prd environments.](./backup-service/images/02.png)
+![Figure 2: View backup history, create manual backups, and more from the Backups page in prd environments.](./backup-service-overview/images/02.png)
 
 From here, you can perform the following tasks:
 
@@ -45,7 +45,7 @@ From the Backups page, environment administrators also have access to the Action
 
 For more information and instructions on how to perform these actions, see [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) and [Restoring Data from a Backup](./restoring-data-from-a-backup.md).
 
-![Figure 3: Production environment administrators can download backups or restore an environment from the Backups page.](./backup-service/images/03.png)
+![Figure 3: Production environment administrators can download backups or restore an environment from the Backups page.](./backup-service-overview/images/03.png)
 
 ## Creating a Manual Backup
 
@@ -53,7 +53,7 @@ To manually backup your `prd` environment from the Backups page, simply click on
 
 Once started, the backup service icon will indicate a backup is in progress, and a new backup will appear in the *Backup history*.
 
-![Figure 4: The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service/images/04.png)
+![Figure 4: The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service-overview/images/04.png)
 
 Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page.
 
@@ -81,7 +81,7 @@ Follow these steps to configure the backup service via the DXP Cloud Console:
 
 1. Click on the *Environment Variables* tab.
 
-   ![Figure 5: Navigate to the backup service's variables tab in your production environment.](./backup-service/images/05.png)
+   ![Figure 5: Navigate to the backup service's variables tab in your production environment.](./backup-service-overview/images/05.png)
 
    You can also access the backup service's page by clicking on *Backup* in the environment Overview page.
 
@@ -144,7 +144,7 @@ The following `LCP.json` example creates backups every 12 hours (i.e., 00:00 and
 
 Name                          | Default Value              | Description |
 ----------------------------- | -------------------------- | ----------- |
-`LCP_BACKUP_CLEANUP_SCHEDULE` | <!--N/A????--> | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). |
+`LCP_BACKUP_CLEANUP_SCHEDULE` | 0 1 * * * | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. |
 `LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
 `LCP_BACKUP_FOLDER`           | `/opt/liferay/data`        | The Liferay folder to back up. |
 `LCP_BACKUP_RESTORE_SCHEDULE` | N/A | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). |

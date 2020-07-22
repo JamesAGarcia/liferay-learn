@@ -124,7 +124,7 @@ mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | 
 tar zcvf database.tgz database.gz
 ```
 
-The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file).
+The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
 
 With these options, the resulting dump file contains the following code just before the create table statements.
 
@@ -170,6 +170,6 @@ curl -X POST \
 
 ## Additional Information
 
-* [Backup Service](./backup-service.md)
+* [Backup Service Overview](./backup-service-overview.md)
 * [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
 * [Database Service (MySQL)](./database-service.md)
