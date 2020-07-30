@@ -35,15 +35,13 @@ Follow these steps to add environment variables to a service via the DXP Cloud c
    While restarting, the service may stop receiving requests for some minutes and behave differently depending on the variable values.
 ```
 
-Once an environment variable is added to a service, you can change its value or remove the variable at any time from the service's *Environment Variables* tab.
+Once an environment variable is added to a service, you can remove it or change its value at any time from the service's *Environment Variables* tab.
 
-To change a variable's value, follow these steps:
+To remove a variable, click on the *Remove* button ( x ).
 
-1. Click on the *Show* icon to view the value of the variable you want to change.
+To change a variable's value, click on the *Show* icon, and enter a new value.
 
-1. Change the variable's value.
-
-1. Click on *Save Changes* to restart the service with the updated value.
+Once you have finished removing or changing variables, click on *Save Changes* to restart the service with updated environment variables.
 
 ![Figure 2: Click on the Show icon to view and edit a variable's value.](./defining-environment-variables/images/02.png)
 
