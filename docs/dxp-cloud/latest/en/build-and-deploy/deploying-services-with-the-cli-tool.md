@@ -2,7 +2,7 @@
 
 The following tutorial walks you through deploying services with the Liferay Cloud Platform CLI tool. This example includes the following steps: adding a sample JAR module to the Liferay service in your working repository and deploying your changes to your project's development (`dev`) environment.
 
-Notably, this deployment method skips pushing local changes to a remote repository, or using the DXP Cloud console to deploy builds. See [Walking Through the Deployment Life Cycle](./walking-through-the-deployment-life-cycle.md) to learn how to deploy local changes to your project environments via the DXP Cloud console.
+Notably, this deployment method skips pushing local changes to a remote repository and using the DXP Cloud console to deploy builds. See [Walking Through the Deployment Life Cycle](./walking-through-the-deployment-life-cycle.md) to learn how to deploy local changes to your project environments via the DXP Cloud console.
 
 ```tip::
    In general, pushing to GitHub and using the DXP Cloud console is recommended for deployments.
