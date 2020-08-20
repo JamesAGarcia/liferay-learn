@@ -2,6 +2,10 @@
 
 Mentioning other users in a DXP asset draws their attention to a particular asset (for example, a message boards thread, blog post, or comment) by sending them a site and email notification and link. To "mention" other users, enter the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards thread](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.
 
+```note::
+   Only Users with Page update permissions can be mentioned in Page Fragment comments.
+```
+
 ## Using the Mentions Function in a Message Boards Thread
 
 1. Navigate to the site page where a _Message Boards_ widget has been deployed.
