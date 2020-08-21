@@ -1,6 +1,6 @@
 # Content Pages Overview
 
-By default, Liferay DXP uses the *Content Page* type, which provides a convenient UI for editing and managing Page elements, content, and design. With Content Pages, you can use configurable drag-and-drop elements out-of-the-box, or develop your own to create the desired user experience.
+By default, Liferay DXP uses the *Content Page* type, which provides a convenient UI for editing Page elements, content, and design. With Content Pages, you can use configurable drag-and-drop elements out-of-the-box, or develop your own to create the desired user experience.
 
 Content Pages also support [A/B Testing](./ab-testing), [Workflow](../../../process-automation/workflow/user-guide/introduction-to-workflow.md), and personalized, adaptive Site experiences. See [Understanding Pages](./../understanding-pages/understanding-pages.md) for more information about Page types.
 
@@ -82,7 +82,7 @@ In the *Page Structure* panel of the Content Page sidebar ( ![Page Structure ico
 ![Page Structure shows you a hierarchy of your Page.](./content-pages-overview/images/07.png)
 
 ```note::
-   While Headers and Footers appear in the Page structure for custom [Master Page Templates](../defining-headers-and-footers/master-Page-templates.md),they can only be edited or removed via the Master Page Template.
+   While Headers and Footers appear in the Page structure for custom `Master Page Templates <../defining-headers-and-footers/master-Page-templates.md>`_, they can only be edited or removed via the Master Page Template.
 ```
 
 ## Page Design Options
