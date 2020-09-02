@@ -65,13 +65,13 @@ Coming soon!
 Publishing Tools
 ----------------
 
--  :doc:`/site-building/publishing_tools/staging-overview`
--  :doc:`/site-building/publishing_tools/configuring-local-live-staging`
--  :doc:`/site-building/publishing_tools/configuring-remote-live-staging`
--  :doc:`/site-building/publishing_tools/page-versioning`
--  :doc:`/site-building/publishing_tools/publishing-single-assets-and-widgets`
--  :doc:`/site-building/publishing_tools/managing-staging-permissions`
--  :doc:`/site-building/publishing_tools/staging-ui-reference`
+-  :doc:`/site-building/publishing-tools/staging-overview`
+-  :doc:`/site-building/publishing-tools/configuring-local-live-staging`
+-  :doc:`/site-building/publishing-tools/configuring-remote-live-staging`
+-  :doc:`/site-building/publishing-tools/page-versioning`
+-  :doc:`/site-building/publishing-tools/publishing-single-assets-and-widgets`
+-  :doc:`/site-building/publishing-tools/managing-staging-permissions`
+-  :doc:`/site-building/publishing-tools/staging-ui-reference`
 
 Optimizing Sites
 ----------------
