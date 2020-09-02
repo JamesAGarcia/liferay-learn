@@ -65,7 +65,7 @@ Coming soon!
 Optimizing Sites
 ----------------
 
-SEO Optimization
+Search Engine Optimization (SEO)
 ~~~~~~~~~~~~~~~~
 Coming soon!
 
