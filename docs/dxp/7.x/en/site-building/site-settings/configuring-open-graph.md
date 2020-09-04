@@ -14,26 +14,27 @@ By default, Open Graph `<meta>` tags are embedded in every Page, which you can u
 
 ## Configuring Open Graph Image
 
-Here, you can also use the *Image* and *Image Alt Description* fields to define the default `og:image` and `og:image:alt` properties for your Site. To create localized alt descriptions for your Open Graph image, click on the *Language Flag* button and select the language you want to set.
+You can use the *Image* and *Image Alt Description* fields to define `og:image` properties for your Site.
 
 ![Define the default og:image and og:image:alt properties used for your Site.](./configuring-open-graph/images/03.png)
 
-These fields define the following Open Graph `<meta>` tags.
+When you select an image, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
 
 ```
 <meta property="og:image" content="http://example.com/ogp.jpg" />
-<meta property="og:image:alt" content="This is an example." />
-```
-
-<!-- Pending Jorge's input...
-```
 <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="400" />
 <meta property="og:image:height" content="300" />
-``` -->
+```
 
-You can also preview how your Open Graph image will appear in supported contexts. Though keep in mind the image ratio may change, depending on where your Page's URL is shared.
+When you enter text into the Image Alt Description field, you determine the default text read by screen readers for your selected image. To create localized alt descriptions for your Open Graph image, click on the *Language Flag* button and select the language you want to set. Values entered here define the default `og:image:alt` tag.
+
+```
+<meta property="og:image:alt" content="This is an example." />
+```
+
+Here, you can also preview how your Open Graph image will appear in supported contexts. Though keep in mind the image ratio may change, depending on where your Page's URL is shared.
 
 ![Preview your default Open Graph configuration.](./configuring-open-graph/images/05.png)
 
