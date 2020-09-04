@@ -23,12 +23,12 @@ Follow these steps to set up Local Live Staging for your DXP instance:
 
    ![Enable Page Versioning for your Private and Public Page sets.](./configuring-local-live-staging/images/03.png)
 
-1. Select the application data and content types you want to stage.
+1. Select the *data* and *content* types you want to stage.
 
-   ![Select the application data and content types you want to stage.](./configuring-local-live-staging/images/04.png)
+   ![Select the data and content types you want to stage.](./configuring-local-live-staging/images/04.png)
 
    ```warning::
-      When an application is checked, its data is copied to Staging, and it may not be possible to edit them directly in Live. When unchecking an application, first make sure that any changes in Staging are published, since they may be lost.
+      When an application is checked, its data is copied to Staging, and it may not be possible to edit them directly in Live. When unchecking an application, first make sure that any changes in Staging are published, since they may be lost. See `Managing Data and Content Types in Staging<./managing-data-and-content-types-in-staging.md>`_ for more information.
    ```
 
 1. Click on *Save* to initiate the cloning process. The duration of this process depends on the size of your Site.
@@ -47,7 +47,7 @@ Follow these steps to disable Local Live Staging:
 
 1. Open the Product Menu in your Staging environment, and go to *Publishing* &rarr; *Staging*.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png ) located in the *Application* bar, and select *Staging Configuration*.
+1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
 
 1. Select *None* for your Staging configuration, and click on *Save*.
 
@@ -55,5 +55,5 @@ Follow these steps to disable Local Live Staging:
 
 * [Staging Overview](./staging-overview.md)
 * [Staging UI Reference](./staging-ui-reference.md)
+* [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)
 * [Managing Staging Permissions](./managing-staging-permissions.md)
-* [Managing Data and Content Types in Staging](managing-data-and-content-types-in-staging.md)

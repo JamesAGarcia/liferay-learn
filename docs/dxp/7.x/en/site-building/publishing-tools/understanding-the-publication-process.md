@@ -1,4 +1,4 @@
-# Understanding The Publication Process
+# Understanding the Publication Process
 
 Publication is the process whereby your Site's Pages, content, and application configurations are transferred from Staging to Live. Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience.
 
@@ -50,3 +50,6 @@ It's recommended users enable Staging at the beginning of the Site creation proc
 For Staging, it's recommended JVMs/networks are configured with a minimum of 4GB of memory and 20MB/s transfer rate (disk).
 
 ## Additional
+
+* [Configuring Local Live Staging](./configuring-local-live-staging.md)
+* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
