@@ -11,7 +11,7 @@ From a low level perspective, staging is an equivalence relation where entities 
 
 ### Export Phase
 
-During *Export*, your publication configuration is processed and necessary/obligatory<!--w/c--> referenced entities are gathered. Then everything is processed into the instance's own file format, per publication parameters,<!--necessary clause?--> which is either stored locally or transferred to the remote live DXP instance.
+During *Export*, your publication configuration is processed and necessary/obligatory<!--w/c--> referenced entities are gathered. Then everything is processed into the instance's own file format, per publication parameters, and is either stored locally or transferred to the remote live DXP instance.
 
 ### Validation Phase
 

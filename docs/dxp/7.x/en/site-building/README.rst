@@ -66,6 +66,7 @@ Publishing Tools
 ----------------
 
 -  :doc:`/site-building/publishing-tools/staging-overview`
+-  :doc:`/site-building/publishing-tools/understanding-the-publication-process`
 -  :doc:`/site-building/publishing-tools/configuring-local-live-staging`
 -  :doc:`/site-building/publishing-tools/configuring-remote-live-staging`
 -  :doc:`/site-building/publishing-tools/page-versioning`

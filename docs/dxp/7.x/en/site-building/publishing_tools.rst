@@ -5,6 +5,7 @@ Publishing Tools
    :maxdepth: 3
 
    publishing-tools/staging-overview.md
+   publishing-tools/understanding-the-publication-process.md
    publishing-tools/configuring-local-live-staging.md
    publishing-tools/configuring-remote-live-staging.md
    publishing-tools/page-versioning.md
@@ -13,6 +14,7 @@ Publishing Tools
    publishing-tools/staging-ui-reference.md
 
 -  :doc:`/site-building/publishing-tools/staging-overview`
+-  :doc:`/site-building/publishing-tools/understanding-the-publication-process`
 -  :doc:`/site-building/publishing-tools/configuring-local-live-staging`
 -  :doc:`/site-building/publishing-tools/configuring-remote-live-staging`
 -  :doc:`/site-building/publishing-tools/page-versioning`

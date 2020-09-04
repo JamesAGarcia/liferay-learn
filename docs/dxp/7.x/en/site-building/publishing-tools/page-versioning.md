@@ -37,11 +37,11 @@ Follow these steps to create new variations of a Page or Page set:
 
    ![Click on the Add button at the bottom right of the modal window](./page-versioning/images/04.png)
 
-1. (For both variation types)<!--Is this kosher?--> Enter a *name* and *description* for your new variation. You can modify these fields for your variation at any time.
+1. Enter a *name* and *description* for your new variation. You can modify these fields for your variation at any time.
 
    ![Enter a name and description for your new variation.](./page-versioning/images/05.png)
 
-1. (Only for variations of Page sets)<!--Is this kosher?--> Determine whether your new Page set variation copies Pages from existing variations by selecting from the following options:
+   For Page set Variations, you can also determine whether your new Page set variation copies Pages from existing variations by selecting from the following options:
 
    * **All Site Pages Variations**: Copy all existing Page variations into your new Page set variation.
 

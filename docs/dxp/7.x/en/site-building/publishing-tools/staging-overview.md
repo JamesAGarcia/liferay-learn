@@ -31,7 +31,9 @@ As part of Staging configuration, you can select which content groups and applic
 
 ## Understanding the Publication Process
 
+From a low level perspective, staging is an equivalence relation where entities are mirrored to a different location. From a high level perspective, the staging process is executed in three sequential phases: Export, Validation, and Import.
 
+Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience. See [Understanding the Publication Process](./understanding-the-publication-process.md) for more information.
 
 ## Additional Information
 
