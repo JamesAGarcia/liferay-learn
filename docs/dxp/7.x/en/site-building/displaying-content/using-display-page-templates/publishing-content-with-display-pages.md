@@ -10,16 +10,14 @@ Follow these steps to display your content on a Display Page:
 
     ![Select a specific display page template to configure a display page template.](./publishing-content-with-display-pages/images/01.png)
 
-1. Click the *Select* button and select the Display Page Template and click *Done*.
+1. Click the *Select* button, and select the Display Page Template and click *Done*.
 
-    When editing the content, you can preview what the display page looks like with the *Preview* (![Preview Template](../../../../images/icon-preview.png)) button located next to the selected Display Page Template.
-
-    ![The preview button lets you view what the content looks like with the selected Display Page Template.](./publishing-content-with-display-pages/images/02.png)
+    When editing the content, you can preview what the display page looks like with the *Preview* (![Preview Template](../../../images/icon-preview.png)) button located next to the selected Display Page Template.
 
 1. Scroll down to the *Friendly URL* panel, expand it, and modify the friendly URL if you want. This is the URL your web content is displayed at when the full content is viewed.
 
-    ![The friendly URL is the unique URL that you can view the web content at.](./publishing-content-with-display-pages/images/03.png)
+    ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/02.png)
 
-1. Click *Publish*.
+1. Click on *Publish*.
 
 When published, you can view the content at its Friendly URL or when you click on the content in an Asset Publisher with *Asset Link Behavior* set to *View in Context*.
