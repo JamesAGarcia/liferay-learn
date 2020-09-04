@@ -61,13 +61,29 @@ The *Description* field defines a Display Page's `og:description` property, whic
 
 ### Image
 
-The *Image* field defines a Display Page's `og:image` property, which determines the image displayed for your content in rich previews. By default, this field is unmapped in Display Page templates. This means the template defaults to the image set at Site level, unless you select a different Image field.
+The *Image* field defines a Display Page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
+
+```
+<meta property="og:image" content="http://example.com/ogp.jpg" />
+<meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+```
+
+By default, this field is unmapped in Display Page templates. This means the template defaults to the image set at Site level, unless you select a different Image field.
 
 ![The Image field defines a Display Page's og:image property.](./configuring-seo-and-open-graph/images/08.png)
 
 ### Image Alt Description
 
-The *Image Alt Description* field defines a Display Page's `og:image:alt` property, which determines the alt text read by screen readers for your displayed content's `og:image` property. By default, this field is unmapped in Display Page templates. This means the template defaults to the alt text set at the Site level, unless you select a different Text field.
+The *Image Alt Description* field defines a Display Page's `og:image:alt` property, which determines the alt text read by screen readers for your displayed content's `og:image` property.
+
+```
+<meta property="og:image:alt" content="This is an example." />
+```
+
+By default, this field is unmapped in Display Page templates. This means the template defaults to the alt text set at the Site level, unless you select a different Text field.
 
 ![The Image Alt Description field defines a Display Page's og:image:alt property](./configuring-seo-and-open-graph/images/09.png)
 
