@@ -76,7 +76,7 @@ Here, you can access information and settings that you can use to customize your
 
 If you want to publish pages with a custom theme, you must check the Theme Settings option under the *Look and Feel* heading for your staging configuration. Otherwise, the default theme is applied.
 
-**Content**: Select the content you want to include in your publication. You can publish *all* content of the selected types, or specify a date and time parameter to limit the content published. You can also click on *Change* for each content type to manage items and other settings included in each type, such as *version history*, *vocabularies*, and *previews and thumbnails*. See [Publish Templates](#publish-templates) for more information.
+**Content**: Select the content you want to include in your publication. You can publish *all* content of the selected types, or specify a date and time parameter to limit the content published. You can also click on *Change* for each content type to manage items and other settings included in each type, such as *version history*, *vocabularies*, and *previews and thumbnails*. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
 
 ![Select the content you want to include in your publication.](./staging-ui-reference/images/09.png)
 
@@ -133,4 +133,6 @@ From here, you can disable Staging for your Site, or modify your [Page versionin
 ## Additional Information
 
 * [Staging Overview](./staging-overview.md)
+* [Understanding the Publication Process](./understanding-the-publication-process.md)
 * [Page Versioning](./page-versioning.md)
+* [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)

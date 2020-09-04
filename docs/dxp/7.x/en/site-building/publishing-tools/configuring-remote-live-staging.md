@@ -68,7 +68,7 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
 Once restarted, both servers are ready for Staging configuration.
 
-```note::
+```important::
    When applying patches to a remote Staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote staging works correctly.
 ```
 
@@ -88,23 +88,19 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
    **Remote Host/IP**: Enter your Remote server's IP address into the *Remote Host/IP* field. This should match the `tunnel.servlet.hosts.allowed` property specified in your `portal-ext.properties` file.
 
+   **Remote Port**: Enter the port for your remote DXP instance into the *Remote Port* field.
+
+   **Remote Path Context**: Enter the *Remote Path Context*. This is only required if a non-root portal servlet context path is used on the remote Liferay server. Access to this context must not be blocked by a proxy or firewall.
+
+   **Remote Site ID**: Enter the *Site ID* for your Remote Liferay DXP instance.
+
+   ![Use the Remote Live Connection Settings fields to enter information for your remote DXP instance](./configuring-remote-live-staging/images/03.png)
+
    ```note::
       If you're configuring an IPv6 address, it must contain brackets when entered into the *Remote Host/IP* field (e.g., [0:0:0:0:0:0:0:1]).
 
       If the Remote server is a cluster, you can set the Remote Host/IP to the cluster's load balanced IP address to increase the availability of the publishing process. See the `Configuring Remote Staging in a Clustered Environment <https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment>`_ for details.
    ```
-
-   **Remote Port**: Enter the port for your remote DXP instance into the *Remote Port* field.
-
-   **Remote Path Context**: Enter the *Remote Path Context*. This is only required if a non-root portal servlet context path is used on the remote Liferay server.
-
-   ```note::
-      Access to this context must not be blocked by a proxy or firewall.
-   ```
-
-   **Remote Site ID**: Enter the *Site ID* for your Remote Liferay DXP instance.
-
-   ![Use the Remote Live Connection Settings fields to enter information for your remote DXP instance](./configuring-remote-live-staging/images/03.png)
 
 1. Select whether to use a secure network connection (i.e., HTTPS) for the publication of Pages from Staging to Live.
 
@@ -114,12 +110,12 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
    ![Enable Page Versioning for your Private and Public Page sets.](./configuring-remote-live-staging/images/04.png)
 
-1. Select the content you want to stage.
+1. Select the *data* and *content* types you want to stage.
 
-   ![Select the content you want to stage.](./configuring-remote-live-staging/images/05.png)
+   ![Select the data and content types you want to stage.](./configuring-remote-live-staging/images/05.png)
 
     ```warning::
-       When an application is checked, its data is copied to staging, and it may not be possible to edit them directly in live. When unchecking an application, first make sure that any changes in Staging are published, since they may be lost.
+       When an application is checked, its data is copied, and it may not be possible to edit them directly in live. When unchecking an application, first make sure that any changes in Staging are published, since they may be lost. See `Managing Data and Content Types in Staging<./managing-data-and-content-types-in-staging.md>`_ for more information.
     ```
 
 1. Click on *Save* to initiate the Staging process. The duration of this process depends on the size of your Site.
@@ -173,4 +169,4 @@ This is only an option for your Staging environment; executing this option erase
 * [Staging Overview](./staging-overview.md)
 * [Staging UI Reference](./staging-ui-reference.md)
 * [Managing Staging Permissions](./managing-staging-permissions.md)
-* [Managing Data and Content Types in Staging](managing-data-and-content-types-in-staging.md)
+* [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)

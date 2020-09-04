@@ -40,5 +40,4 @@ Understanding this process can improve efficiency and help you plan ahead to ach
 * [Understanding the Publication Process](./understanding-the-publication-process.md)
 * [Configuring Local Live Staging](./configuring-local-live-staging.md)
 * [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
-* [Page Versioning](./page-versioning.md)
 * [Staging UI Reference](./staging-ui-reference.md)
