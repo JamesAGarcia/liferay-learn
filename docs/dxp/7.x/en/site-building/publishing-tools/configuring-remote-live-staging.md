@@ -7,13 +7,12 @@ Before enabling Remote Live Staging, you'll need to configure the Liferay server
 * [Preparing Your Liferay Servers](#preparing-your-liferay-servers)
 * [Setting Up Remote Live Staging](#setting-up-remote-live-staging)
 * [Remote Live Staging Permissions](#remote-live-staging-permissions)
-* [Applying Patches When Using Remote Staging](#applying-patches-when-using-remote-staging)
 * [Configuring Remote Staging's Buffer Size](#configuring-remote-stagings-buffer-size)
 * [Disabling Remote Live Staging](#disabling-remote-live-staging)
 
 ## Preparing Your Liferay Servers
 
-Follow these steps to configure your Liferay servers for Remote Live Staging:
+If you haven't already, follow these steps to configure your Liferay servers for Remote Live Staging:
 
 1. Specify a shared authentication key for your servers by adding the following properties to the `portal-ext.properties` file for both Liferay servers:
 
@@ -38,19 +37,25 @@ Follow these steps to configure your Liferay servers for Remote Live Staging:
    tunnel.servlet.hosts.allowed=127.0.0.1,SERVER_IP,[OTHER_SERVER_IP]
    ```
 
-   If the server has multiple interfaces, each IP address must also be added.
+   If the server has multiple IP addresses, each IP address must also be added.
 
    ```important::
       If you're validating IPv6 addresses, you must configure the app server's JVM to not force the usage of IPv4 addresses. For example, if you're using Tomcat, add the ``-Djava.net.preferIPv4Stack=false`` attribute in the ``$TOMCAT_HOME\bin\setenv.[bat|sh]`` file.
    ```
 
-1. Update the *Tunnel Authentication Verifier Configuration* of your remote Liferay instance.
+1. Update the remote instance's *Tunnel Authentication Verifier Configuration*.
 
-   To do this, go to the *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *API Authentication* &rarr; *Tunnel Authentication*. Click */api/liferay/do* and insert the additional IP addresses you're using in the *Hosts Allowed* field. When finished, click on *Update*.
+   To do this, go to the *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *API Authentication* &rarr; *Tunnel Authentication*.
+   
+   Click */api/liferay/do* and insert the additional IP addresses you're using in the *Hosts Allowed* field. When finished, click on *Update*.
 
-   ![Add each server to the other's list of allowed servers via each server's Control Panel.](./configuring-remote-live-staging/images/06.png)
+   ![Update the remote instance's Tunnel Authentication Verifier Configuration via the Control Panel.](./configuring-remote-live-staging/images/06.png)
 
-   Alternatively, you can write this configuration into an OSGi file (e.g., `osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`) in your Liferay instance:
+   ```note::
+      While it is enabled by default, ensure each Liferay server's tunneling servlet authentication verifier is enabled.
+   ```
+
+   Alternatively, you can write this configuration into an OSGi file in your Liferay instance (e.g., `osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`):
 
    ```
    enabled=true
@@ -62,6 +67,10 @@ Follow these steps to configure your Liferay servers for Remote Live Staging:
 1. Restart both Liferay servers to implement your changes.
 
 Once restarted, both servers are ready for Staging configuration.
+
+```note::
+   When applying patches to a remote Staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote staging works correctly.
+```
 
 ## Setting Up Remote Live Staging
 
@@ -116,7 +125,7 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 1. Click on *Save* to initiate the Staging process. The duration of this process depends on the size of your Site.
 
    ```note::
-      If your Liferay servers are not properly configured, you won't be able to enable staging and an error message appears. If you have issues, verify you've configured your servers properly.
+      If your attempt to enable Remote Live Staging fails, please verify that you've properly prepared your servers.
    ```
 
 Once the process is complete, you are ready to use Local Live Staging. See [Staging UI Reference](./staging-ui-reference.md) for information about navigating the Staging environment's publishing features.
@@ -131,11 +140,7 @@ When a User attempts to publish changes from Staging to Live, Liferay passes the
 
 To give a local User permission to publish changes from staging to production/live, create an identical User account with identical permissions for the User on the remote server.
 
-To simplify this process, you can use LDAP to copy selected User accounts from your local server to your remote server.
-
-## Applying Patches When Using Remote Staging
-
-When applying patches to a remote Staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote staging works correctly.
+To simplify this process, you can use LDAP to copy selected User accounts from your local server to your remote server. See [Connecting to an LDAP Directory](./../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) for more information.
 
 ## Configuring Remote Staging's Buffer Size
 

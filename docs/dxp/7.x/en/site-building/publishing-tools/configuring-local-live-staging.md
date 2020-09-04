@@ -41,15 +41,15 @@ Once the process is complete, you are ready to use Local Live Staging. See [Stag
 
 ## Disabling Local Live Staging
 
-If for any reason you need to disable Staging for your Site, follow these steps:
+If for any reason you need to disable Staging for your Site, you can easily do so from your staging environment. However, be aware that disabling Local Live Staging will delete the Staging environment, along with all unpublished content. For this reason, ensure all necessary information is published or preserved elsewhere before disabling Staging. This process may take some time, depending on the size of your Staging environment. So it's best not to disable staging when your DXP instance is busy.
 
-1. Go to *Publishing* &rarr; *Staging*, which is only available from your Staging environment.
+Follow these steps to disable Local Live Staging:
+
+1. Open the Product Menu in your Staging environment, and go to *Publishing* &rarr; *Staging*.
 
 1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png ) located in the *Application* bar, and select *Staging Configuration*.
 
 1. Select *None* for your Staging configuration, and click on *Save*.
-
-Disabling Local Live Staging deletes the Staging environment, along with all unpublished content. For this reason, ensure all necessary information is published or preserved elsewhere before disabling Staging. This process may take some time, depending on the size of your Staging environment. So it's best not to disable staging when your DXP instance is busy.
 
 ## Additional Information
 

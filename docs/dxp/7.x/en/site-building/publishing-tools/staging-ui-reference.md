@@ -24,7 +24,7 @@ You can also access the following options for Widget Pages in your Staging envir
 
 * **History**: You can view and manage the history of Page revisions by clicking on the *Actions* button (![Actions button](./../../images/icon-actions.png)) in the Staging bar and selecting *History*. From here, you can also revert a Page to an earlier version by clicking on the *Actions* button (![Actions button](./../../images/icon-actions.png)) for the Page version you want to restore and selecting *Mark as Ready for Publication*.
 
-* **Ready for Publication**: When you have finished making your changes, click on *Ready for Publication* to change the Page's status from *Draft* to *Ready for Publication*. You can then click *Publish to Live* to configure and initiate the publication process for your changes. When you publish a Page to Live, only the version *Marked as Ready for Publication* is published.
+* **Ready for Publication**: When you have finished making your changes, click on *Ready for Publication* to change the Page's status from *Draft* to *Ready for Publication*. You can then click *Publish to Live* to configure and initiate the publication process for your changes. When you publish a Page to Live, only the version marked as *Ready for Publication* is published.
 
 ## Publish to Live
 
@@ -43,7 +43,7 @@ The *Simple Publication* tab of the modal window includes the following sections
 **Pages to Publish**: View the number of Pages included in your publication.
 
     ```note::
-       This displays the number of Page deletions tracked by the Staging framework. Keep in mind that this number counts the Page deletions on the staging Site, not how many Pages will be deleted on the on the live Site. There could be an inconsistency between the number of Page deletions to be published and the actual number of Pages present on either of the staging and live Sites.
+       This displays the number of Page deletions tracked by the Staging framework. Keep in mind that this number counts the Page deletions on the Staging Site, not how many Pages will be deleted on the on the Live Site. There could be an inconsistency between the number of Page deletions to be published and the actual number of Pages present on either of the Staging and Live Sites.
     ```
 
 When ready, click on *Publish to Live* to initiate publishing.
@@ -70,7 +70,7 @@ Here, you can access information and settings that you can use to customize your
 
 ![Select whether you want to Delete Application Data Before Importing and whether you want to Replicate Individual Deletions.](./staging-ui-reference/images/07.png)
 
-**Pages**: Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages. You can also select whether to *Delete Missing Pages*, which deletes all Pages from the live Site that are not present on the staging Site. If you choose a Page to be published from the Pages menu, the widgets and their references are always published.
+**Pages**: Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages. You can also select whether to *Delete Missing Pages*, which deletes all Pages from the Live Site that are not present on the Staging Site. If you choose a Page to be published from the Pages menu, the widgets and their references are always published.
 
 ![Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages.](./staging-ui-reference/images/08.png)
 
@@ -102,11 +102,13 @@ You can also access new options in the Staging Page. You can now view publicatio
 
 When you publish with Staging, it's captured as a *process* and stored for future reference. To view and manage these processes, go to *Product Menu* &rarr; *Publishing* &rarr; *Staging*.
 
-In the *Processes* tab, you'll see a list of staging processes that have been completed. You can *relaunch*, *clear* or view a *summary* of any previous publications by clicking on a process's *Actions* button ( ![Actions button](./../../images/icon-actions.png) ).
+In the *Processes* tab, you'll see a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking on a process's *Actions* button ( ![Actions button](./../../images/icon-actions.png) ).
 
 ![View and manage previous publication processes from the Staging Page.](./staging-ui-reference/images/14.png)
 
-If you click on the *Scheduled* tab, you can view all scheduled publication processes. You can also click on the *Add* (![Add button](./../../images/icon-add.png)) button to create a new publication process using a custom configuration or pre-defined publishing template.
+You can also click on the *Add* (![Add button](./../../images/icon-add.png)) button to create a new publication process using a custom configuration or pre-defined publishing template.
+
+In the *Scheduled* tab, you can view all scheduled publication processes.
 
 ### Publish Templates
 
