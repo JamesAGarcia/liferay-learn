@@ -12,9 +12,9 @@ Follow these steps to assign general Staging permissions to a User Role:
 
 1. Go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the role you want to modify, and select *Edit*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the role you want to modify, and select *Edit*.
 
-   Alternatively, you can create a new Role by clicking on the *Add* button (![Add button](./../../images/icon-add.png)) and completing the *New Role* section.
+   Alternatively, you can create a new Role by clicking on the *Add* button (![Add button](../../../images/icon-add.png)) and completing the *New Role* section.
 
 1. Click on the *Define Permissions* tab.
 
@@ -52,11 +52,11 @@ You can also set permissions for individual variations, so certain Users have ac
 
 Follow these steps to manage permissions:
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the Staging bar, and select either *Site Pages Variation* or *Page Variations*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select either *Site Pages Variation* or *Page Variations*.
 
    ![Click on the Actions button in the Staging bar and select the variation type you want to configure.](./managing-staging-permissions/images/01.png)
 
-1. Click on the *Actions* button ( ![Actions button](./../../../images/icon-actions.png) ) for the variation you want to configure, and select *Permissions*.
+1. Click on the *Actions* button ( ![Actions button](../../../../images/icon-actions.png) ) for the variation you want to configure, and select *Permissions*.
 
    ![Select Permissions.](./managing-staging-permissions/images/02.png)
 

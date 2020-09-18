@@ -16,13 +16,13 @@ When Staging is enabled for a Site, you can access additional options via the St
 
 You can also access the following options for Widget Pages in your Staging environment via the Staging bar:
 
-* **Site Pages Variation**: You can toggle between variations of Page sets in your staged Site using the dropdown menu. You can also manage and create Page set variations by clicking on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the Staging bar and selecting *Site Pages Variation*. See [Page Versioning](./page-versioning.md) for more information.
+* **Site Pages Variation**: You can toggle between variations of Page sets in your staged Site using the dropdown menu. You can also manage and create Page set variations by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar and selecting *Site Pages Variation*. See [Page Versioning](./page-versioning.md) for more information.
 
-* **Page Variations**: You can toggle between variations of a single Page in your staged Site using the dropdown menu. You can also manage and create Page variations by clicking on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the Staging bar and selecting *Page Variations*. See [Page Versioning](./page-versioning.md) for more information.
+* **Page Variations**: You can toggle between variations of a single Page in your staged Site using the dropdown menu. You can also manage and create Page variations by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar and selecting *Page Variations*. See [Page Versioning](./page-versioning.md) for more information.
 
-* **Undo/Redo**: You can undo or redo recent changes to a Page by clicking on the *Actions* button (![Actions button](./../../images/icon-actions.png)) in the Staging bar and selecting *Undo*/*Redo*. Once you've marked a Page as *Ready for Publication*, you are unable to undo or redo recent changes.
+* **Undo/Redo**: You can undo or redo recent changes to a Page by clicking on the *Actions* button (![Actions button](../../../images/icon-actions.png)) in the Staging bar and selecting *Undo*/*Redo*. Once you've marked a Page as *Ready for Publication*, you are unable to undo or redo recent changes.
 
-* **History**: You can view and manage the history of Page revisions by clicking on the *Actions* button (![Actions button](./../../images/icon-actions.png)) in the Staging bar and selecting *History*. From here, you can also revert a Page to an earlier version by clicking on the *Actions* button (![Actions button](./../../images/icon-actions.png)) for the Page version you want to restore and selecting *Mark as Ready for Publication*.
+* **History**: You can view and manage the history of Page revisions by clicking on the *Actions* button (![Actions button](../../../images/icon-actions.png)) in the Staging bar and selecting *History*. From here, you can also revert a Page to an earlier version by clicking on the *Actions* button (![Actions button](../../../images/icon-actions.png)) for the Page version you want to restore and selecting *Mark as Ready for Publication*.
 
 * **Ready for Publication**: When you have finished making your changes, click on *Ready for Publication* to change the Page's status from *Draft* to *Ready for Publication*. You can then click *Publish to Live* to configure and initiate the publication process for your changes. When you publish a Page to Live, only the version marked as *Ready for Publication* is published.
 
@@ -102,21 +102,21 @@ You can also access new options in the Staging Page. You can now view publicatio
 
 When you publish with Staging, it's captured as a *process* and stored for future reference. To view and manage these processes, go to *Product Menu* &rarr; *Publishing* &rarr; *Staging*.
 
-In the *Processes* tab, you'll see a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking on a process's *Actions* button ( ![Actions button](./../../images/icon-actions.png) ).
+In the *Processes* tab, you'll see a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking on a process's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ).
 
 ![View and manage previous publication processes from the Staging Page.](./staging-ui-reference/images/14.png)
 
-You can also click on the *Add* (![Add button](./../../images/icon-add.png)) button to create a new publication process using a custom configuration or pre-defined publishing template.
+You can also click on the *Add* (![Add button](../../../images/icon-add.png)) button to create a new publication process using a custom configuration or pre-defined publishing template.
 
 In the *Scheduled* tab, you can view all scheduled publication processes.
 
 ### Publish Templates
 
-If you regularly create similar staging configurations, you can create your own *publish templates* to save time. To create a template, click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Publish Templates*.
+If you regularly create similar staging configurations, you can create your own *publish templates* to save time. To create a template, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Publish Templates*.
 
 ![Click on the Actions button in the Application bar of the Staging Page.](./staging-ui-reference/images/15.png)
 
-From here, you can create and manage templates for frequent publishing configurations. You can then use a template by clicking on its *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) and selecting *Publish*.
+From here, you can create and manage templates for frequent publishing configurations. You can then use a template by clicking on its *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) and selecting *Publish*.
 
 ![Create and manage templates for frequent publishing configurations.](./staging-ui-reference/images/16.png)
 
@@ -124,7 +124,7 @@ You can also use a template when publishing a Page or content using the *Publish
 
 ### Staging Configuration
 
-After setting up Staging, you can access the Staging Configuration Page by clicking on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Staging Configuration*.
+After setting up Staging, you can access the Staging Configuration Page by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Staging Configuration*.
 
 ![Click on the Actions button in the Application bar of the Staging Page to access Staging Configuration.](./staging-ui-reference/images/17.png)
 

@@ -47,7 +47,7 @@ Follow these steps to disable Local Live Staging:
 
 1. Open the Product Menu in your Staging environment, and go to *Publishing* &rarr; *Staging*.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
 
 1. Select *None* for your Staging configuration, and click on *Save*.
 

@@ -29,7 +29,7 @@ However, modifying the *layout type* or *friendly URL* of a Page does affect eve
 
 Follow these steps to create new variations of a Page or Page set:
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation* or *Page Variations*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation* or *Page Variations*.
 
    ![Click on the Actions button in the Staging bar and select the variation type you want to create.](./page-versioning/images/03.png)
 
@@ -67,11 +67,11 @@ With Page versioning, you can merge two Page set variations. This adds Pages and
 
 Follow these steps to merge two variations of Site Pages:
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) in the Staging bar, and select Site Pages Variation.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select Site Pages Variation.
 
    ![Select Site Pages Variation.](./page-versioning/images/07.png)
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the variation you want to use as the base for merging, and select *Merge*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the variation you want to use as the base for merging, and select *Merge*.
 
    ![Click on the Actions button for the variation you want to use as the base for merging, and select Merge.](./page-versioning/images/08.png)
 

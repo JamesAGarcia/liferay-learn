@@ -136,7 +136,7 @@ When a User attempts to publish changes from Staging to Live, Liferay passes the
 
 To give a local User permission to publish changes from staging to production/live, create an identical User account with identical permissions for the User on the remote server.
 
-To simplify this process, you can use LDAP to copy selected User accounts from your local server to your remote server. See [Connecting to an LDAP Directory](./../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) for more information.
+To simplify this process, you can use LDAP to copy selected User accounts from your local server to your remote server. See [Connecting to an LDAP Directory](../../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) for more information.
 
 ## Configuring Remote Staging's Buffer Size
 
@@ -154,7 +154,7 @@ If for any reason you need to disable Staging for your Site, follow these steps:
 
 1. Go to *Publishing* &rarr; *Staging*, which is only available from your Staging environment.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
 
 1. Select *None* for your Staging configuration, and click on *Save*.
 
