@@ -60,23 +60,23 @@ Before Publishing, review your publication's tracked changes. You can do this by
 
 ![Click on Review Changes in the Publications bar drop-down menu.](./making-and-publishing-changes/images/03.png)
 
-Alternatively, you can review any publication's tracked changes in the *Ongoing* tab of the Publications overview Page. Simply click on the *Actions* button ( ![Actions button]() ) for the Publication you want to review, and select *Review Changes* to see all changes included in the selected publication.
+Alternatively, you can review any publication's tracked changes in the *Ongoing* tab of the Publications overview Page. Simply click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the Publication you want to review, and select *Review Changes* to see all changes included in the selected publication.
 
 ### Simple and Advanced Change Summaries
 
 By default, DXP displays a simple summary of the publication's tracked changes, but you can set the toggle switch to *Show all Items* to view all processes related to your changes.
 
-Click on an individual change to see further details, including all processes connected to the change if *Show All Items* is enabled. You can click on the *Actions* button ( ![Actions button]() ) for the tracked change to either *Edit* or *Discard* it.
+Click on an individual change to see further details, including all processes connected to the change if *Show All Items* is enabled. You can click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to either *Edit* or *Discard* it.
 
 ### Display Styles
 
 Here, you can also switch between two display styles: *Changes* and *Context*.
 
-* **Changes**: *Changes* displays all tracked changes in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
+* **Changes**: This displays all tracked changes in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
 
     ![View tracked changes in a list.](./making-and-publishing-changes/images/04.png)
 
-* **Context**: *Context* displays all changes in a tree, where each change can be seen in its relative context.
+* **Context**: This displays all changes in a tree, where every change ach change can be seen in its relative context.
 
     ![View tracked changes in context.](./making-and-publishing-changes/images/05.png)
 

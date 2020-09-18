@@ -1,6 +1,6 @@
 # Enabling Publications
 
-The Publications tool provides a convenient and flexible way for you and your teams to develop, track, and publish changes to your DXP instance. When enabled, Publications is activated globally and can be accessed anywhere to edit supported entities in your instance.
+Publications provides a convenient and flexible way for you and your teams to develop, track, and publish changes to your DXP instance. When enabled, Publications is activated globally and can be accessed anywhere to edit supported entities in your instance.
 
 ```important::
    Staging and Publications cannot be enabled at the same time. If Staging is enabled on any of your Sites, you must first disable Staging before enabling Publications. See `Disabling Local Live Staging <https://learn.liferay.com/dxp/7.x/en/site-building/publishing-tools/configuring-local-live-staging.html#disabling-local-live-staging>`_ and `Disabling Remote Live Staging <https://learn.liferay.com/dxp/7.x/en/site-building/publishing-tools/configuring-remote-live-staging.html#disabling-remote-live-staging>`_ for more information.

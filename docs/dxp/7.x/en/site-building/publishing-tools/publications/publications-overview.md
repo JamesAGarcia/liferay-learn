@@ -1,10 +1,10 @@
 # Publications Overview
 
-The *Publications* tool provides a convenient and flexible way for you and your teams to develop, track, and publish changes to your DXP instance. With it, your team can work concurrently on different publications that group changes into blocks that can be published together when ready. <!--Use each publication to make and review changes to your DXP instance before they go live.-->
+DXP's *Publications* tool... you and your teams can develop, track, and publish changes to your DXP instance. With it, your team can work concurrently on the same or different publications to group changes into publishable blocks. <!--Use each publication to make and review changes to your DXP instance before they go live.-->
 
-Team members can work on their own timelines, creating and collaborating on as many publications as they need. Users can work concurrently and create as many publications as needed to group, track, and rollout their changes.
+Users can work concurrently and create as many publications as needed to group, track, and rollout their changes. This can free up team members to work on their own timelines and __. When ready, they can publish their changes immediately, or schedule them to take effect at a later time.
 
-Publish your changes immediately, or schedule them to take effect at a later time. Publications also maintains a history of all published , which you can use to __ Site development or easily revert tracked changes.
+Publications also maintains a history of all published , which you can use to __ Site development or easily revert tracked changes.
 
 Publications also provides a convenient way to __ and resolve conflicts between changes made to Production by publications.
 
@@ -40,11 +40,6 @@ Publications provides a convenient and simply way for users to track their chang
 
 ## Additional Information
 
-
-
-
-
-
-
-
-Overview. <!--Understand use cases... write with an awareness of where the product is going...--> Define it. Note the problem it solves. In Publications, talk about Publications. <!--Staging documentation should have more information about Publications--pointing people to Publications; comparison between the two in Staging doc; provides greater flexibility than Staging.--> VISION - Problem solved... Talk about permissions. IF you want to be able to x, you need to have x permission.
+* [Enabling Publications](./enabling-publications.md)
+* [Creating and Managing Publications](./creating-and-managing-publications.md)
+* [Making and Publishing Changes](./making-and-publishing-changes.md)

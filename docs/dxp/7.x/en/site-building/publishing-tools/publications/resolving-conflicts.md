@@ -2,7 +2,7 @@
 
 Liferay DXP's Publications tool provides a high level of process transparency that you can use to understand and resolve conflicts and other errors when they occur.
 
-Generally, there are three types of conflicts you can encounter when making, publishing, or reverting changes: *Modification* conflicts, *Constraint* conflicts, and *Missing Parent* conflicts.
+Generally, there are three types of conflicts you can encounter when making, publishing, or reverting changes: *Modification*, *Constraint*, and *Missing Parent*.
 
 While Liferay DXP can automatically resolve some conflicts, others require manual intervention.
 
@@ -23,6 +23,14 @@ Modification conflicts occur when the same item has been modified in Production 
 
 ## Resolving Constraint Conflicts
 
+Example: Duplicate folder name
+
+Duplicate Assets/Entities: Ensure unique naming of assets/entities. Prompted to *View* or *Discard* duplicate.
+
+If you don't want to discard your changes, simply rename your asset/entities.
+
+You must manually resolve the issue by changing the name.
+
 ## Resolving Missing Parent Conflicts
 
 Occurs when a parent is removed from Production while a new child has been created in the publication prepared for publishing.
@@ -33,7 +41,7 @@ e.g., deleting a folder from Production that contains a new folder in the public
 
 Adding something in publication that is also added to Production.
 
-Duplicate Assets/Entities: Ensure unique naming of assets/entities. Prompted to *View* or *Discard* duplicate.
+
 
 View: opens a modal window with details for the conflicting changes.
 

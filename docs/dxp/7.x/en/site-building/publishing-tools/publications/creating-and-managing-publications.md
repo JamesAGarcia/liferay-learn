@@ -31,7 +31,7 @@ Follow these steps to create a new publication for your instance.
 
    ![Click on Create New Publication in the drop-down Publications bar menu.](./creating-and-managing-publications/images/02.png)
 
-   Alternatively, you can create a new publication by going to the *Ongoing* tab in the Publications overview page and clicking on the *Add* button ( ![Add button]() ).
+   Alternatively, you can create a new publication by going to the *Ongoing* tab in the Publications overview page and clicking on the *Add* button ( ![Add button](../../../images/icon-add.png) ).
 
 1. Enter a *name* for your new publication.
 
@@ -55,7 +55,7 @@ The *Ongoing* tab lists all active, unpublished publications for your DXP instan
 
 ![The Ongoing tab lists all active, unpublished publications for your DXP instance and their information.](./creating-and-managing-publications/images/04.png)
 
-By clicking on a publication's *Actions* button ( ![Actions button]() ), you can select which publication to work on, edit its name and description, review its changes, prepare it for publication, configure its permissions, or remove it from your database.
+By clicking on a publication's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ), you can select which publication to work on, edit its name and description, review its changes, prepare it for publication, configure its permissions, or remove it from your database.
 
 ### Work on Publication
 
@@ -95,7 +95,7 @@ The *Schedule* tab lists all scheduled publications for your instance. By defaul
 
 ![The Schedule tab lists all scheduled publications for your instance.](./creating-and-managing-publications/images/05.png)
 
-By clicking on the *Actions* button ( ![Actions button]() ) for a scheduled publication, you can *Unschedule* or *Reschedule* its publication, as well as *Review Changes*. When a publication is unscheduled, it becomes active again and is listed in the Ongoing tab.
+By clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for a scheduled publication, you can *Unschedule* or *Reschedule* its publication, as well as *Review Changes*. When a publication is unscheduled, it becomes active again and is listed in the Ongoing tab.
 
 ## Managing History of Publications
 
