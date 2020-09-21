@@ -19,7 +19,7 @@ During Validation, everything is checked to determine whether it's possible to s
 
 If anything is not verified during the publication process, the transactional database reverts the Site back to its original state, discarding the current publication. This is a necessary action to safeguard against publishing incomplete information, which could break an otherwise well-designed live Site.
 
-If the Document Library's file system, however, is not database-stored (e.g., [DBStore](../../system-administration/file-storage/other-file-store-types/dbstore.md)), it's not transactional and isn't reverted if a staging failure occurs. This could cause a discrepancy between a file and its reference in the database. To preserve data integrity, ensure that regular backups of both the database and file system are maintained before staging the document library.
+If the Document Library's file system, however, is not database-stored (e.g., [DBStore](../../../system-administration/file-storage/other-file-store-types/dbstore.md)), it's not transactional and isn't reverted if a staging failure occurs. This could cause a discrepancy between a file and its reference in the database. To preserve data integrity, ensure that regular backups of both the database and file system are maintained before staging the document library.
 
 ### Import Phase
 
@@ -43,7 +43,7 @@ Your organization's business logic is most likely implemented in an app, and if 
 
 ### Publication Wait Times
 
-You should enable Staging at the beginning of the Site creation process to avoid waiting for huge publications that can take a long time to execute. Small, incremental changes are far more performant than huge re-imaginings. 
+You should enable Staging at the beginning of the Site creation process to avoid waiting for huge publications that can take a long time to execute. Small, incremental changes are far more performant than huge re-imaginings.
 
 ### JVM/Network Configuration
 

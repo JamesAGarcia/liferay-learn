@@ -8,7 +8,7 @@ To publish assets in this way, Users must have the following permissions: *Expor
 
 1. Go to *Content & Data* in the *Product* menu and select the content or data type you want to publish.
 
-1. Click on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the asset you want to publish and select *Publish to Live*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the asset you want to publish and select *Publish to Live*.
 
    ![Click on the Actions button for the asset you want to publish, and select Publish to Live.](./publishing-single-assets-and-widgets/images/01.png)
 
@@ -24,7 +24,7 @@ Similar to the standard publication process, single asset publications include a
 
 Although Staging is typically used to publish content, you can also publish widgets. For example, you can modify a widget's title and publish the change to Live. This is possible because widget configurations are always staged. To publish a widget that is on a Page, you must publish the Page first.
 
-After changing a widget, you can publish the widget by clicking on the *Actions* button ( ![Actions button](./../../images/icon-actions.png) ) for the widget and selecting *Staging*.
+After changing a widget, you can publish the widget by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the widget and selecting *Staging*.
 
 ![Click on a widget's Action button, and select Staging.](./publishing-single-assets-and-widgets/images/04.png)
 
