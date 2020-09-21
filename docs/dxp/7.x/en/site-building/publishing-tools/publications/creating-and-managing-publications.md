@@ -8,15 +8,15 @@ Once Publications is enabled, you can create, edit, publish, or remove a publica
 
 To access this Page, open the *Applications* menu, and go to *Publications* in the Applications tab.
 
-![Access the Publications overview Page via the Applications Menu.](./creating-and-managing-publications/images/01.png)
-
 ```tip::
-   You can quickly access the *Applications* menu from anywhere in your DXP instance with the following key shortcut:
+   Quickly access the *Applications* menu anywhere in your DXP instance using the following shortcut:
 
-   Mac OS: Cmd+Shift+M
-
-   Windows: Ctrl+Shift+M
+   **Mac OS**: Cmd+Shift+M
+   
+   **Windows**: Ctrl+Shift+M
 ```
+
+![Access the Publications overview Page via the Applications Menu.](./creating-and-managing-publications/images/01.png)
 
 * [Creating a New Publication](#creating-a-new-publication)
 * [Managing Ongoing Publications](#managing-ongoing-publications)

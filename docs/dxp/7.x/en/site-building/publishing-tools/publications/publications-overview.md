@@ -8,7 +8,7 @@ You and your team can create as many publications as needed to organize and roll
 
 Each publication is instance-scoped and can be accessed anywhere. This means you can use a publication to track diverse and complex changes across multiple Sites. All changes are applied together when the publication is published.
 
-Additionally, Publications provides a high level of process transparency, so you can more easily identify and [resolve conflicts](./resolving-conflicts.md) during publishing. It also maintains a complete publishing history that you can use to review and [revert changes](./reverting-changes.md) to your instance.
+Additionally, Publications provides a high level of process transparency, so you can more easily identify and resolve conflicts during publishing. It also maintains a complete publishing history that you can use to review and revert changes to your instance.
 
 To get started, see [Enabling Publications](./enabling-publications.md).
 

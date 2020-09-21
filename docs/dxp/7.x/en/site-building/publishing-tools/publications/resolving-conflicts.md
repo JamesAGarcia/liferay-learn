@@ -23,7 +23,7 @@ By contrast, manual resolutions require User intervention before being able to p
 * **Discard**: When you click on *Discard*, you're redirected to the *Discard Changes* page. This lists all changes that will be discarded. You can click on *Discard* to permanently remove them from your publication.
 
    ```warning::
-      Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before discarding your changes.
+      Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before using discarding them from your publication.
    ```
 
 ## Resolving Modification Conflicts
@@ -36,7 +36,7 @@ Constraint conflicts occur when an entity in your publication cannot coexist wit
 
 ## Resolving Missing Parent Conflicts
 
-Missing Parent conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder or _ from production, while your publication adds or modifies a sub-folder or _.<!--finish--> To resolve missing parent conflicts, you can discard the conflicting changes from your publication or revert the deletion in production. See [Reverting Changes](./reverting-changes.md) for how to revert changes published to production. Missing parent conflicts can only be resolved manually. <!--refine-->
+Missing Parent conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder from production, while your publication adds or modifies a sub-folder. To resolve missing parent conflicts, you can discard the conflicting changes from your publication or revert the deletion in production. See [Reverting Changes](./reverting-changes.md) for how to revert changes published to production. Missing parent conflicts can only be resolved manually.
 
 ## Additional Information
 
