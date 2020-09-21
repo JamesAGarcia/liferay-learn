@@ -4,22 +4,32 @@ Publishing Tools
 .. toctree::
    :maxdepth: 3
 
-   publishing-tools/staging-overview.md
-   publishing-tools/understanding-the-publication-process.md
-   publishing-tools/configuring-local-live-staging.md
-   publishing-tools/configuring-remote-live-staging.md
-   publishing-tools/managing-data-and-content-types-in-staging.md
-   publishing-tools/page-versioning.md
-   publishing-tools/publishing-single-assets-and-widgets.md
-   publishing-tools/managing-staging-permissions.md
-   publishing-tools/staging-ui-reference.md
+   publishing-tools/introduction-to-publishing-tools.md
+   publishing-tools/staging.rst
+   publishing-tools/publications.rst
 
--  :doc:`/site-building/publishing-tools/staging-overview`
--  :doc:`/site-building/publishing-tools/understanding-the-publication-process`
--  :doc:`/site-building/publishing-tools/configuring-local-live-staging`
--  :doc:`/site-building/publishing-tools/configuring-remote-live-staging`
--  :doc:`/site-building/publishing-tools/managing-data-and-content-types-in-staging`
--  :doc:`/site-building/publishing-tools/page-versioning`
--  :doc:`/site-building/publishing-tools/publishing-single-assets-and-widgets`
--  :doc:`/site-building/publishing-tools/managing-staging-permissions`
--  :doc:`/site-building/publishing-tools/staging-ui-reference`
+-  :doc:`/site-building/publishing-tools/introduction-to-publishing-tools`
+
+Staging
+~~~~~~~
+
+-  :doc:`/site-building/publishing-tools/staging/staging-overview`
+-  :doc:`/site-building/publishing-tools/staging/understanding-the-publication-process`
+-  :doc:`/site-building/publishing-tools/staging/configuring-local-live-staging`
+-  :doc:`/site-building/publishing-tools/staging/configuring-remote-live-staging`
+-  :doc:`/site-building/publishing-tools/staging/managing-data-and-content-types-in-staging`
+-  :doc:`/site-building/publishing-tools/staging/page-versioning`
+-  :doc:`/site-building/publishing-tools/staging/publishing-single-assets-and-widgets`
+-  :doc:`/site-building/publishing-tools/staging/managing-staging-permissions`
+-  :doc:`/site-building/publishing-tools/staging/staging-ui-reference`
+
+Publications
+~~~~~~~~~~~~
+
+-  :doc:`/site-building/publishing-tools/publications/publications-overview`
+-  :doc:`/site-building/publishing-tools/publications/enabling-publications`
+-  :doc:`/site-building/publishing-tools/publications/creating-and-managing-publications`
+-  :doc:`/site-building/publishing-tools/publications/making-and-publishing-changes`
+-  :doc:`/site-building/publishing-tools/publications/resolving-conflicts`
+-  :doc:`/site-building/publishing-tools/publications/reverting-changes`
+
