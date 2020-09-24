@@ -6,6 +6,8 @@ The Publications tool provides a high level of process transparency that you can
 
 Publications provides convenient automatic and manual options to quickly resolve publishing conflicts. Alternatively, you can always cancel publishing, return to editing your publication or production, and implement a different solution.
 
+![Publications provides convenient automatic and manual options to quickly resolve publishing conflicts.](./resolving-conflicts/images/01.png)
+
 ### Automatic Resolutions
 
 In Publications, automatic resolutions are pre-configured responses to certain kinds of publishing conflicts. These responses provide pre-set solutions, so you can publish your changes without further action. These solutions may include adding, modifying, or removing content from the current publication, or replacing the version of content in production with your publication's version.

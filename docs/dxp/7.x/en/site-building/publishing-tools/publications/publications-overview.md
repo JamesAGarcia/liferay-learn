@@ -4,6 +4,9 @@
 
 When making your changes, you can easily switch between *edit* and *production* modes. This frees you up to work on minor or major changes to your instance in an editing environment before they go live. You can then review and publish your changes immediately, or schedule them to be published at a later time.
 
+![Create, view and manage publications via the Publications overview Page.](./publications-overview/images/01.png)
+
+
 You and your team can create as many publications as needed to organize and roll out your changes. You can also work concurrently with team members on the same or different publications, freeing you up to work on your own timelines.
 
 Each publication is instance-scoped and can be accessed anywhere. This means you can use a publication to track diverse and complex changes across multiple Sites. All changes are applied together when the publication is published.

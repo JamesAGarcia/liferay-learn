@@ -16,6 +16,8 @@ Follow these steps to revert a publication:
 
 1. Determine when you want to publish your reversion, whether *Now* or *Later*.
 
+   ![From the Revert page, you can determine when you want to publish your revision.](./reverting-changes/images/02.png)
+
 1. Click on *Revert and Create Publication*.
 
 This creates a new publication with changes that undo all the changes made by your selected publication across your instance, but it does not immediately apply those changes to production.
