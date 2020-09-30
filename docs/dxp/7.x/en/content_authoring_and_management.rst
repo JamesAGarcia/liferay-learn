@@ -10,6 +10,7 @@ Content Authoring and Management
    content-authoring-and-management/content_sets.rst
    content-authoring-and-management/tags_and_categories.rst
    content-authoring-and-management/recycle_bin.rst
+   content-authoring-and-management/asset_libraries.rst
 
 .. raw:: html
    :file: landingpage_template.html
