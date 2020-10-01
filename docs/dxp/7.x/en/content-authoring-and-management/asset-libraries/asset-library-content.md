@@ -4,11 +4,9 @@ Asset Libraries provide a convenient way to share content across your Sites. Thi
 
 ![Click on the desired Asset Library's name to access its dashboard.](./asset-library-content/images/01.png)
 
-Each Library's dashboard displays its active applications and categorization tools. From here, you can view, create, and organize a Library's content. You can also enable a workflow to direct the publishing process for your Library's web content.
+Each Library's dashboard displays its active applications and categorization tools. From here, you can view, create, and organize a Library's content, as well as initiate import/export processes. You can also enable a workflow to direct the publishing process for your Library's web content.
 
-Each dashboard also provides access to import/export functionalities.
-
-When enabled, you can also view the Library's Recycle Bin before its content is permanently removed from your instance.
+If enabled, all removed content will be temporarily stored in the Library's Recycle Bin, where you can manually restore it to its Library or delete it from your instance.
 
 * [Creating Content](#creating-content)
 * [Using Content in Your Sites](#using-content-in-your-sites)
@@ -23,11 +21,8 @@ Since all supported applications behave in the same way, creating content in an 
 To create content, first go to the dashboard for the desired Asset Library, and then click on the *application* with which you want to create content. From here, the content creation process is the same as with Site content. See [Content Authoring and Management](../../content_authoring_and_management.html) articles for more information about creating each type of content.
 
 ```note::
-   Only active applications appear on a Library's dashboard. To activate or deactivate an application, see `Asset Library Configuration <./creating-and-managing-asset-libraries.md#asset-library-configuration>`_ for more information.
+   Only active applications appear on a Library's dashboard. To activate or deactivate an application, see `Configuring Asset Libraries <./creating-and-managing-asset-libraries.md#configuring-asset-libraries>`_ for more information.
 ```
-<!-- TEST RELATIVE LINK -->
-
-Once created, you can view an Asset Library's content by going to its respective application. When viewing a Library's content, you can use breadcrumbs to quickly navigate back to the Library's *dashboard* or to the *Asset Libraries* application Page.
 
 ## Using Content in Your Sites
 

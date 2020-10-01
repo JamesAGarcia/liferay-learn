@@ -25,7 +25,7 @@ You can configure your Library now, or accept the default settings and get start
 
 ## Configuring Asset Libraries
 
-Once you've created an Asset Library, you can configure it at any time by clicking on its *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and selecting *Edit*. Configuration options are organized into three sections: *General*, *Sites*, and *Languages*. <!--IS THE FOLLOWING TEXT RELEVANT? "You can also access a Library's settings via its dashboard page. Simply click on the *name* of the Asset Library you want to configure, and then click on *Settings*."-->
+Once you've created an Asset Library, you can configure it at any time by clicking on its *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and selecting *Edit*. Configuration options are organized into three sections: *General*, *Sites*, and *Languages*. <!--IS THE FOLLOWING TEXT RELEVANT, OR TOO MUCH INFO? "You can also access a Library's settings via its dashboard page. Simply click on the *name* of the Asset Library you want to configure, and then click on *Settings*."-->
 
 ### General Settings
 
@@ -65,13 +65,13 @@ In the *Sites* tab, you can connect or disconnect individual Sites to an Asset L
 
 * **Make Searchable/Unsearchable**: Determine whether the Library's assets appear in search queries for the selected Site. By default, all connections are searchable.
 
-* **Make Web Content Structures Available**: Determine whether *Web Content Structures* and *Document Types* are available to the selected Site. By default, this feature is disabled. When enabled, you can create content in the Site based on structures and types stored in the Library.
-
-   ```important::
-      You cannot disconnect a site while this feature is enabled. This is to avoid problems in public Pages using these contents. Also, ensure you've communicated with your team before disabling this feature, since content using these structures will no longer be available.
-   ```
+* **Make Web Content Structures Available**: Determine whether *Web Content Structures* and *Document Types* are available to the selected Site. By default, this feature is disabled. When enabled, you can create content in the Site based on structures and types stored in the Library. However, if this feature is ever disabled, content using these structures in Sites will no longer be available.
 
 * **Disconnect**: Disconnect the selected Site from the Library. When disconnected, the Library's assets are no longer accessible from the Site.
+
+   ```important::
+      You cannot disconnect a Library from a Site while its web content structures are made available. This is to avoid problems in Public Pages using them for their contents.
+   ```
 
 ### Languages
 
@@ -91,10 +91,6 @@ By default, Asset Libraries include the five following roles:
 
 * **Asset Library Member**: This role grants basic permissions and is automatically assigned to Users who belong to an Asset Library.
 
-   ```note::
-      By default, the Asset Library Member's permissions are more restricted than those of its Site counterpart. This means you’ll need to manually grant access to applications, update/delete permissions for content, and more if you want Members to be responsible for managing content.
-   ```
-
 * **Asset Library Connected Site Member**: This role is automatically assigned to members of a connected Site. <!--does this role come with any permissions? Do its permissions depend on how their Site's connection to a Library is configured? -->
 
 * **Asset Library Content Reviewer**: This role grants permissions necessary for reviewing content in a workflow.
@@ -103,7 +99,9 @@ By default, Asset Libraries include the five following roles:
 
 * **Asset Library Owner**: This role grants control over all aspects of an Asset Library and is automatically assigned to the Library's creator.
 
-![Asset Libraries include four default Roles](./creating-and-managing-asset-libraries/images/11.png)
+```note::
+   By default, the Asset Library Member's permissions are more restricted than those of its Site counterpart. This means you’ll need to manually grant access to applications, update/delete permissions for content, and more if you want Members to be responsible for managing content.
+```
 
 Creating or customizing an Asset Library role is the same process as for other kinds of roles. See [Roles and Permissions](../../users-and-permissions/roles_and_permissions.html) documentation for how to create, customize, manage, and assign User roles.
 
