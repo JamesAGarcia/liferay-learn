@@ -152,7 +152,7 @@ This property sets the file block sizes for remote staging. If a LAR file used f
 
 1. Go to *Publishing* &rarr; *Staging*, which is only available from your Staging environment.
 
-1. Click on the *Actions* button ( ![Actions button](../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
+1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) located in the *Application* bar, and select *Staging Configuration*.
 
 1. Select *None* for your Staging configuration and click on *Save*.
 
