@@ -12,8 +12,9 @@ Asset Libraries work under the same permission management system as other DXP ap
 
 By default, there are four main Asset Library roles created by default, equivalent to their site counterparts (Asset Library Owner, Admin, Member and Content Reviewer). Administrators can create new Asset Library roles to cater for their specific needs.
 
+See []() for how to get started with Asset Libraries.
+
 ## Additional Information
 
 * [Creating and Managing Asset Libraries](./creating-and-managing-asset-libraries.md)
 * [Asset Library Content](./asset-library-content.md)
-* [Asset Library Roles and Permissions](./asset-library-roles-and-permissions.md)
