@@ -79,7 +79,7 @@ In the *Languages* tab, you can determine whether to use your instance's default
 
 ![Use your instance's default language options for an Asset Library, or define your own](./creating-and-managing-asset-libraries/images/09.png)
 
-The default language is used for displaying content when no other language is selected, or when the selected language has no set translation. Use the *Drag* icon ( ![Drag icon]() ) to manually adjust a language's relative priority, or click on a language's *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and select *Move Up* or *Move Down*.
+The default language is used for displaying content when no other language is selected, or when the selected language has no set translation. Use the *Drag* icon ( ![Drag icon](../../images/icon-drag.png) ) to manually adjust a language's relative priority, or click on a language's *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and select *Move Up* or *Move Down*.
 
 ## Managing Asset Library Memberships
 
@@ -91,7 +91,7 @@ By default, Asset Libraries include the five following roles:
 
 * **Asset Library Member**: This role grants basic permissions and is automatically assigned to Users who belong to an Asset Library.
 
-* **Asset Library Connected Site Member**: This role is automatically assigned to members of a connected Site. <!--does this role come with any permissions? Do its permissions depend on how their Site's connection to a Library is configured? -->
+* **Asset Library Connected Site Member**: This role is automatically assigned to members of a connected Site. 
 
 * **Asset Library Content Reviewer**: This role grants permissions necessary for reviewing content in a workflow.
 
