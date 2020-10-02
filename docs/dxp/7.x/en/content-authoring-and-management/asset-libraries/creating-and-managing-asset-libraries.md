@@ -33,33 +33,21 @@ In the *General* tab, you can configure an Asset Library's basic information.
 
 * **Details**: View a Library's unique ID, and configure its name or description.
 
-   ![View a Library's ID, and configure its name or description.](./creating-and-managing-asset-libraries/images/02.png)
-
-* **Applications**: Determine whether a Library's supported applications (i.e., Documents and Media, Collections, Web Content) are available to Sites.
-
-   ![Determine whether a Library's supported applications are available to Sites.](./creating-and-managing-asset-libraries/images/03.png)
+* **Applications**: Determine whether a Library's supported applications (i.e., Documents and Media, Collections, Web Content) are available to Sites. You can activate and deactivate applications without losing data or any existing connections with Sites and other Asset Libraries.
 
 * **Sharing**: Determine whether Users can share a Library's assets with other Users.
 
-   ![Determine whether Users can share a Library's assets with other Users](./creating-and-managing-asset-libraries/images/04.png)
-
 * **Asset Auto Tagging**: Determine whether a Library's assets are auto tagged by the providers configured at the instance level.
-
-   ![Determine whether a Library's assets are auto tagged by the providers configured at instance level.](./creating-and-managing-asset-libraries/images/05.png)
 
 * **Documents and Media**: Determine whether all Users with the View permission can browse Documents and Media files and folders in a Library. By default, this setting is disabled.
 
-   ![Determine whether all Users with the view permission can browse Documents and Media files and folders](./creating-and-managing-asset-libraries/images/06.png)
-
-* **Recycle Bin**: Determine whether to enable Recycle Bin for a Library, and set the maximum age for recycled assets.
-
-   ![Determine whether to enable Recycle Bin for a Library, and set the maximum age for recycled assets.](./creating-and-managing-asset-libraries/images/07.png)
+* **Recycle Bin**: Determine whether to enable Recycle Bin for a Library, and set the maximum age for recycled assets. By default, the maximum age is set to 43200 minutes (i.e., 30 days).
 
 ### Sites
 
 In the *Sites* tab, you can connect or disconnect individual Sites to an Asset Library, as well as configure how they're related via the connected Site's *Actions* button ( ![Actions button](../../images/icon-actions.png) ).
 
-![Connect Sites to an Asset Library and configure their connection.](./creating-and-managing-asset-libraries/images/08.png)
+![Connect Sites to an Asset Library and configure their connection.](./creating-and-managing-asset-libraries/images/02.png)
 
 * **Add**: Connect a new Site to the selected Library.
 
@@ -77,7 +65,7 @@ In the *Sites* tab, you can connect or disconnect individual Sites to an Asset L
 
 In the *Languages* tab, you can determine whether to use your instance's default language options for an Asset Library, or to define your own options. When configuring your own options, you can determine your Library's default language, as well as each language's relative priority. You can also click on *Edit* to determine which languages are available in the Library.
 
-![Use your instance's default language options for an Asset Library, or define your own](./creating-and-managing-asset-libraries/images/09.png)
+![Use your instance's default language options for an Asset Library, or define your own](./creating-and-managing-asset-libraries/images/03.png)
 
 The default language is used for displaying content when no other language is selected, or when the selected language has no set translation. Use the *Drag* icon ( ![Drag icon](../../images/icon-drag.png) ) to manually adjust a language's relative priority, or click on a language's *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and select *Move Up* or *Move Down*.
 
@@ -85,7 +73,7 @@ The default language is used for displaying content when no other language is se
 
 You can view and manage User memberships for an Asset Library by going to its dashboard Page and clicking on *Memberships*. From here, you can add new Users, Organizations, and User Groups to the selected Library by click on the *Add* button (![Add button](../../images/icon-add.png)). You can also *Assign Roles* or *Remove Memberships* for each existing member by clicking on its *Actions* button ( ![Actions button](../../images/icon-actions.png) ).
 
-![View an manage Asset Library memberships.](./creating-and-managing-asset-libraries/images/10.png)
+![View an manage Asset Library memberships.](./creating-and-managing-asset-libraries/images/04.png)
 
 By default, Asset Libraries include the five following roles:
 
