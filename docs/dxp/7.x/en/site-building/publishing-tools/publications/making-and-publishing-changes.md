@@ -40,7 +40,7 @@ You can also edit how assets are displayed in widgets as part of your publicatio
 
 ### Deleting an Asset
 
-When you delete an asset in a publication, DXP creates a new, special version of that asset with the *deleted* status. The asset remains viewable to production and any other publications, since its removal in a publication is only a logical deletion.
+When you delete an asset in a publication, DXP marks the asset for deletion and hides it when viewing the publication. The asset remains viewable to production and any other publications, since its removal in a publication is only a logical deletion.
 
 ## Making Changes on Parallel Publications
 
@@ -52,7 +52,7 @@ If parallel publications include compatible changes, they can be published witho
 
 ### Conflicting Changes
 
-If parallel publications include incompatible changes, they cause a conflict during the publishing process. In this case, the User attempting to publish these conflicting changes receives a notification, explaining the cause of the conflict and whether DXP has automatically resolved it, or if the conflict requires manual resolution. See [Resolving Conflicts](./resolving-conflicts.md) for more information about this process.
+If production is updated while Users are developing their changes in a publication, this may cause a conflict during the publishing process. If Users attempt to publish a publication that includes changes that are incompatible with the current version of production, they are notified of any conflicting changes. These notifications explain the cause of each conflict and whether DXP has an available automatic solution, or if a conflict requires manual resolution. These conflicts can occur whether production is updated directly or by means of a publication. However, when production is directly updated, these changes are not tracked as part of your instance's publication history. See [Resolving Conflicts](./resolving-conflicts.md) for more information on this process.
 
 ## Reviewing Publication Changes
 

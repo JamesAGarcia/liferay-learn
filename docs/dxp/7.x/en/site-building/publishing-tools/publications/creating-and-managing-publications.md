@@ -1,22 +1,22 @@
 # Creating and Managing Publications
 
-With the Publications tool, you and your team can create and manage multiple publications at the same time or group changes across multiple Sites into a single publication. Each of these publications is instance-scoped and can include changes to Pages, web content, and documents across multiple Sites.
+With the Publications tool, you and your team can create and manage multiple publications at the same time or group changes across multiple Sites into a single publication. Each publication is instance-scoped and can include changes to Pages, web content, and documents across multiple Sites.
 
 Because they are instance-scoped, the same publications are visible and accessible anywhere in your instance. However, changes made within those publications are scoped according to the context in which they're made. For example, Site-scoped changes are only applied to the Site in which they're made, while instance-scoped changes are applied to all Sites when published.
 
 Once Publications is enabled, you can create, edit, publish, or remove a publication via the *Publications* bar drop-down menu and *Publications* overview Page.
 
-To access this Page, open the *Applications* menu, and go to *Publications* in the Applications tab.
+To access this Page, open the *Global Menu*, and go to *Publications* in the Applications tab.
 
 ```tip::
-   Quickly access the *Applications* menu anywhere in your DXP instance using the following shortcut:
+   Quickly access the Global Menu anywhere in your DXP instance using the following shortcut:
 
    **Mac OS**: Cmd+Shift+M
-   
+
    **Windows**: Ctrl+Shift+M
 ```
 
-![Access the Publications overview Page via the Applications Menu.](./creating-and-managing-publications/images/01.png)
+![Access the Publications overview Page in the Applications tab of the Global Menu.](./creating-and-managing-publications/images/01.png)
 
 * [Creating a New Publication](#creating-a-new-publication)
 * [Managing Ongoing Publications](#managing-ongoing-publications)
@@ -79,7 +79,7 @@ Select *Schedule* to determine a future date and time when your publication's ch
 
 ### Permissions
 
-Select *Permissions* to assign publication specific permissions to User roles in your instance. Permissions configured in this way are scoped to the individual publication.
+Select *Permissions* to assign publication specific permissions to User roles in your instance. Permissions configured in this way are scoped to the individual publication. By default, most Users cannot create or access Publications, though you can manually configure Users roles to grant wider accessibility.
 
 ### Delete
 

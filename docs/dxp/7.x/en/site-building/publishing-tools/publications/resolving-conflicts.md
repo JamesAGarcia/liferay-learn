@@ -1,6 +1,6 @@
 # Resolving Conflicts
 
-The Publications tool is highly transparent so you can identify and resolve conflicts when publishing. By default, Publications can automatically resolve some conflicts, while others require User intervention. Users can encounter three general types of conflicts: *Modification*, *Constraint*, and *Missing Parent*.
+The Publications tool is highly transparent so you can identify and resolve conflicts when publishing. By default, Publications can automatically resolve some conflicts, while others require User intervention. Users can encounter three general types of conflicts: *Modification*, *Constraint*, and *Missing Requirement*.
 
 ## Automatic and Manual Resolutions
 
@@ -36,9 +36,9 @@ Modification conflicts occur when the same entity has been modified in both prod
 
 Constraint conflicts occur when an entity in your publication cannot coexist with an entity in production. Examples include when there are duplicate folders or assets between your publication and production. To resolve constraint conflicts, you can discard conflicting changes in your publication or edit the version in production.
 
-## Resolving Missing Parent Conflicts
+## Resolving Missing Requirement Conflicts
 
-Missing Parent conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder from production, while your publication adds or modifies a sub-folder. To resolve missing parent conflicts, you can discard the conflicting changes from your publication or revert the deletion in production. See [Reverting Changes](./reverting-changes.md) for how to revert changes published to production.
+Missing Requirement conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder from production, while your publication adds or modifies a sub-folder. To resolve missing parent conflicts, you can discard the conflicting changes from your publication or revert the deletion in production. See [Reverting Changes](./reverting-changes.md) for how to revert changes published to production.
 
 ## Additional Information
 

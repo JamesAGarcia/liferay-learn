@@ -10,9 +10,9 @@ Publications provides a convenient and flexible way for you and your teams to de
 
 Follow these steps to enable *Publications* for your DXP instance:
 
-1. Go to the *Applications* menu, and click on *Settings* under *Publications*.
+1. Go to the *Global Menu*, and click on *Settings* under *Publications*.
 
-    ![In the Applications menu, click on Settings under Publications.](./enabling-publications/images/01.png)
+    ![In the Global Menu, click on Settings under Publications.](./enabling-publications/images/01.png)
 
 1. Set the toggle switch to *Yes* to enable Publications for your DXP instance.
 
@@ -29,7 +29,7 @@ Once enabled, you can access the drop-down Publications bar menu from any page i
 Once enabled, you can disable Publications at any time, via the Publications *Settings* page. Simply set the toggle switch to *No*, and then click on *Submit*.
 
 ```important::
-   Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history.
+   Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. However, DXP will retain your instance's publication history, so you can access it again if you re-enable Publications.
 ```
 
 ## Additional Information
