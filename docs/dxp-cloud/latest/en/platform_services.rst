@@ -13,5 +13,7 @@ Platform Services
 
    platform-services/backup-service.rst
    
+   platform-services/database-service.rst
+
 .. include:: /platform-services/README.rst
 	:start-line: 2
