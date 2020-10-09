@@ -28,4 +28,6 @@ Name                                   | Acceptable Value | Default Value |
 
 ## Related Information
 
-* [Using the MySQL Client](../using-the-liferay-dxp-service/using-the-mysql-client.md)
+* [Changing Your Database Username](./changing-your-database-username.md)
+* [Changing your Database Password](./changing-your-database-password.md)
+* [Using the MySQL Client](../../using-the-liferay-dxp-service/using-the-mysql-client.md)

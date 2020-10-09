@@ -84,4 +84,4 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 * [Backup Service](./backup-service-overview.md)
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
-* [Database Service (MySQL)](../database-service.md)
+* [Database Service (MySQL)](../database-service/database-service.md)

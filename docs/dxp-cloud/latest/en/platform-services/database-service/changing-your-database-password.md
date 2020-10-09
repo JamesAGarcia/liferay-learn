@@ -20,7 +20,7 @@ Then, click _Backup Now_ on the _Backups_ page:
 
 ## Changing the Database Password
 
-The database password is changed directly using the [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) feature within your chosen environment. However, for the database password secret, you must follow additional steps to ensure that your services update correctly with the new value.
+The database password is changed directly using the [secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) feature within your chosen environment. However, for the database password secret, you must follow additional steps to ensure that your services update correctly with the new value.
 
 <!-- Mention required service versions, and link to possible section on the procedure for 3.x services -->
 
@@ -60,7 +60,7 @@ When you are ready, follow these steps to change your database password:
 
 1. Open a command prompt within your local clone of the repository.
 
-1. Deploy the `database` service to your environment using the [command-line interface](../reference/command-line-tool.md):
+1. Deploy the `database` service to your environment using the [command-line interface](../../reference/command-line-tool.md):
 
     ```bash
     cd database
@@ -86,11 +86,12 @@ When you are ready, follow these steps to change your database password:
 
     The database service starts up using the updated password. The `liferay` and `backup` services restart to reconnect to the database service with the correct password, as well.
 
-1. If you [prepared a backup](#creating-a-backup), then navigate to your **production** environment's _Backups_ page, and [restore the backup](./backup-service/restoring-data-from-a-backup.md).
+1. If you [prepared a backup](#creating-a-backup), then navigate to your **production** environment's _Backups_ page, and [restore the backup](../backup-service/restoring-data-from-a-backup.md).
 
 Your `database` service is now updated with a new password, and your other services are synchronized to connect to it properly.
 
 ## Additional Information
 
 * [Database Service](./database-service.md)
-* [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+* [Changing Your Database Username](./changing-your-database-username.md)
+* [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)

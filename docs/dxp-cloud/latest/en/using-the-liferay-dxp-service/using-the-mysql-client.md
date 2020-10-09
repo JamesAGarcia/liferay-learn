@@ -71,4 +71,4 @@ You can add this variable from within the _Environment Variables_ tab:
 
 ## Related Information
 
-* [Database Service](../platform-services/database-service.md)
+* [Database Service](../platform-services/database-service/database-service.md)

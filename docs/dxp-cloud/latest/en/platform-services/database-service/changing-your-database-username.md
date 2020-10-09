@@ -30,7 +30,7 @@ Follow these steps to change your database username:
 
 1. Go to the desired Project environment, and click on *Settings* in the environment menu.
 
-1. In the *Secrets* section, click on the *Actions* button (![Actions button]()) for `lcp-secret-database-user`, and select *Edit*.
+1. In the *Secrets* section, click on the *Actions* button for `lcp-secret-database-user`, and select *Edit*.
 
 1. In the *Value* section, click on *Show* to reveal and enable editing for the secret's value. Then, set a new value.
 
@@ -44,6 +44,6 @@ Once published, all connected services will restart and stop receiving requests 
 
 ## Additional Information
 
-* [Database Service]()
-* [Changing your Database Password]()
-* [Using the MySQL Client]()
+* [Database Service](./database-service.md)
+* [Changing your Database Password](./changing-your-database-password.md)
+* [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
