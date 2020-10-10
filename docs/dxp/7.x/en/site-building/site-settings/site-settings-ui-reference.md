@@ -1,6 +1,6 @@
 # Site Settings UI Reference
 
-To view a Site's settings, open the *Product Menu* and go to *Configuration* &rarr; *Settings*, where you 'll see the following tabs:
+To view a Site's settings, open the *Site Menu* and go to *Configuration* &rarr; *Settings*, where you 'll see the following tabs:
 
 * [General](#general)
 * [Social](#social)
@@ -35,23 +35,17 @@ General settings range from core configuration, like a Site's Membership Type, t
 
 **Limit Membership to Parent Site Members**: Determine whether a child Site's membership is limited to members of its parent Site.
 
-![In the Details section you can view and edit a site's name, description, status, and more.](./site-settings-ui-reference/images/02.png)
-
 ### Pages
 
-Here you can view a Site's Public and Private pages, if any exist. If they don't exist, a *Site Templates* selector appears for creating pages with a template.
-
-![In the Pages section, you can view a Site's public and private pages.](./site-settings-ui-reference/images/03.png)
+View a Site's Public and Private pages, if any exist, and enable or disable the propagation of changes from the selected Site template. If they don't exist, a *Site Templates* selector appears for creating pages with a template.
 
 ### Custom Fields
 
-Here you can view and configure any custom fields you've defined for your pages. With these fields, you can set page metadata, such as author, date of creation, and geolocation. This section only appears once you've configured custom fields for your Site. See [Custom Fields](../../installation-and-upgrades/setting-up-liferay-dxp/custom-fields.md) for more information.
+View and configure any custom fields you've defined for your pages. With these fields, you can set page metadata, such as author, date of creation, and geolocation. This section only appears once you've configured custom fields for your Site. See [Custom Fields](../../installation-and-upgrades/setting-up-liferay-dxp/custom-fields.md) for more information.
 
 ### Categorization
 
-Here you can categorize Site content using *Topics* and *Tags*. These tools help organize sites so users can more easily find your site's content via search and navigation widgets. See [Organizing Content with Tags and Categories](../../content-authoring-and-management/index.html#tags-and-categories) for more information.
-
-![You can categorize Site content using Topics and Tags.](./site-settings-ui-reference/images/04.png)
+Categorize Site content using *Topics* and *Tags*. These tools help organize sites so users can more easily find your site's content via search and navigation widgets. See [Organizing Content with Tags and Categories](../../content-authoring-and-management/index.html#tags-and-categories) for more information.
 
 ### Site URL
 
@@ -59,39 +53,37 @@ Here you can categorize Site content using *Topics* and *Tags*. These tools help
 
 **Public and Private Virtual Host**: Set public and private *Virtual Hosts* to map to a Site's public and private pages. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information.
 
-![In the Site URL section, you can configure your Site's Friendly URL, as well as Virtual Hosts for your public and private pages.](./site-settings-ui-reference/images/05.png)
-
 ### Documents and Media
 
 You can enable *Directory Indexing* for a Site. When enabled, a User with view permission can browse the Site's document library files and folders.
-
-![You can determine whether to enable Directory Indexing for a Site.](./site-settings-ui-reference/images/06.png)
 
 ### Site Template
 
 If you created your Site using a *Site Template*, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Building Sites from Templates](../building-sites/building-sites-with-site-templates.md) for more information about Site templates and how to create your own.
 
-![View your page's selected template.](./site-settings-ui-reference/images/07.png)
-
 ### Open Graph
 
 **Enable Open Graph**: Determine whether to embed [Open Graph](https://ogp.me/) `<meta>` tags in the `<head>` of your Site's pages. These tags define page metadata to create engaging representations of your Site's content when shared in applications that support the Open Graph protocol, such as Facebook, Slack, and Twitter.
 
-**Open Graph Image**: Use the *Image* and *Alt Description* fields to define the default `og:image` and `og:image:alt` properties used for Site pages. You can also localize the image's alt description via the *Language Flag* button. See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
+**Open Graph Image**: Using the *Image* field defines the following `<meta>` tags:
 
-![You can enable or disable Open Graph, define image meta tags, and see an image preview.](./site-settings-ui-reference/images/08.png)
+   ```html
+      <meta property="og:image" content="http://example.com/ogp.jpg" />
+      <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="300" />
+   ```
+
+Using the *Alt Description* field defines the default `og:image:alt` property used for Site pages. You can also localize an image's alt description via the *Language Flag* button. See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
 
 ### Asset Auto Tagging
 
-Here you can enable or disable asset auto tagging for a Site. When enabled, assets are auto tagged by the providers configured at instance level. See [Asset Auto Tagging](../../content-authoring-and-management/web-content/auto_tagging.md) for more information. 
-
-![You can enable or disable asset auto tagging for a Site.](./site-settings-ui-reference/images/09.png)
+Enable or disable asset auto tagging for a Site. When enabled, assets are auto tagged by the providers configured at instance level. See [Asset Auto Tagging](../../content-authoring-and-management/web-content/auto_tagging.md) for more information. 
 
 ### Sharing
 
-Here you can enable or disable document sharing between Site Users. When enabled, Users can share items with other users. See [Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) for more information. 
-
-![You can enable or disable document sharing between Site Users.](./site-settings-ui-reference/images/10.png)
+Enable or disable document sharing between Site Users. When enabled, Users can share items with other users. See [Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) for more information. 
 
 ## Social
 
@@ -101,19 +93,13 @@ Here you can manage the social interactions between Users on a Site.
 
 Here you can select the type of ratings used for the following Site applications: Comments, Knowledge Base, Blogs, Wiki, Message Boards, Web Content, and Documents and Media. See [Configuring Content Ratings Types](./site-content-configurations/configuring-content-rating-type.md) for more information.
 
-![You can select the type of ratings used for Site applications.](./site-settings-ui-reference/images/11.png)
-
 ### Mentions
 
 Here you can enable Users mentioning other Users in Site applications. See [Mentioning Users](../../collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.md) for more information.
 
-![You can determine whether Users can mention other Users in Site applications.](./site-settings-ui-reference/images/12.png)
-
 ## Language
 
-Here you can choose to use the installation's default language or define this Site's enabled languages.
-
-![You can update language options through the Languages tab of Site Settings.](./site-settings-ui-reference/images/13.png)
+Here you can choose whether to use the installation's default language options, or define your own for a Site.
 
 ## Advanced
 
@@ -121,9 +107,7 @@ Here you can configure additional settings, including analytics services, conten
 
 ### Default User Associations
 
-Here you can select the Roles and Teams that new Site members are assigned to by default. See [Configuring Role and Team Defaults for Site Members](./site-users/configuring-role-and-team-defaults-for-site-members.md) for more information.
-
-![You can select the Roles and Teams that new Site members are assigned to by default.](./site-settings-ui-reference/images/14.png)
+Select the Roles and Teams that new Site members are assigned to by default. See [Configuring Role and Team Defaults for Site Members](./site-users/configuring-role-and-team-defaults-for-site-members.md) for more information.
 
 ### Analytics
 
@@ -131,22 +115,14 @@ Here you can set the Google Analytics ID, create method configuration, and custo
 
 If you require a different analytics service, you can add it. See [Adding a New Analytics Service](./adding-a-new-analytics-service.md) for more information and how to add additional fields for different analytics services.
 
-![In the Analytics section, you can configure a Site's analytic services.](./site-settings-ui-reference/images/15.png)
-
 ### Maps
 
 Here you can select the maps API provider to use when displaying geolocalized assets in your Site. Geolocalized assets can be displayed for documents, web content articles, DDL records, and more. See [Geolocating Assets](./site-content-configurations/configuring-geolocation-for-assets.md) for more information.
-
-![You can select the maps API provider used for Site geolocation.](./site-settings-ui-reference/images/16.png)
 
 ### Recycle Bin
 
 Here you can enable the Recycle Bin and specify the number of minutes an asset remains in the Recycle Bin before being automatically deleted. See [Configuring the Asset Recycle Bin for Sites](./site-content-configurations/configuring-the-asset-recycle-bin-for-sites.md) for more information.
 
-![You can configure a Site's Recycle Bin.](./site-settings-ui-reference/images/17.png)
-
 ### Content Sharing
 
 Here you can determine whether child Sites can display content from this Site, including structures, templates, categories, widget templates, and more. Disabling this option immediately revokes content sharing from all child Sites. See [Managing Content Sharing Across Sites](./site-content-configurations/managing-content-sharing-globally.md) for more information. 
-
-![You can determine whether child Sites can display content from this Site.](./site-settings-ui-reference/images/18.png)
