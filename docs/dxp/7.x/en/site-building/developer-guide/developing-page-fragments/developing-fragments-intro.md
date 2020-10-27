@@ -23,6 +23,12 @@ Fragments can be enhanced using the below resources, making them much more power
 * [Configuration Options](./adding-configuration-options-to-fragments.md) <!-- TODO: Fix link -->: Add configuration options to the application's Configuration Menu, like modifying the Fragment's font color.
 * [FreeMarker](https://freemarker.apache.org/): FreeMarker is a templating language that enhances HTML with variables, conditional statements, and more. From your HTML, you can use the [alternative (square bracket) syntax](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) for FreeMarker.
 
+```note::
+   If desired, you can disable FreeMarker templates for Fragments across your DXP instances. To do so, open the *Control Panel* tab in the Global Menu, and go to *Configuration* → *System Settings* → *Page Fragments* → *FreeMarker Fragment Entry Processor*. Then, uncheck *Enable FreeMarker*, and click *Save*.
+
+   Once disabled, Fragments created through the UI and imported or created with an API can no longer execute FreeMarker code. This does not affect out-of-the-box Fragments or those already deployed.
+```
+
 ## Best Practices
 
 We recommend these best practices when writing your Fragment code:
