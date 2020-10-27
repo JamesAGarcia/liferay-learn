@@ -324,5 +324,5 @@ Next you'll learn about the Content Page Editing Interface.
 
 * [Developing a Page Fragment](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)
 * [Using Master Pages](../defining-headers-and-footers/master-page-templates.md)
-* [Changing Content Pages Look and Feel](./content-pages-overview.md#look-and-feel)
+* [Changing Content Pages Look and Feel](./editing-content-pages.md#look-and-feel)
 * [Content Page Personalization guide](../../personalizing-site-experience/personalizing-site-experience.md)

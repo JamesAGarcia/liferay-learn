@@ -4,9 +4,13 @@
 
 Configurable options help make your Fragments flexible, so you don't have to maintain many similar Fragments. For example, instead of having one Fragment that has a heading with style A and another Fragment that has a heading with style B, you can create one Fragment that has a configurable style for the heading with options for style A and B. Here you'll learn how to add configuration options to a Fragment:
 
-1. [Deploy a Configurable Fragment](#deploy-a-configurable-fragment)
-1. [Modify the Configuration](#modify-the-configuration)
-1. [Propagate the Changes and Test](#propagate-the-changes-and-test)
+- [Adding Configuration Options to Fragments](#adding-configuration-options-to-fragments)
+  - [Deploy a Configurable Fragment](#deploy-a-configurable-fragment)
+  - [Configuration Overview](#configuration-overview)
+  - [Escape Configuration Text Values](#escape-configuration-text-values)
+  - [Modify the Configuration](#modify-the-configuration)
+  - [Propagate the Changes and Test](#propagate-the-changes-and-test)
+  - [Related Information](#related-information)
 
 ## Deploy a Configurable Fragment
 
@@ -56,7 +60,7 @@ First, deploy an example to see how Fragment Configuration options work:
     ![The Collection is available.](./auto-deploying-fragments/images/01.png)
 
 1. Go to the Home Page and click the (![Edit icon](../../../images/icon-edit-pencil.png)) icon to edit the Content Page.
-1. Expand the *Configurable Marketing Collection* heading in the [Fragments panel](../../creating-pages/building-and-managing-content-pages/content-pages-overview.md#fragments) and drag the *Configurable Marketing Card* Fragment onto the page.
+1. Expand the *Configurable Marketing Collection* heading in the [Fragments panel](../../creating-pages/building-and-managing-content-pages/editing-content-pages.md#fragments) and drag the *Configurable Marketing Card* Fragment onto the page.
 1. Select the Configurable Marketing Card. Open the Fragment Configuration Menu by clicking the (![Gear icon](../../../images/icon-control-menu-gear.png)) icon in the context menu that appears. From here, you can choose a configuration option for the text style to change the text from dark to light.
 
     ![Configurable Fragments provide options to modify the Fragment's look and feel.](./adding-configuration-options-to-fragments/images/01.png)
