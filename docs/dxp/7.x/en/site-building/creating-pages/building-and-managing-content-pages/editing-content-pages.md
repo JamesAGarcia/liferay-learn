@@ -83,8 +83,8 @@ Click on the *Look and Feel* icon (![Look and Feel](../../../images/icon-format.
 
 Use Page Fragment comments to collaborate with team members while developing your Content Page. Once made, you can view, edit, delete, or reply to open comments in the *Comments* panel of the Content Page sidebar (![Comments icon](../../../images/icon-comments-w.png)). If [mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag Users with Page update permissions as part of your comment.
 
-```note
-   For versions prior to 7.3+, comments are disabled by default. To enable Page comments, go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Pages* &rarr; *Content Page Editor*. Then, check the *Comments Enabled* checkbox, and click on *Update*.
+```note::
+   For versions prior to 7.3+, comments are disabled by default. To enable Page comments, go to *Control Panel* → *Configuration* → *System Settings* → *Pages* → *Content Page Editor*. Then, check the *Comments Enabled* checkbox, and click on *Update*.
 ```
 
 ## Liferay DXP 7.1 and 7.2
