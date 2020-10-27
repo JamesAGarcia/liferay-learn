@@ -2,6 +2,10 @@
 
 The Widgets section functions just like the [*Add* menu on a Widget Page](../using-widget-pages/adding-widgets-to-a-page.md). The full list of available widgets appears, and you can add them to the page. The main difference is that only the main configuration options for Widgets are available on Content Pages.
 
+```note::
+   While widgets are rendered according to `render-weight <https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight>`_ on Widget Pages, this is not true for Content Pages. Instead, they are rendered in the order they appear on the Page (i.e. left to right, top to bottom).
+```
+
 ## Adding Widgets on Content Pages
 
 Follow these steps to add a widget to a Content Page:
