@@ -10,7 +10,7 @@ Collections organize Fragments so that groups of related Fragments can be manage
 
 ## Tooling
 
-You can use the included Page Fragments to [build Content Pages](../../creating-pages/building-and-managing-content-pages/building-content-pages.md), and you can also create your own Page Fragments. Browser-based tools help you create Fragments directly on your system, and CLI-based tools integrate with your own toolset to preserve your productivity:
+Browser-based tools help you create Fragments directly on your system, and CLI-based tools integrate with your own toolset to preserve your productivity:
 
 * [The Built-in Fragments Editor](./using-the-fragments-editor.md): use the built-in editor to develop Page Fragments inside of Liferay Portal.
 * [The Fragments Toolkit](./using-the-fragments-toolkit.md): use the Fragments CLI to generate, import, and export Page Fragments and Fragment Collections from your desktop.
@@ -20,6 +20,7 @@ You can use the included Page Fragments to [build Content Pages](../../creating-
 Fragments can be enhanced using the below resources, making them much more powerful than plain HTML, CSS, and JavaScript:
 
 * [Editable Elements](../reference/fragments/fragment-specific-tags-reference.md): make text, images, links, and "rich" text elements editable, so users can replace the content with custom text and images. This is the key feature of Fragments that makes them reusable. You can also embed widgets.
+* [Drop Zones](./defining-fragment-drop-zones): Add drop zones to Fragments using the `<lfr-drop-zone></lfr-drop-zone>` label. Once added, you can drag and drop Fragments and widgets into the defined area.
 * [Configuration Options](./adding-configuration-options-to-fragments.md) <!-- TODO: Fix link -->: Add configuration options to the application's Configuration Menu, like modifying the Fragment's font color.
 * [FreeMarker](https://freemarker.apache.org/): FreeMarker is a templating language that enhances HTML with variables, conditional statements, and more. From your HTML, you can use the [alternative (square bracket) syntax](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) for FreeMarker.
 
