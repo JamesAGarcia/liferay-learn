@@ -2,7 +2,7 @@
 
 > Available: Liferay Portal CE 7.3 GA1+ and Liferay DXP 7.3+
 
-If you're [developing Page Fragments with your own tooling](./using-the-fragments-toolkit.md#collection-format-overview), the packaged ZIP file must be imported through the UI manually by default. You can add an auto-deployment descriptor to your Fragment Collection to automatically import it upon deployment instead. If you're using the Fragments Toolkit to develop Fragments, you can use the [`npm run compress` command](././using-the-fragments-toolkit.md) to include an auto-deployment descriptor. Here you'll learn how to add an auto-deployment descriptor to your Fragment Collection:
+If you're developing Page Fragments with [your own tooling](./using-the-fragments-toolkit.md#collection-format-overview), the packaged ZIP file must be imported through the UI manually by default. You can add an auto-deployment descriptor to your Fragment Collection to automatically import it upon deployment instead. If you're using the Fragments Toolkit to develop Fragments, you can use the [`npm run compress` command](././using-the-fragments-toolkit.md) to include an auto-deployment descriptor. Here you'll learn how to add an auto-deployment descriptor to your Fragment Collection:
 
 1. [Deploy an Auto-deployable Fragment Collection](#deploy-an-auto-deployable-fragment-collection)
 1. [Modify the Fragment Collection and Redeploy](#modify-the-fragment-collection-and-redeploy)
@@ -52,6 +52,10 @@ First, deploy an example to see how auto-deployable Fragments work:
     ```
 
 1. Verify that the Fragment Collection is available. Open your browser to `https://localhost:8080`, open the Product Menu, and go to Site &rarr; *Site Builder* &rarr; *Page Fragments*. The Collection is listed with the other Collections.
+
+```note::
+   If an imported Fragment has invalid rules, it is automatically saved as a draft.
+```
 
 ![The Collection is available.](./auto-deploying-fragments/images/01.png)
 
@@ -107,7 +111,7 @@ Follow these steps to add a new Fragment to the Collection and redeploy:
 
 Great! Now you know how to configure a Fragment Collection for automatic import.
 
-## Related Information
+## Additional Information
 
 * [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
