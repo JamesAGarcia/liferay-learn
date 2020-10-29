@@ -18,17 +18,17 @@ To access the collections management menu, follow these steps:
 
 1. Select an action for the Collection:
 
-    **Edit**: change the name or description for the collection.
+   **Edit**: change the name or description for the collection.
 
-    **Export**: Download a `.zip` file containing all Page Fragments in the Collection without exporting any Collection data. To export the Collection with Collection data, select the *Export* option from the Actions Menu next to the *Collections* heading and choose one or more Collections to export. Each collection exports in a separate `.zip` file.
+   **Export**: Download a `.zip` file containing all Page Fragments in the Collection without exporting any Collection data. To export the Collection with Collection data, select the *Export* option from the Actions Menu next to the *Collections* heading and choose one or more Collections to export. Each collection exports in a separate `.zip` file.
 
-    **Import**: Select a `.zip` file to upload with additional Page Fragments. If you want to replace an existing collection, make sure the box is checked for *Overwrite Existing Files*. You can import a Collection that was created in Liferay DXP, a Collection created using external tools, or Page Fragments without a Collection.
+   **Import**: Select a `.zip` file to upload with additional Page Fragments. If you want to replace an existing collection, make sure the box is checked for *Overwrite Existing Files*. You can import a Collection that was created in Liferay DXP, a Collection created using external tools, or Page Fragments without a Collection. If an imported Fragment has invalid rules, it is automatically saved as a draft.
 
-    ```note::
+   ```note::
       Exporting and importing Page Fragments is the preferred way to share code or bring it into your Site.
-    ```
+   ```
 
-    **Delete**: Remove the current collection and all its contents.
+   **Delete**: Remove the current collection and all its contents.
 
 ![You can export all of the Page Fragments in a Collection.](./managing-page-fragments/images/01.png)
 
