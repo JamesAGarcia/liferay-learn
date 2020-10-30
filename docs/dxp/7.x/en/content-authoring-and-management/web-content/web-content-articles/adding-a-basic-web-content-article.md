@@ -1,6 +1,6 @@
 # Adding a Basic Web Content Article
 
-Web content is one of the most practical and essential methods for creating site content in DXP. Web content articles can be displayed through widgets, Fragments, or special [display pages](../../../site-building/displaying-content/using-fragments/using-display-page-templates/creating-a-display-page-template.md) designed specifically to display the content.
+Web content is one of the most practical and essential methods for creating site content in DXP. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/using-the-web-content-display-widget/web-content-display.md), [Fragments](../../../site-building/displaying-content/using_fragments.html), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-a-display-page-template.md).
 
 All web content articles are based on a structure that defines its available fields. DXP includes the _Basic Web Content_ structure out-of-the-box, but you can create your own. See [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information.
 
@@ -41,6 +41,6 @@ When creating or editing a _Basic Web Content_ article, you can access the follo
 
 ## Additional Information
 
-* [Display Page Templates](../../../site-building/displaying-content/using-fragments/using-display-page-templates/creating-a-display-page-template.md)
+* [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-a-display-page-template.md)
 * [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
 * [Using the Web Content Display Widget](../../../site-building/displaying-content/using-the-web-content-display-widget/web-content-display.md)
