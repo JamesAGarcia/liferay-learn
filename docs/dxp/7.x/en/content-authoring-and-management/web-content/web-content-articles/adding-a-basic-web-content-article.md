@@ -1,30 +1,30 @@
 # Adding a Basic Web Content Article
 
-Web content is one of the most practical and essential methods for creating site content in DXP. Web content articles can be displayed through widgets on pages, or on special [display pages](../../../site-building/displaying-content/using-fragments/using-display-page-templates/creating-a-display-page-template.md) designed specifically to display the content.
+Web content is one of the most practical and essential methods for creating site content in DXP. Web content articles can be displayed through widgets, Fragments, or special [display pages](../../../site-building/displaying-content/using-fragments/using-display-page-templates/creating-a-display-page-template.md) designed specifically to display the content.
 
-All web content articles are based on a structure that defines the fields available to it. See the [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information. DXP provides one default structure out-of-the-box, _Basic Web Content._ The steps below will use this default structure.
+All web content articles are based on a structure that defines its available fields. DXP includes the _Basic Web Content_ structure out-of-the-box, but you can create your own. See [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information.
 
 ## Creating a Basic Web Content Article
 
-Use the following steps to create a _Basic Web Content_ article:
+Follow these steps to create a _Basic Web Content_ article:
 
-1. Open the Site menu and navigate to _Content & Data_ → _Web Content_.
+1. Open the Site Menu, and navigate to _Content & Data_ → _Web Content_.
 
-1. On the _Web Content_ screen, click the add ![Add icon](../../../images/icon-add.png) button, and then click _Basic Web Content_ in the menu that appears.
+1. Click on the *Add* button (![Add icon](../../../images/icon-add.png)), and select _Basic Web Content_.
 
     ![The Web Content administration page.](./adding-a-basic-web-content-article/images/01.png).
 
-1. Add a title and content into their respective fields.
+1. Enter a *title* (required) for the new article, and add the desired *content* to their respective fields.
 
     ![The edit screen for a new web content article.](./adding-a-basic-web-content-article/images/02.png)
 
-1. Click _Publish_.
+1. When finished, click on _Publish_.
 
 Congratulations! You have added a basic web content article to your Site. See [Using the Web Content Display Widget](../../../site-building/displaying-content/using-the-web-content-display-widget/web-content-display.md) for more information on displaying this article on a page.
 
 ## Properties Tab
 
-You can see and edit more details for the article you are editing by opening the _Properties_ tab on the right side of the screen. The following properties are available here:
+When creating or editing a _Basic Web Content_ article, you can access the following options via the _Properties_ tab in the sidebar menu:
 
 | **Property** | **Purpose** | **Additional Notes** |
 | --- | --- | --- |
