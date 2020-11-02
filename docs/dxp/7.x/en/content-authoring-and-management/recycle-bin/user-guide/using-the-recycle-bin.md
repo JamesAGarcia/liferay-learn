@@ -1,56 +1,87 @@
 # Using the Recycle Bin
 
-Recycle Bin functionality is available for the following asset types:
+Recycle Bin functionality is available for the following items:
 
 * Blogs
 * Bookmarks
 * Documents and Media
+* Folders
 * Message Boards (and attachments)
 * Web Content
 * Wiki (and attachments)
-
-![The Recycle Bin provides a seamless administrative experience for deleting and removing content.](./using-the-recycle-bin/images/01.png)
 
 ```note::
    Attachments added to Wiki and Message Board entries do not go to the Recycle Bin when they are deleted. They can be restored in a similar fashion from the *Removed Attachments* menu within the application.
 ```
 
-## Moving an Asset to the Recycle Bin
+## Moving Items to the Recycle Bin
 
-1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu.
-1. Select the site.
-1. Click *Content & Data* &rarr; *Web Content*.
-1. Click the article's *Actions* button (![Actions](../../../images/icon-actions.png)) and click _Move to the Recycle Bin_. Note that the _Delete_ button is not listed.
+Follow these steps to move one or more items to the Recycle Bin:
 
-    ![Moving the web content article to the recycle bin](./using-the-recycle-bin/images/02.png)
+1. Open the *Site Menu* (![Product Menu](../../../images/icon-product-menu.png)), and go to *Content & Data* &rarr; *Web Content*.
 
-1. Click OK in the confirmation window.
-1. After deleting the file, a success message appears, offering an _Undo_ option. If you click _Undo_, the web content is retrieved from the Recycle Bin and stored in its original place.
+1. Use the checkboxes to select the folders and assets you want to recycle, and then click on the *Recycle Bin* button (![Recycle](../../../images/icon-app-trash.png)).
 
-    ![Confirmation window allows users to restore immediately](./using-the-recycle-bin/images/03.png)
+   Alternatively, you can click on the *Actions* button (![Actions](../../../images/icon-actions.png)) for individual folders or assets, and select *Move to the Recycle Bin*.
 
-Some applications, such as Web Content and Documents and Media, support folders for organizing content. You can also send folders to the Recycle Bin. Keep in mind that this action recursively sends all sub-folders and files to the Recycle Bin. Folders are restored and deleted the same way as a single file.
+   ![Check the folders and assets you want to move to the Recycle Bin.](./using-the-recycle-bin/images/02.png)
+
+1. Click *OK* in the confirmation window.
+
+DXP then displays a status message indicating how many items have been moved to the Recycle Bin along with a quick access link and an *Undo* button to immediately restore the recycled assets.
+
+   ![DXP displays a status message with a quick access link to the Recycle bin and an Undo button. ](./using-the-recycle-bin/images/03.png)
 
 ### Drag and Drop
+<!-- This feature is not working for me -->
+You can also drag and drop items into the Recycle Bin:
 
-You can also drag and drop items into the Recycle Bin.
+1. Use the checkboxes to select the folders or assets you want to recycle.
 
-1. While you're in the Control Panel, select an asset and drag it to the Recycle Bin portlet on the Control Panel menu.
-1. When you click and begin dragging the asset, a message appears near your cursor notifying you of the number of files ready to be moved, and the Recycle Bin is highlighted, showing you where the files can be dropped.
-1. After you drop the asset onto the Recycle Bin portlet, the asset is removed from its original location and transferred to the Recycle Bin.
+1. Then, drag and drop the selected assets into the *Recycle Bin* in the Site menu. As you do this, a message appears near your cursor indicating the number of files you're moving.
 
-    ![A quick and easy way of disposing your items is the drag and drop method.](./using-the-recycle-bin/images/04.png)
+   ![Drag and drop multiple folders and assets into the Recycle Bin.](./using-the-recycle-bin/images/04.png)
 
-## Restoring an Asset
+## Restoring Items from the Recycle Bin
 
-1. Navigate to _Site Administration_ and click _Recycle Bin_ from the Content dropdown.
-1. Next to the asset to be restored, click the _Actions_ button.
-1. Click _Restore_.
+Follow these steps to restore one or more items from the Recycle Bin:
 
-   ![In the Recycle Bin, you have the option of restoring or permanently deleting the content.](./using-the-recycle-bin/images/05.png)
+1. Open the *Site Menu*, and go to *Recycle Bin*.
 
-1. Navigate back to the Web Content screen and verify that your content is back to its original place.
+1. Use the checkboxes to select the folders and assets you want to restore, and then click on the *Restore* button (![Restore](../../../images/icon-restore.png)).
 
-## Deleting an Asset Permanently
+   Alternatively, you can click on the *Actions* button (![Actions](../../../images/icon-actions.png)) for individual folders or assets, and select *Restore*.
 
-*Delete* within the Recycle Bin is the permanent delete button. Once you select this, your file cannot be retrieved and is gone forever. There is also an *Empty the Recycle Bin* option accessible from the (![Options](../../../images/icon-options.png)) button at the top of the Recycle Bin screen. This permanently deletes all the files from the Recycle Bin.
+   ![Check the folders and assets you want to move to restore.](./using-the-recycle-bin/images/05.png)
+
+DXP then displays a status message indicating which items have been restored, along with quick access links to view them in your Site.
+
+![DXP displays a status message with a quick access links to the restored items.](./using-the-recycle-bin/images/06.png)
+
+## Deleting Items Permanently
+
+Follow these steps to permanently delete  one or more items in the Recycle Bin:
+
+1. Open the *Site Menu*, and go to *Recycle Bin*.
+
+1. Use the checkboxes to select the recycled folders and assets you want to permanently delete from you instance, and click on the *Delete* button (![Delete](../../../images/icon-delete.png)).
+
+   Alternatively, you can click on the *Actions* button (![Actions](../../../images/icon-actions.png)) for individual folders or assets, and select *Delete*.
+
+   ![Check the recycled folders and assets you want to delete.](./using-the-recycle-bin/images/07.png)
+
+```important::
+   Deleting your content is the permanent and cannot be undone. Deleted files cannot be retrieved and are gone forever.
+```
+
+DXP then displays a status message indicating whether your request was successful.
+
+![DXP displays a status message indicating whether your request was successful.](./using-the-recycle-bin/images/08.png)
+
+To delete all recycled items, click on the *Actions* button (![Actions](../../../images/icon-actions.png)) in the Application bar, and select *Empty the Recycle Bin*.
+
+## Additional Information
+
+* [Introduction to the Recycle Bin](./introduction-to-the-recycle-bin.md)
+* [Configuring the Recycle Bin](./configuring-the-recycle-bin.md)
+* [Recycle Bin and Staging](./recycle-bin-and-staging.md)
