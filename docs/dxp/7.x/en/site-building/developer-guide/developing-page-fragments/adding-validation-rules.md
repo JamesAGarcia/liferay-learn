@@ -126,6 +126,10 @@ The following code adds `url` validation rules to require proper URL protocol an
 
 The following code adds `pattern` validation rules to a `text` type field using regex to define valid entries.
 
+```note::
+   When using backslashes to escape characters in regex values (e.g., ``\d``), Users must use two backslashes within ``JSON`` files to first escape the backslash (e.g., ``\\d``). See `IETF <./https://www.ietf.org/rfc/rfc4627.txt>`_ documentation for more information on JSON grammar.
+```
+
 ```json
 {
 	"fieldSets": [
