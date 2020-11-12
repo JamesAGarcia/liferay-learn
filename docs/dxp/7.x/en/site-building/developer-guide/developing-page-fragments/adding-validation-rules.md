@@ -42,6 +42,7 @@ The following code adds `number` validation rules to define the numerical range 
 		{
 			"fields": [
 				{
+					"dataType": "int",
 					"label": "validate number",
 					"name": "text2",
 					"type": "text",
