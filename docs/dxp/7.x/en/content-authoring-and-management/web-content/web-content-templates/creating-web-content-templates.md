@@ -1,61 +1,51 @@
 # Creating Web Content Templates
 
-Structures define the available fields for creating Web Content, while Web Content Templates define how the [Structure's](../web-content-structures/creating-structures.md) content is presented on the page. A Web Content Template can be associated with a Structure or even [embedded in another Web Content Template](./embedding-widgets-in-templates.md#embedding-other-templates). Changes in the Structure may require changes in the associated Web Content Template, if a Structure field name referenced in the Template is renamed or removed.
+Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a specific Web Content [Structure](../web-content-structures/creating-structures.md), or even [embedded in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates).
 
 ```note::
-   Web Content Templates are written in the FreeMarker Template Language (FTL).
+   If desired, Template creation can be disabled for a DXP installation. To do this, open the *Control Panel* tab in the Global Menu, and go to *Configuration* → *System Settings* → *Dynamic Data Mapping* → *Dynamic Data Mapping Web*. Then, uncheck *Enable Template Creation*, and click *Save*.
+
+   Once disabled, Users can no longer access creation options for Web Content Templates. However, this does not affect existing Templates.
 ```
 
-Download the [Newspaper Article Structure](./creating-web-content-templates/resources/newspaper-article-structure.xml) and [Template](./creating-web-content-templates/resources/newspaper-article-template.ftl) to follow along with the example. Unzip it to a convenient location on your system.
+Follow these steps to create a new Template:
 
-1. Open the Product Menu and go to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
-1. Select the *Templates* tab.
-1. Click the *Add button* (![Add Template](../../../images/icon-add.png)) to create a new Web Content Template.
-1. Enter the title of your new Web Content Template and add your code to the script window. You can add the code from the example *Newspaper Article* Template by clicking the *Choose File* button below the Script window and importing the `newspaper-article-template.ftl` file. If you're creating a Web Content Template to [embed in another Template](./embedding-widgets-in-templates.md#embedding-other-templates), you can skip to step eight.
+1. Open the *Site Menu* (![Site Menu](./../../../images/icon-menu.png)), and go to *Content & Data* &rarr; *Web Content*.
 
-   ![Add your template code (FreeMarker) to the script window.](./creating-web-content-templates/images/01.png)
+1. Select the *Templates* tab, and click on the *Add button* (![Add Template](../../../images/icon-add.png)) to create a new Web Content Template.
 
-1. Optionally link a Structure to the Template by clicking *Select* under the *Structure* field in the *Properties* panel on the right and clicking the name of the Structure in the dialog that appears. See [Creating Structures](../web-content-structures/creating-structures.md) for more information on creating Structures.
+1. Enter a title for your new Template.
 
-   To follow along with the example, [Create a new Structure](../web-content-structures/creating-structures.md) called *Newspaper Article Structure* and replace the contents of the *Source* tab with the `newspaper-article-structure.xml` file.
+1. Optionally, you can determine the following Template settings in the Properties panel:
 
-   ![You can link the Template to a Structure through the Properties panel.](./creating-web-content-templates/images/02.png)
+   **Structure**: Use the Structure field to link your Template with an existing Web Content Structure, or leave this field blank to create a generic Template that can be embedded in other Web Content Templates.
 
-   The fields configured in the Structure appear in the *Fields* panel on the left side of the script window.
+   **Description**: Use the Description field to provide localized descriptions of your Template.
 
-   ![Available Structure field variables are added to the Fields panel on the left side of the Script window.](./creating-web-content-templates/images/03.png)
+   **Cacheable**: By default, new Templates are cacheable. Uncheck this property if dynamic behavior is needed (e.g., [taglibs](./using-taglibs-in-templates.md), request handling, CMS query API).
 
-1. Place your cursor in the script editor where you want to add the field to the Template and click the field in the *Fields* panel to add it:
+   **Featured Image**: Select a featured image for your Template via URL or from your device.
 
-    ```markup
-    ${Title.getData()}
-    ${Content.getData()}
-    <#if Imagem1j5.getData()?? && Imagem1j5.getData() != "">
-      <img alt="${Imagem1j5.getAttribute("alt")}" data-fileentryid="${Imagem1j5.getAttribute("fileEntryId")}" src="${Imagem1j5.getData()}" />
-    </#if>
-    ```
+   ![Optionally, determine Template settings in the Properties panel.](./creating-web-content-templates/images/01.png)
 
-1. Add any additional HTML or FreeMarker that your require for the Template. The example below wraps the fields with some basic HTML elements to provide formatting:
+1. Add FreeMarker code to your Template via the script window, or by importing an existing `.ftl` script file.
 
-    ```markup
-    <h1>${Title.getData()}</h1>
-    <hr>
-    <p>${Content.getData()}</p>
-    <#if Imagem1j5.getData()?? && Imagem1j5.getData() != "">
-      <img
-        alt="${Imagem1j5.getAttribute("alt")}"
-        class="text-center"
-        data-fileentryid="${Imagem1j5.getAttribute("fileEntryId")}"
-        src="${Imagem1j5.getData()}"
-      />
-    </#if>
-    ```
+   When manually entering code in the Script window, you can quickly access standard variables in the left Template panel. If you've selected a Structure for your Template, you can also access variables for its specific fields, as well as the friendly URL variable.
 
-1. Click *Save*.
+   You can then add HTML or additional FreeMarker code to your Template's script.
 
-Once you've created the Web Content Template, you can [create a Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md) to use it.
+   ![Access standard variables in the left Template panel, as well as variables specific to your selected Structure.](./creating-web-content-templates/images/02.png)
+
+1. Click on *Save* when finished, or *Save and Continue* to save your progress and continue editing.
+
+   When saved, DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template, which you can view in the Properties panel.
+
+   ![DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template.](./creating-web-content-templates/images/03.png)
+
+Once you've created a Template, you can [use it for Web Content](../web-content-articles/adding-a-basic-web-content-article.md) created with its linked Structure, or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration.
 
 ## Related Information
 
 * [Creating Structures](../web-content-structures/creating-structures.md)
 * [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)
+* [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)
