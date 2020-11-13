@@ -38,11 +38,19 @@ Follow these steps to create a new Template:
 
 1. Click on *Save* when finished, or *Save and Continue* to save your progress and continue editing.
 
-   When saved, DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template, which you can view in the Properties panel.
+   ```important::
+      Once your Template is linked with a Structure and saved, you no longer change this Template property.
+   ```
+
+   When saved, DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template, which you can view in its Properties panel.
 
    ![DXP automatically generates a DDM Template Key, URL, and WebDAV URL for your Template.](./creating-web-content-templates/images/03.png)
 
-Once you've created a Template, you can [use it for Web Content](../web-content-articles/adding-a-basic-web-content-article.md) created with its linked Structure, or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration.
+Once you've created a Template, you can [use it for Web Content](../web-content-articles/adding-a-basic-web-content-article.md) created with its linked Structure, or [embed it in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), depending on its configuration. You can also edit your Template at any time.
+
+```note::
+   Changes in a Structure may require changes in associated Templates. For example, if a Structure field name referenced in a Template is renamed or removed, the Template's reference must be manually updated.
+```
 
 ## Related Information
 
