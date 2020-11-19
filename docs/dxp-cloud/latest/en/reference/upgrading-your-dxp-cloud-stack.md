@@ -160,7 +160,7 @@ If you are defining your own Jenkinsfile within your `ci` service directory to o
 
 After your local repository has changed, use the [CLI tool](./command-line-tool.md)'s `lcp deploy` command to deploy your `ci` service to the `infra` environment. This ensures that the changes to the `ci` service are deployed first, which will allow further changes to deploy correctly.
 
-You may then want to [deploy the new service versions](../build-and-deploy/walking-through-the-deployment-life-cycle.md) to a development environment, or explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
+You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
 
 ## Additional Information
 

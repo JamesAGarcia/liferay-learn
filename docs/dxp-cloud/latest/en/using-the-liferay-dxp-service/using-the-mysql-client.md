@@ -61,7 +61,7 @@ If you have not yet deployed the database service on a supported version, then y
    If you have already deployed your database service using a version that supports the MySQL client, then the default user will already be initialized with a default password. This password cannot be changed later, so you can only add the ``LCP_DATABASE_READONLY_USER_PASSWORD`` environment variable before you deploy the database service (either for the first time, or updating from an older image version than the above). Otherwise, you must use the default, generated password.
 ```
 
-Then, update to the appropriate Docker image versions (or newer) and [re-deploy the services](../build-and-deploy/walking-through-the-deployment-life-cycle.md) so that the MySQL client is available for use.
+Then, update to the appropriate Docker image versions (or newer) and [re-deploy the services](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) so that the MySQL client is available for use.
 
 If you set your own password for the default user with `LCP_DATABASE_READONLY_USER_PASSWORD`, then add the same environment variable to your `liferay` service. Otherwise, do not add this variable, so that the service uses the default password.
 
