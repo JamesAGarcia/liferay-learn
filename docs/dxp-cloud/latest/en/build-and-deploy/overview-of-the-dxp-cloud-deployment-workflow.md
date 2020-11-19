@@ -1,6 +1,8 @@
 # Overview of the DXP Cloud Deployment Workflow
 
-This article outlines the path developers will take to develop for and deploy to a DXP Cloud project. The development process with DXP Cloud follows three stages:
+DXP Cloud provides a robust framework<!--w/c? structure? infrastructure?--> for achieving a highly efficient CI/CD strategy. With its Github<!--should it be 'Git' (or something different) since you can use an alternative hosting service?--> and Jenkins integrations, you can automatically trigger CI builds that you can then manually or automatically deploy to Project environments. Alternatively, you can skip the CI service altogether and directly deploy local changes to Project environments using the [Command Line Interface](../reference/command-line-tool.md) (CLI) tool.
+
+Although there are multiple paths for deployment, workflows generally follow these three stages:
 
 * [Develop and Configure](#develop-and-configure)
 * [Build and Test](#build-and-test)
@@ -8,67 +10,52 @@ This article outlines the path developers will take to develop for and deploy to
 
 ## Develop and Configure
 
-Although there are multiple paths for deploying to an environment, all paths begin with adding changes to the GitHub repository [you configured](../getting-started/configuring-your-github-repository.md) with your DXP Cloud project. This repository is used as the basis for any custom additions to a DXP Cloud project, including the Liferay DXP service instance itself.
+All workflows begin with making changes to your Project's Git repository (i.e., [GitHub](../getting-started/configuring-your-github-repository.md), [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md), or [GitLab](../getting-started/configuring-your-gitlab-repository.md)). This repository serves as the basis for any custom additions to your Project, including the Liferay DXP service instance itself. This Git repository provides shared version control for configuration and customization of Project services, a single source of truth for Project deployments, and a shared workspace for building DXP modules, themes, and extensions.
 
-The repository provides the following:
+Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md), or make environment-specific and Project-wide changes to a service via its `configs/` folder. To learn more about each service's configuration options, see their respective documentation:
 
-* Workspace for building Liferay DXP modules, themes, and extensions. 
-* Shared version control for configuration and customizations of DXP Cloud services. 
-* Single source of truth for DXP Cloud project deployments. 
-
-With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services. See [Deployment](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#deployment-customization-patching-and-licensing) for more information.
-
-### Code Additions
-
-The source for new code additions must be added to folders in the repository's `liferay/` directory: 
-
-* The `modules` folder for new modules
-* The `themes` folder for custom themes
-* The `wars` folder for exploded WARs 
-
-When the build is deployed, code changes in any of these locations are automatically compiled and added to the Liferay DXP service.
-
-```note::
-   If you are using version 3.x.x services, then these folders are instead located at the root of the repository. See `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for more information on checking the version.
-```
-
-### Compiled Additions
-
-You can add compiled files (e.g., pre-built JARs or LPKGs) to a `liferay/configs/{ENV}/deploy/` folder. When the build is deployed to an environment, these files are copied to the corresponding folder within `$LIFERAY_HOME` (depending on the file type). For example, adding a JAR file to `liferay/configs/common/deploy/` will result in the file being copied to `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to. 
-
-```note::
-   If you are using version 3.x.x services, then these additions are instead added to the appropriate ``lcp/liferay/deploy/{ENV}`` folder. See `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for more information on checking the version.
-```
+* [Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Backup Service](../platform-services/backup-service/backup-service-overview.md)
+* [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
+* [Database Service (MySQL)](../platform-services/database-service/database-service.md)
+* [Search Service (Elasticsearch)](../platform-services/search-service.md)
+* [Web Server Service (Nginx)](../platform-services/web-server-service.md)
 
 ## Build and Test
 
-The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Continuous Integration](../platform-services/continuous-integration.md) for more information.
+Depending on the configuration of your Project's Git repository, you can trigger automatic CI builds by merging commits into your Project's central repository or opening a new pull request with your changes. While this process is automatic, you can modify the CI service in the `infra` environment to include additional pipeline steps, including testing. See [Continuous Integration](../platform-services/continuous-integration.md) for more information.
 
-Navigate to the `Builds` tab to see all builds that have been initiated. Pending, passed, or failed builds are all displayed. If the build passes CI, then the Cloud console will offer the option in the UI to deploy the passing build to any applicable environment.
+To access a full history of builds across all Project environments, navigate to the *Builds* page in the DXP Cloud console. Here you can view all builds initiated by either the CI service or CLI tool, along with their general information and status (i.e., pending, passed, or failed).
 
-![Reviewing Builds](./overview-of-the-dxp-cloud-deployment-workflow/images/02.png)
+![Access builds for your Project via the Builds page.](./overview-of-the-dxp-cloud-deployment-workflow/images/01.png)
 
 ## Deploy
 
-There are two main ways to deploy to services on DXP Cloud: deploying through the CLI, or deploying a successful build from the `Builds` tab in the DXP Cloud Console.
+With DXP Cloud, there are three ways to deploy services: deploying via the CLI tool (manually), deploying via the DXP Cloud Management Console (manually), or configuring certain CI builds to deploy automatically.
 
 ### Option 1: Deploying Through the Command Line Interface
 
-The quickest way to deploy services from a repository locally is by using the CLI. See [Using the Command Line Interface](../reference/command-line-tool.md) for more information on setting up the CLI.
+Using the CLI tool is the quickest way to deploy local changes to a service. With it, you can deploy from your terminal and skip pushing your changes to a remote repository or triggering a Jenkins build altogether. However, unlike other deployment methods, the CLI tool can only deploy local changes for one service at a time.
 
-After logging in through the CLI, use `lcp deploy` to deploy any additions present in the local repository. The CLI will prompt you to choose one of the environments to deploy to (e.g., `dev`, `uat`, or `prd`). You must have permissions to deploy to the chosen environment for the deployment to be successful.
+To do this, log in to the CLI tool in your terminal, and navigate to the folder for the service you want to deploy. Then, initiate the deployment process by running `lcp deploy`, and select which Project and environment to deploy to (e.g., `dev`, `uat`, `prd`). For the deployment to be successful, you must have permissions to deploy to the chosen environment. See [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md) for a walk through of this deployment workflow.
 
-### Option 2: Deploying From `Builds` in DXP Cloud
+```important::
+   While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the ``lcp deploy`` command.
+```
 
-Another way to deploy changes is to use a completed build in CI from the DXP Cloud Console.
+### Option 2: Deploying From the DXP Cloud Console
 
-Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Continuous Integration](./walking-through-the-deployment-life-cycle.md) for an example tutorial.
+The DXP Cloud console is the primary way for deploying changes to your Project. With it, you can view and select from successful builds and deploy them to the environments of your choice. These include builds generated by both the CI service and CLI tool and can be accessed via the *Builds* page in the DXP Cloud console. See [Deploying Changes via the DXP Cloud Console](./deploying-changes-via-the-cli-tool.md) for a walk through of this deployment workflow.
 
-![Deploying to Prod](./overview-of-the-dxp-cloud-deployment-workflow/images/01.png)
+![Deploy builds via the DXP Cloud console.](./overview-of-the-dxp-cloud-deployment-workflow/images/02.png)
+
+### Option 3: Automatically Deploying Builds to `dev` Environment
+
+If desired, you can set up your CI service to automatically deploy builds to your Project's `dev` environment. Simply add an environment variable to the CI service that initiates automatic deployments for builds made from your specified branch. See [Setting Up Automatic Deployment](./setting-up-automatic-deployment) for more information.
 
 ## Additional Information
 
-* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
-* [Using the Command Line Interface](../reference/command-line-tool.md)
-* [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+* [Understanding Deployment Types](./understanding-deployment-types.md)
+* [Understanding Deployment Strategies](./understanding-deployment-strategies.md)
+* [Deploying Changes via the DXP Cloud Console](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)
