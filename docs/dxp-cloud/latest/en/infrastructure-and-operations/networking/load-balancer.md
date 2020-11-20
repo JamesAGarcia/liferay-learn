@@ -2,7 +2,7 @@
 
 The Ingress Load Balancer gives internet access to your environment's services via proxied HTTP(S) connections using TLS (1.0 to 1.2) protocol. Each load balancer has a static IP that can set up custom domains.
 
-![Figure 1: You can configure your environment's load balancer with a custom domain.](./load-balancer/images/01.png)
+![You can configure your environment's load balancer with a custom domain.](./load-balancer/images/01.png)
 
 Having a dedicated load balancer provides a myriad of enhanced features, such as port configuration, custom SSL certificates, and a CDN. Here's an example configuration for a load balancer in an `LCP.json` file:
 
@@ -29,7 +29,7 @@ Liferay's Content Delivery Network (CDN) is a built-in feature provided with DXP
 "cdn": true
 ```
 
-![Figure 2: The CDN's status is visible on the Network page.](./load-balancer/images/02.png)
+![The CDN's status is visible on the Network page.](./load-balancer/images/02.png)
 
 ## Port
 
@@ -39,7 +39,7 @@ You can set which internal port (`targetPort`) the load balancer's service endpo
 "targetPort": 3000
 ```
 
-![Figure 3: The load balancer shows your port configurations.](./load-balancer/images/03.png)
+![The load balancer shows your port configurations.](./load-balancer/images/03.png)
 
 ## Custom SSL
 
@@ -57,6 +57,10 @@ Consider this example:
 These domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered by a wildcard certificate that will not display in the Network page's SSL certificates section.
 
 For all custom domains added through the console or `LCP.json`, Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for a certificate that renews automatically and covers all custom domains you create.
+
+```important::
+   Note that DXP Cloud's infrastructure does not accept passphrase protected keys and that any encryption algorithm used should be either RSA-2048, or ECDSA P-256.
+```
 
 ### Custom SSL Certificates
 
@@ -125,7 +129,7 @@ The `key` and `cert` values are now encoded and usable in your web server config
 
 The Network page shows any custom certificates, with a maximum of one per service. For more information, see [Custom Domains](./custom-domains.md).
 
-![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/04.png)
+![DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/04.png)
 
 ## Environment Variables Reference
 
@@ -136,3 +140,9 @@ The Network page shows any custom certificates, with a maximum of one per servic
 | `targetPort` | 3000 | Port number for the load balancer |
 | `key` | | SSL certificate's key in Base64 format |
 | `crt` | | SSL certificate's crt in Base64 format |
+
+## Additional Information
+
+* [Private Network](./private-network.md)
+* [VPN Integrtion Overview](./vpn-integration-overview.md)
+* [Custom Domains](./custom-domains.md)
