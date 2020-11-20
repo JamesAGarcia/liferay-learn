@@ -8,6 +8,8 @@ Web Content Templates use the FreeMarker Template Language (FTL) to determine ho
    Once disabled, Users can no longer access creation options for Web Content Templates. However, this does not affect existing Templates.
 ```
 
+## How to Create a Web Content Template
+
 Follow these steps to create a new Template:
 
 1. Open the *Site Menu* (![Site Menu](./../../../images/icon-menu.png)), and go to *Content & Data* &rarr; *Web Content*.
@@ -16,21 +18,13 @@ Follow these steps to create a new Template:
 
 1. Enter a title for your new Template.
 
-1. Optionally, you can determine the following Template settings in the Properties panel:
-
-   **Structure**: Use the Structure field to link your Template with an existing Web Content Structure, or leave this field blank to create a generic Template that can be embedded in other Web Content Templates.
-
-   **Description**: Use the Description field to provide localized descriptions of your Template.
-
-   **Cacheable**: By default, new Templates are cacheable. Uncheck this property if dynamic behavior is needed (e.g., [taglibs](./using-taglibs-in-templates.md), request handling, CMS query API).
-
-   **Featured Image**: Select a featured image for your Template via URL or from your device.
+1. Optionally, you can determine the following configurable [Template Properties](#configurable-template-properties):
 
    ![Optionally, determine Template settings in the Properties panel.](./creating-web-content-templates/images/01.png)
 
-1. Add FreeMarker code to your Template via the script window, or by importing an existing `.ftl` script file.
+1. Add FreeMarker code to your Template via the script window, or by clicking on *Choose File* to select an existing `.ftl` script file to import.
 
-   When manually entering code in the Script window, you can quickly access standard variables in the left Template panel. If you've selected a Structure for your Template, you can also access variables for its specific fields, as well as the friendly URL variable.
+   When manually entering code in the script window, you can quickly access standard variables in the left Template panel. If you've selected a Structure for your Template, you can also access variables for its specific fields, as well as the *Friendly URL* variable.
 
    You can then add HTML or additional FreeMarker code to your Template's script.
 
@@ -52,7 +46,19 @@ Once you've created a Template, you can [use it for Web Content](../web-content-
    Changes in a Structure may require changes in associated Templates. For example, if a Structure field name referenced in a Template is renamed or removed, the Template's reference must be manually updated.
 ```
 
-## Related Information
+## Configurable Template Properties
+
+While Creating a template, you can optionally determine the following Template settings in the Properties panel:
+
+* **Structure**: Use the Structure field to link your Template with an existing Web Content Structure, or leave this field blank to create a generic Template that can be embedded in other Web Content Templates.
+
+* **Description**: Use the Description field to provide localized descriptions of your Template.
+
+* **Cacheable**: By default, new Templates are cacheable. Uncheck this property if dynamic behavior is needed (e.g., [taglibs](./using-taglibs-in-templates.md), request handling, CMS query API).
+
+* **Featured Image**: Select a featured image for your Template via URL or from your device.
+
+## Additional Information
 
 * [Creating Structures](../web-content-structures/creating-structures.md)
 * [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)
