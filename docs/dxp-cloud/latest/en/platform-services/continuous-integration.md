@@ -118,11 +118,11 @@ Name                                          | Default Value   | Description |
 `LCP_CI_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable or disable the Default Jenkinsfile |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |                 | Comma-delimited list of hotfixes for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |
 `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
-`LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
-`LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
-`LCP_CI_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
-`LCP_CI_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
+`LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Set the number of recent builds for which *stashes* are preserved. Stashes cannot be preserved for more builds than allowed by the `LCP_CI_ARTIFACT_NUM_TO_KEEP` variable. |
+`LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that are stored |
+`LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds are stored |
+`LCP_CI_ARTIFACT_NUM_TO_KEEP`         | `1`             | Set the number of recent builds for which *artifacts* and *stashes* are preserved. |
+`LCP_CI_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts are stored |
 
 ## Additional Information
 
