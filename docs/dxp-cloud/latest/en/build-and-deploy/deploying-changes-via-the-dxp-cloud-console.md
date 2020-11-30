@@ -31,9 +31,9 @@ Begin the deployment life cycle by adding a portal property to the `dev` environ
    web.server.display.node=true
    ```
 
-```note::
-   If you're using version 3.x.x services, then the appropriate folder path is ``lcp/liferay/deploy/dev``. See `DXP Cloud Project Changes in Version 4 <#project-version-3-differences>`__ for more information on the differences in the directory structure, and `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for how to check the version of your services.
-```
+   ```note::
+      If you're using version 3.x.x services, then the appropriate folder path is ``lcp/liferay/deploy/dev``. See `DXP Cloud Project Changes in Version 4 <../reference/dxp-cloud-project-changes-in-version-4.md>`__ for more information on the differences in the directory structure, and `Understanding Service Stack Versions <../reference/understanding-service-stack-versions.md>`__ for how to check the version of your services.
+   ```
 
 1. Add and commit your changes to the `portal-env.properties` file with the following commands:
 
