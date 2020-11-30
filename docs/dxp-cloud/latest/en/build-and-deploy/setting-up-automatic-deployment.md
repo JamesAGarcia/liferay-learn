@@ -1,6 +1,6 @@
 # Setting Up Automatic Deployment
 
-You can speed up the deployment of CI builds by configuring the CI service to automatically deploy them to your Project's `dev` environment.
+Once integrated with the CI service, you can automatically trigger builds for changes made to your Git repository (e.g., [GitHub](../getting-started/configuring-your-github-repository.md#integrating-with-the-jenkins-service), [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service), [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service)). These builds can then be manually deployed to project environments via the DXP Cloud Console. Alternatively, you can speed up the deployment process by configuring the CI service to automatically deploy certain builds to your `dev` env.
 
 Follow these steps to set it up:
 
