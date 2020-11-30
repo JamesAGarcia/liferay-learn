@@ -69,4 +69,4 @@ DXP Cloud delivers [application metrics](../manage-and-optimize/application-metr
 * [Development Requirements](./development-requirements.md)
 * [Configuring Your Github Repository](./configuring-your-github-repository.md)
 * [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [DXP Cloud Deployment Walk Through](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+* [Deploying Changes via the DXP Cloud Console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)

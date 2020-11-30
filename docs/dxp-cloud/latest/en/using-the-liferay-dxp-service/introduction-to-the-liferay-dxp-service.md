@@ -42,7 +42,7 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
-See [Overview of the Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment workflow. For a tutorial on deploying to DXP Cloud, see [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md).
+See [Overview of the Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment workflow. For a tutorial on deploying to DXP Cloud, see [Deploying Changes via the DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md).
 
 ### Themes, Portlets, and OSGi Modules
 
@@ -204,4 +204,4 @@ Name                                  | Default Value | Description  |
 
 * [Logging Into Your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
-* [Walking through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
+* [Deploying Changes via the DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
