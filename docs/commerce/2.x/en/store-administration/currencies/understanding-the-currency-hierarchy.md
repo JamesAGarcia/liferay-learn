@@ -1,4 +1,4 @@
-# Understanding the Currencies Hierarchy
+# Understanding the Currency Hierarchy
 
 Liferay Commerce supports the use of multiple currencies and implements a hierarchy to govern currency settings across store Catalogs, Price Lists, and Channels.
 
