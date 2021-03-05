@@ -52,7 +52,7 @@ Lastly, users can use a [custom shipping engine](../../../developer-guide/implem
 
 ### Tax Calculations
 
-Users can configure the channel's tax calculations. To learn more about setting a tax rate, see [Setting Tax Rate by Address](../../../store-administration/configuring-taxes/setting-tax-rate-by-address.md) or [Setting Tax Rate by Fixed Rate](../../../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+Users can configure the channel's tax calculations. To learn more about setting a tax rate, see [Setting Rates for Tax Calculations](../../store-administration/configuring-taxes/setting-rates-for-tax-calculations.md).
 
 ![Users can configure the channel's tax calculation.](./channels-reference-guide/images/07.png)
 

@@ -54,8 +54,8 @@ Liferay Commerce provides support for several third party payment processors and
 In order to collect the applicable taxes, Liferay Commerce has the ability to create tax categories and to set tax rates by address or by a fixed rate.
 
 * [Creating Tax Categories](../store-administration/configuring-taxes/creating-tax-categories.md)
-* [Setting Tax Rate by Address](../store-administration/configuring-taxes/setting-tax-rate-by-address.md)
-* [Setting Tax Rate by Fixed Rate](../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+* [Setting Rates for Tax Calculations](../store-administration/configuring-taxes/setting-rates-for-tax-calculations.md)
+* [Applying Tax Rates](../store-administration/configuring-taxes/applying-tax-rates.md)
 
 #### Shipping Products
 
