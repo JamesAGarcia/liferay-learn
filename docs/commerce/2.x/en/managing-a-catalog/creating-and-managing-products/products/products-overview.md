@@ -1,10 +1,12 @@
 # Products Overview
 
-Products are the assets that drive your store and which are listed in the store's [Catalog](../../catalogs/creating-a-new-catalog.md). Users can add three types of product: [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-grouped-product.md), and [Virtual](../product-types/creating-a-virtual-product.md). See [Introduction to Product Types](../product-types/introduction-to-product-types.md) for more information. Products and their related SKUs can be configured in a variety of useful ways.
+Products are the assets that drive your store and are listed in the store's [Catalog](../../catalogs/creating-a-new-catalog.md). Liferay Commerce provides three types of products: [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-grouped-product.md), and [Virtual](../product-types/creating-a-virtual-product.md). See [Introduction to Product Types](../product-types/introduction-to-product-types.md) for more information. <!--review paragraph-->
+
+Products and their related SKUs can be configured in a variety of useful ways. <!--RECONSIDER: These products and their related SKUs can be configured in a variety of ways to ____. -->
 
 ## Product Options
 
-Product Options can be used to offer products with a variety of options such as size, quantity, and color.
+Product Options provide a convenient way to add custom fields to your products. They can be used to define product variants based on attributes (e.g., size, quantity, color, material), create bundles, and more.
 
 See [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md) to learn more.
 
