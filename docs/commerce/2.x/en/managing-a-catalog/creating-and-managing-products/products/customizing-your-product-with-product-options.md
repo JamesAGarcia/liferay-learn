@@ -1,62 +1,80 @@
 # Customizing Your Products with Product Options
 
-Option Templates and Product Options provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color.
+Liferay Commerce's *Product Options* provides a convenient and flexible way to customize your products. With this product feature, you can create generic Templates that define custom fields that can be applied to any catalog product. Can then add unique values to the template or at the individual product level. Can customize the option's settings and values at a product level without affecting the template. Then add them to a product to ..., ..., or .... Options are applied to a product without affecting any of its details. Use Product Options to define product variants based on attributes (e.g., size, quantity, color, material), create bundles, and more.  <!--FINISH. REFINE. GIVE EXAMPLE.-->
 
-Before applying an option to a product, it is necessary to create an option template first.
-
-An option template can be applied to any product in the catalog. This makes it easy to apply frequently-used options to a large number of products. This article describes how to create an option template. Option Templates are created independently from a product so that changes to the template do not affect the product's description.
+![]()
 
 ## Creating an Option Template
 
-To create an option template:
+Follow these steps to create an Option Template:
 
-1. Go to the _Global Menu_ (![Applications Menu icon](../../../images/icon-applications-menu.png)) → _Commerce_ → _Options_.
-1. Click the (![Add icon](../../../images/icon-add.png)) to add an Option Template.
-1. Enter the following:
-    * **Title**: Color
-    * **Description**: Choice of colors
-    * **Field Type**: Select from List
-    * **Use in Faceted Navigation**: Yes
-    * **Required**: Yes
-    * **SKU Contributor:** No
-    * **Key**: (automatically generated)
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Product Management* &rarr; *Options*.
 
-        ![Create a new Option Template](./customizing-your-product-with-product-options/images/01.png)
+1. Click the *Add* button (![Add icon](../../../images/icon-add.png)).
 
-1. Click _Save_.
+1. Enter a template *Name* and *Description* (optional). A *Key* is automatically generated to match the entered name, though you can set them independently if desired.
 
-The Option Template has been added and can be applied to all products.
+1. Select template's *Field Type*. This determines the type of field displayed on ...
 
-When _Use in Faceted Navigation_ is switched to _Active_, users have the ability to filter search results based on the specified option.
+   * **Text**: adds a blank field for entering text.
+   * **Select from List**: adds a drop-down list for the option's values.
+   * **Single Selection**: adds a radio button list for the option's values.
+   * **Multiple Selection**: adds a check-box list for the option's values and allows buyers to select multiple values.
+   * **Date**: adds a field for entering the date.
+   * **Numeric**: adds a blank field for entering integers.
+   * **Boolean Question**: adds a checkbox for the option.
 
-A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
+1. Determine whether the option is included in store search results (*Use in Faceted Navigation*). <!--CORRECT THIS: cf. Gives users the ability to filter search results based on the specified option. -->
 
-```warning::
-   You cannot use a Boolean option as a SKU contributor. Attempting to use a Boolean option as a SKU contributor shows the following warning message: ``SKU Contributor cannot be set as true for the selected Field Type.``
-```
+1. Determine whether the option field is *Required*. When required, users must ___. <!--FINISH-->
+
+1. Determine ___ *SKU Contributor*. <!--CLARIFY MEANING A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.-->
+
+   ```warning::
+      The *SKU Contributor* setting cannot be enabled with the *Boolean Question* field type.
+   ```
+
+1. Click on *Save* when finished.
+
+   ![Create a new Option Template](./customizing-your-product-with-product-options/images/01.png)
+
+Once created, you can [apply the Option](#applying-an-option-template-to-a-product) to individual products.
 
 ## Adding Option Values
 
-Depending on the Field Type used in the template, you may need to create values for that option. In this example, _Select from List_ requires Option Values, such as the different product colors.
+If an Option uses the *Select from List*, *Single Selection*, or *Multiple Selection* field types, you'll have to add values to it. You can create generic values via the Options page, or create particular, product scoped values via the product's page. <!--FINISH-->
 
-To add multiple Option Values:
+### Adding Generic Values to Option Templates
 
-1. Click the _Values_ link next to _Color_.
-1. Click the (![Add icon](../../../images/icon-add.png)) to add an Option Template.
-1. Enter the following:
-    * **Name:** Black
-    * **Priority:** 1.0
-    * **Key:** (autogenerated from the _Name_ field)
+Follow these steps to add generic values to an Option Template:
 
-        ![Add values to the Production Option.](./customizing-your-product-with-product-options/images/02.png)
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Product Management* &rarr; *Options*.
 
-1. Click _Save_.
+1. Click on *Values* for the desired template.
 
-_Black_ is now added to the Color options. To add more colors, repeat the steps and increment the priority. For example, you can add _White_ and priority set as 2.0 followed by _Blue_ with priority 3.0, and so forth. Remember the priority field determines the order in which the options are displayed with the lowest values being displayed first.
+1. Click the *Add* button (![Add icon](../../../images/icon-add.png)).
+
+1. Enter a *Name* for the value. A *Key* is automatically generated to match the entered name, though you can set them independently if desired
+
+1. Set the value's *Priority* to determine the order in which its listed, beginning with the lowest value.<!--REFINE-->
+
+1. Click on *Save* to add the value to the Option Template.
+
+   ![Add values to the Production Option.](./customizing-your-product-with-product-options/images/02.png)
+
+You can repeat this process to add as many generic values to the option as desired. When the template is applied to a product, all values are included, though you can add, remove, or edit values for each product without affecting template values.
+
+### Adding Product Specific Values
+
+Follow these steps to add and configure product specific values to an Option:
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Product Management* &rarr; *Products*.
+
+1. Click on the Desired Product.
 
 ## Applying an Option Template to a Product
 
-Once you apply a template to a product, you can make any changes to the product's option. These changes will not affect the option template or any other product.
+Once you apply a template to a product, you can make any changes to the product's option. These changes will not affect the option template or any other product. You can apply multiple Option Templates to the same product, each with its own priority to determine the order in which they're displayed.
 
 To apply an option template to a product:
 
