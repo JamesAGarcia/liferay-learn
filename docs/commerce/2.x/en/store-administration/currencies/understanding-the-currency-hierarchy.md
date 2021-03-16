@@ -8,7 +8,7 @@ When products are added to a [Channel](../../starting-a-store/channels/managing-
 
 For example, consider a US-based business with two Channels, one for US customers and another for EU customers. This business's Catalog and Base Price List both use USD, while its Channels use different currencies, USD and EUR. When its products are made available to these Channels, Commerce's Exchange Rate Provider automatically converts the base USD prices to the Channel's currency.
 
-In this example, the USD prices are converted to EUR prices and stored in the EU Channel. These stored prices are then used for the Channel's connected Site. This ensures that German customers see EUR prices when browsing the EU Channel's Site, while US customers accessing the US Channel's Site see USD prices. Each Channel's prices are then used when creating and processing customer orders.
+In this example, the USD prices are converted to EUR prices and stored in the EU Channel. These stored prices are then used for the Channel's connected Site. This ensures that German customers see EUR prices when browsing the EU Channel's Site, while US customers accessing the US Channel's Site see USD prices. When orders are created, each Channel uses its stored prices in the appropriate currency.
 
 ```note::
    You can view available currencies via the *Currencies* page in the *Commerce* tab of the *Global Menu*. Here you can edit, prioritize, add/remove, and activate/deactivate currencies. See `Currencies Reference <./currencies-reference.md>`_ and `Adding a New Currency <./adding-a-new-currency.md>`_ for more information.
