@@ -1,10 +1,10 @@
 # Setting a Product's Base Price
 
-Each product SKU must have a set base price. Base prices are stored in the catalogs Base Price List generated at catalog creation. It serves as the standard price for the product when no overrides (e.g., other Price Lists or Promotions) are applied to it.
+Product SKUs are created without a set base price. So, you'll need to add one before it's added to the Catalog's Base Price List. Once added, this price serves as the standard price for the SKU when no overrides (e.g., other Price Lists or Promotions) are applied to it.
 
 ## Setting a Product's Base Price
 
-Follow these steps to assign a price to a single SKU:
+Follow these steps to assign a price to an SKU:
 
 1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Products*.
 

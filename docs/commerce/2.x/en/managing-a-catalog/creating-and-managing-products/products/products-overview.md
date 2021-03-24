@@ -1,74 +1,27 @@
 # Products Overview
 
-Products are the assets that drive your store and are listed in the store's [Catalog](../../catalogs/creating-a-new-catalog.md). Liferay Commerce provides three types of products: [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-grouped-product.md), and [Virtual](../product-types/creating-a-virtual-product.md). See [Introduction to Product Types](../product-types/introduction-to-product-types.md) for more information. <!--review paragraph-->
+Liferay Commerce provides three out-of-the-box Product types: [Simple](./creating-a-simple-product.md), [Grouped](./creating-a-grouped-product.md), and [Virtual](./creating-a-virtual-product.md). Each Product type is stored in a [Catalog](../../catalogs/creating-a-new-catalog.md) and assigned a default [SKU](./adding-skus-to-your-products.md) at creation. <!--By default, Products are visible to all Channels and , but you can control Product visibility, determining which Channels or Accounts can view a Product.-->
 
-Products and their related SKUs can be configured in a variety of useful ways. <!--RECONSIDER: These products and their related SKUs can be configured in a variety of ways to ____. -->
+After creation, you can add each Product can be configured in many of the same ways and have additional SKUs added to it for Product variants.. These configurations determine __, as well as the information displayed in a Product's details page.<!--FINISH-->
 
-## Product Options
+![You can configure each Product.](./products-overview/images/01b.png)
 
-Product Options provide a convenient way to add custom fields to your products. They can be used to define product variants based on attributes (e.g., size, quantity, color, material), create bundles, and more.
+For instance, you can upload [images](./product-images.md) and [attachments](./product-attachments.md) directly to a Product. Subscription users can also map Products to a Bill of Materials (BOM) diagram to help customers identify what they need. See [Managing BOMs](./managing-boms.md) for more information.
 
-See [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md) to learn more.
+![Create BOM diagrams.](./products-overview/images/02.png)
 
-![Create Product Options.](./products-overview/images/02.png)
+Easily create friendly URLs for Products and add meta data for search engine optimization (SEO).
 
-## SKUs
+Use [Product Categories](./organizing-your-catalog-with-product-categories.md) to group related products and quickly display them together on your Site using widgets and fragments.
 
-SKUs represent each variant of a product and can be based on the product's color, size, and quantity (see previous Product Options section).
+Add [specifications](./specifications.md) to your Products, such as dimensions, weight, material, and warranty information.
 
-To add SKUs, see [Adding SKUs to Your Products](./adding-skus-to-your-products.md).
+With [Options](./customizing-your-product-with-product-options.md), you can quickly add custom fields to your Products. These fields can be used to gather customer input (e.g., date, custom message) and provide customers with a choice between Product variants.
 
-![Generate multiple SKUs for multiple product variants.](./products-overview/images/09.png)
-
-By default, a product's SKUs inherit the specifications and configurations defined by the parent product. Users can choose to override some product configurations on a per SKU basis. This includes defining distinct dimensions and weights for SKUs or by configuring a SKU to be available on a subscription basis - even if the parent product is not. See [Overriding Product Level Information](./overriding-product-level-information.md) for more information.
-
-## Media
-
-Users can upload multiple product images and attachments. See [Product Images](./product-images.md) and [Product Attachments](./product-attachments.md) to learn more.
-
-![Upload images and attachments.](./products-overview/images/07.png)
-
-## Product Relations and Categories
-
-Often, related products are sold together, such as brake rotors and brake pads. Product Relation Type templates can be used to group similar products. See [Related Products, Up-Sells, and Cross-Sells](./related-products-up-sells-and-cross-sells.md)
-
-![Set Product Relations.](./products-overview/images/03.png)
-
-Products can also be grouped for presentation using Tags and Categories. See [Organizing Your Catalog with Product Categories](./organizing-your-catalog-with-product-categories.md).
-
-![Use Categories to group Products.](./products-overview/images/04.png)
-
-## Subscriptions
-
-Products classified as subscriptions are recurring orders; some examples include (but are not limited to) magazines, service contracts with options to renew, and items consumed on a regular basis.
-
-![Enable Subscriptions.](./products-overview/images/05.png)
-
-See [Enabling Subscriptions for a Product](./enabling-subscriptions-for-a-product.md) to learn more.
-
-## Inventory
-
-Once a product has been created, users can configure its inventory rules. Rules can be defined that govern how to sell a product when its inventory falls below a set threshold, the maximum or minimum quantity a user can buy in a single order, and whether the store will take back orders.
-
-![Set Inventory Rules.](./products-overview/images/01.png)
-
-## Visibility
-
-In order for products in a catalog to be visible, the catalog must be associated with a channel. Catalogs can be associated with multiple [channels](../../../starting-a-store/channels/introduction-to-channels.md). Furthermore, users can advertise a product to specific [Account Groups](../../../account-management/creating-a-new-account-group.md).
-
-![Managing Product visibility.](./products-overview/images/08.png)
-
-## Bill of Materials Diagrams
-
-Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create and annotate BOM diagrams in Liferay Commerce that reference products in the store. BOM diagrams can then be displayed on a site page.
-
-![Create BOM diagrams.](./products-overview/images/06.png)
-
-To create a BOM, see [Managing BOMs](./managing-boms.md)
+Set up subscriptions... Configure custom Product inventory rules to govern how a Product is sold when its inventory falls below a set threshold, the maximum and minimum quantity a user can buy in a single order, and whether the store will take back orders.
 
 ## Additional Information
 
 * [Creating a Simple Product](../product-types/creating-a-simple-product.md)
 * [Creating a Grouped Product](../product-types/creating-a-grouped-product.md)
 * [Creating a Virtual Product](../product-types/creating-a-virtual-product.md)
-* [Low Stock Actions](../../managing-inventory/low-stock-action.md)
