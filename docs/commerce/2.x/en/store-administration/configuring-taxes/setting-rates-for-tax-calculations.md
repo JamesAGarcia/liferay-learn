@@ -1,6 +1,6 @@
 # Setting Rates for Tax Calculations
 
-Liferay Commerce includes built-in tools for defining and applying tax rates to store products and shipping costs. These rates are calculated using tax engines and are linked to specific [Tax Categories](./creating-tax-categories.md). You can then [apply rates](./applying-tax-rates.md) using those categories.
+Liferay Commerce includes built-in tools for defining and applying tax rates to Product and shipping costs. These rates are calculated using configurable Tax Engines and are added to [Tax Categories](./creating-tax-categories.md). You can then [apply tax rates](./applying-tax-rates.md) to Channel Products and shipping costs by assigning the Tax Category to them.
 
 * [Understanding Tax Engines](#understanding-tax-engines)
 * [Configuring Tax Calculations](#configuring-tax-calculations)
@@ -16,7 +16,7 @@ Commerce tax engines define calculations for tax rates when a transaction is mad
 
 ### Fixed Tax Rate
 
-The *Fixed Tax Rate* engine applies the same rate for all products and shipping costs to which it's category is assigned. This rate is applied regardless of the buyer's location.
+The *Fixed Tax Rate* engine applies the same rate for all Products and shipping costs to which it's category is assigned. This rate is applied regardless of the buyer's location.
 
 ### By Address
 
