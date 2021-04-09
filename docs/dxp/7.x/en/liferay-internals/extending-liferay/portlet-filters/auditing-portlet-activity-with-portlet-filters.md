@@ -4,7 +4,7 @@ Portlet filters provide a way to add custom functionality to portlets by interce
 
 Follow these steps to create portlet filters for auditing portlet activities:
 
-1. Identify the target portlet's full name.
+1. Identify the target portlet by its full name (e.g., `com_liferay_blogs_web_portlet_BlogsPortlet`).
 
 1. Determine the portlet phase you want to audit, and implement the corresponding portlet filter interface from the [`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html) package.
 
@@ -15,7 +15,7 @@ Follow these steps to create portlet filters for auditing portlet activities:
 
    See [Portlets]() for more information about each portlet phase.
 
-1. Declare the portlet filter a Component within the OSGi framework (`@Component`), and identify it as a `PortletFilter.class` service.
+1. Declare the portlet filter a Component within the OSGi framework using the `@Component` annotation, and identify it as a `PortletFilter.class` service.
 
    ```note::
       Portlet filters are `OSGi Declarative Service (DS) Component <https://enroute.osgi.org/FAQ/300-declarative-services.html>`_. Filters can also be applied to a portlet using a ``portlet.xml`` descriptor or a ``@PortletLifecycleFilter`` annotation. See Portlet 3.0 Specification for details.
@@ -67,7 +67,7 @@ Follow these steps to download, build, and deploy the sample Portlet Filter to a
 
 1. Verify the portlet filter is working by adding the Blogs widget to a Site Page.
 
-   Whenever a render request is made to the Blogs portlet, the container console should display a warning message with an audit of the its render time, average render time, and number of renders.
+   Whenever a render request is made to the Blogs portlet, the container console should display a warning message with an audit of its render time, average render time, and total number of renders.
 
    ```log
    WARN [http-nio-8080-exec-2][B4K8PortletFilter:54] Blogs portlet rendered in 3 ms with an average of 3 ms out of 1 renders.
@@ -160,7 +160,7 @@ The portlet filter implements the [`RenderFilter`](http://docs.liferay.com/portl
 
 This sample implements each of the `RenderFilter` methods.
 
-* `init`: this method is called once when the portlet filter is initially deployed to Liferay and initialized within the portlet container.
+* `init`: This method is only called when the portlet filter is first deployed to Liferay and initialized within the portlet container.
 
    ```Java
    @Override
@@ -168,7 +168,7 @@ This sample implements each of the `RenderFilter` methods.
    }
    ```
 
-* `destroy`: this method is called to remove the portlet filter from service.
+* `destroy`: This method can be called to remove the portlet filter from service.
 
    ```java
    @Override
@@ -176,7 +176,7 @@ This sample implements each of the `RenderFilter` methods.
    }
    ```
 
-* `doFilter`: this method is called by the portlet container each time a render request/response pair is passed through the chain due to a client request.
+* `doFilter`: This method is called by the portlet container each time a render request/response pair is passed through the chain due to a client request.
 
    ```java
    @Override
@@ -228,13 +228,13 @@ This sample implements each of the `RenderFilter` methods.
       long renderTime = (System.currentTimeMillis() - startTime) / 1000;
       ```
 
-   1. Adds the current renter time to the total time of all renders.
+   1. Adds the current render time to the total time of all renders.
 
       ```java
       _totalTime.add(renderTime);
       ```
 
-   1. Increments the number of time the portlet has rendered.
+   1. Increments the total number of portlet renders.
 
       ```java
       _count.increment();
@@ -260,4 +260,4 @@ This sample implements each of the `RenderFilter` methods.
 ## Additional Information
 
 * [Portlets]()
-<!--TASK: Add link to Portlet Filters article when finished -->
+<!--TASK: Add link to Using Portlet Filters article when finished -->
