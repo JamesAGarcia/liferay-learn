@@ -1,6 +1,6 @@
 # Auditing Portlet Activity with Portlet Filters
 
-Portlet filters provide a way to add custom functionality to portlets by intercepting requests and responses at the start of each [portlet request processing phase](https://github.com/sez11a/liferay-learn/pull/215/files). For this reason, you can use portlet filters to audit portlet activities during the render, action, event, and resource serving phases.
+Portlet filters provide a way to add custom functionality to portlets by intercepting requests and responses at the start of each [portlet request processing phase](https://github.com/sez11a/liferay-learn/pull/215/files). This makes them useful for auditing portlet activities during its render, action, event, and resource serving phases.
 
 Follow these steps to create portlet filters for auditing portlet activities:
 
@@ -13,7 +13,7 @@ Follow these steps to create portlet filters for auditing portlet activities:
    * Render Phase - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
    * Resource Serving Phase - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
 
-   See [Portlets]() for more information about each portlet phase.
+   See [Portlets](../../../developing-applications/developing-a-java-web-application/portlets.md) for more information about each portlet phase.
 
 1. Declare the portlet filter a Component within the OSGi framework using the `@Component` annotation, and identify it as a `PortletFilter.class` service.
 
@@ -21,7 +21,7 @@ Follow these steps to create portlet filters for auditing portlet activities:
       Portlet filters are `OSGi Declarative Service (DS) Component <https://enroute.osgi.org/FAQ/300-declarative-services.html>`_. Filters can also be applied to a portlet using a ``portlet.xml`` descriptor or a ``@PortletLifecycleFilter`` annotation. See Portlet 3.0 Specification for details.
    ```
    <!--TASK: Reconsider admonition link-->
-1. Enter the following properties into the `@Component` declaration:
+1. Enter the following properties into the `@Component` declaration.
 
    * `"javax.portlet.name=[portlet_Name]"`: This property sets the filter's target portlet.
    * `"service.ranking:Integer=100"`: This property sets the filter's ranking, with the higher integers executing first. Ensure the filter starts up at the beginning of the filter chain by assigning it the highest ranking.
@@ -30,7 +30,7 @@ Follow these steps to create portlet filters for auditing portlet activities:
 
 The following tutorial uses a `RenderFilter` to audit the render phase for the Blogs portlet.
 
-## Deploy Sample Portlet Filter
+## Deploy the Sample Portlet Filter
 
 Follow these steps to download, build, and deploy the sample Portlet Filter to a new docker container:
 
@@ -133,82 +133,17 @@ public class B4K8PortletFilter implements RenderFilter {
 }
 ```
 
-### Declared an OSGi DS Component
+In this code, the filter is first declared an OSGi DS Component and identified as a `PortletFilter.class` service. As part of this declaration, it also sets two properties: the first property targets the `BlogsPortlet`, and the second property sets its priority to `100`.
 
-```java
-@Component(
-   property = {
-      "javax.portlet.name=com_liferay_blogs_web_portlet_BlogsPortlet",
-      "service.ranking:Integer=100"
-   },
-   service = PortletFilter.class
-)
-```
-
-This filter is declared an OSGi DS Component and identified as a `PortletFilter.class` service. The `@Component` declaration also sets two properties: the first property targets the `BlogsPortlet`, and the second property sets its priority to `100`.
-
-### Class Interface
-
-```java
-public class B4K8PortletFilter implements RenderFilter {
-}
-```
-
-The portlet filter implements the [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html) interface, which extends the [`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html) interface. This object performs filtering tasks on both the render request to the Blogs portlet and its response. This filtering happens in the `doFilter` method (see below).
-
-### Methods
-
-This sample implements each of the `RenderFilter` methods.
+The portlet filter proceeds to implement the [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html) interface, which extends the [`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html) interface. This interface includes three methods (i.e., `init`, `destroy`, `doFilter`) and performs its filtering tasks on both the render request to the Blogs portlet and its response.
 
 * `init`: This method is only called when the portlet filter is first deployed to Liferay and initialized within the portlet container.
 
-   ```Java
-   @Override
-   public void init(FilterConfig filterConfig) throws PortletException {
-   }
-   ```
-
 * `destroy`: This method can be called to remove the portlet filter from service.
-
-   ```java
-   @Override
-   public void destroy() {
-   }
-   ```
 
 * `doFilter`: This method is called by the portlet container each time a render request/response pair is passed through the chain due to a client request.
 
-   ```java
-   @Override
-   public void doFilter(
-         RenderRequest renderRequest, RenderResponse renderResponse,
-         FilterChain filterChain)
-      throws IOException, PortletException {
-
-      long startTime = System.currentTimeMillis();
-
-      filterChain.doFilter(renderRequest, renderResponse);
-
-      long renderTime = (System.currentTimeMillis() - startTime) / 1000;
-
-      _totalTime.add(renderTime);
-
-      _count.increment();
-
-      if (_log.isWarnEnabled()) {
-         long count = _count.longValue();
-
-         long averageRenderTime = _totalTime.longValue() / count;
-
-         _log.warn(
-            "Blogs portlet rendered in " + renderTime +
-               " ms with an average of " + averageRenderTime +
-                  " ms out of " + count + " renders.");
-      }
-   }
-   ```
-
-   The above method audits the Blogs portlet in the following ways:
+   In this example, `doFilter` audits the Blogs portlet in the following ways:
 
    1. Notes the render phase start time.
 
@@ -259,5 +194,5 @@ This sample implements each of the `RenderFilter` methods.
 
 ## Additional Information
 
-* [Portlets]()
+* [Portlets](../../../developing-applications/developing-a-java-web-application/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->
