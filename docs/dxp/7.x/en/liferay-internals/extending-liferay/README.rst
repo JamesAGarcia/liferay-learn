@@ -12,3 +12,8 @@ Extending Liferay
 -  :doc:`/liferay-internals/extending-liferay/osgi-extension-points`
 -  :doc:`/liferay-internals/extending-liferay/overriding-mvc-commands`
 -  :doc:`/liferay-internals/extending-liferay/overriding-service-components`
+
+Portlet Filters
+---------------
+
+-  :doc:`/liferay-internals/extending-liferay/portlet-filters/auditing-portlet-activity-with-portlet-filters`

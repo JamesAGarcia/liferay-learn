@@ -15,6 +15,7 @@ Extending Liferay
    extending-liferay/osgi-extension-points.md
    extending-liferay/overriding-mvc-commands.md
    extending-liferay/overriding-service-components.md
+   extending-liferay/portlet-filters.rst
 
 .. include:: /liferay-internals/extending-liferay/README.rst
    :start-line: 2
