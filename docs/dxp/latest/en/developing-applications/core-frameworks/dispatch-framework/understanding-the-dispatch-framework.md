@@ -1,6 +1,6 @@
 # Understanding the Dispatch Framework
 
-Liferay Dispatch is a dynamic/versatile<!--w/c--> framework built on top of Liferay's Scheduler Engine. You can use it to add, execute, and schedule tasks with any custom logic across a Liferay instance.
+Liferay Dispatch is a flexible framework built on top of Liferay's Scheduler Engine. You can use it to add, execute, and schedule tasks with any custom logic across a Liferay instance.
 
 The Dispatch framework consist of six essential parts:
 
@@ -13,7 +13,7 @@ The Dispatch framework consist of six essential parts:
 
 ## `DispatchTaskExecutor`
 
-The [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) interface is used to create templates for Dispatch Tasks in a Liferay instance. Each implementation of `DispatchTaskExecutor` is registered as an OSGi component and contains the essential logic executed by the Dispatch Task. See [Creating a New Dispatch Task Executor](./creating-a-new-dispatch-task-executor.md) to learn more. <!--INTEGRATE: Each Dispatch Task is an instance of a Java class that implements the `DispatchTaskExecutor` interface and has the `dispatch.task.executor.name` and `dispatch.task.executor.type` OSGi component properties.-->
+The [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) interface is used to create templates for Dispatch Tasks in a Liferay instance. Each implementation of `DispatchTaskExecutor` is registered as an OSGi component and contains the essential logic executed by the Dispatch Task. All Dispatch Tasks are instances of Java classes that implement the `DispatchTaskExecutor` interface and has the `dispatch.task.executor.name` and `dispatch.task.executor.type` OSGi component properties. See [Creating a New Dispatch Task Executor](./creating-a-new-dispatch-task-executor.md) to learn more.
 
 ## `DispatchTrigger`
 
@@ -29,7 +29,7 @@ The [`DispatchTaskExecutorRegistry`](https://github.com/liferay/liferay-portal/b
 
 ## `DispatchLog`
 
-The [`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java) interface extends `DispatchLogModel` and `PersistedModel`. This entity is responsible for persisting Dispatch task execution logs.
+The [`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java) interface extends `DispatchLogModel` and `PersistedModel`. This entity is responsible for persisting Dispatch Task execution logs.
 
 ## `DispatchConfigurator`
 

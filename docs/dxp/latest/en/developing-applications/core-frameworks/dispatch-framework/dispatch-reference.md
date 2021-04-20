@@ -64,10 +64,10 @@ Configure the Dispatch Trigger to schedule Dispatch Task executions.
 | Active | Determines whether the configured schedule for execution is active or inactive |
 | Task Execution Cluster Mode | Determines whether the Dispatch Tasks is executed on a *Single Node* or *All Nodes* in a clustered environment |
 | Overlap Allowed | Determines whether concurrent execution of Dispatch Tasks is allowed |
-| Cron Expression | Defines time intervals for when the Dispatch Task is executed |
+| Cron Expression | Defines time intervals for automatically executing the Dispatch Task |
 | Start Date | Defines when the Dispatch Task begins to be executed according to the cron schedule; set to current date and time by default |
-| Never End | Determines whether the Dispatch Task's execution automatically ends |
-| End Date | Defines when the Dispatch Task is no longer executed by the cron schedule; set to current date and time by default |
+| Never End | Determines whether the Dispatch Task's automatic execution ever ends; checked by default |
+| End Date | Defines when the Dispatch Task is no longer automatically executed; disabled if *Never End* is checked |
 
 ## Scheduled Jobs
 

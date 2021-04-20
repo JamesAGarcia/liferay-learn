@@ -1,10 +1,16 @@
 # Using Dispatch
 
-[Dispatch](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a dynamic/versatile<!--w/c--> framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-dispatch-task) via the Control Panel. Once a Dispatch Task is created, you can configure its behavior and [schedule](#scheduling-the-dispatch-task) when it executes. <!--Examples of Dispatch Tasks include custom Talend data integration jobs, __, and __.-->
-
-Dispatch also provides a convenient UI for viewing and managing all [scheduled jobs](#viewing-and-managing-scheduled-jobs) across a Liferay instance.
+[Dispatch](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-dispatch-task) via the Control Panel. Once a Dispatch Task is created, you can configure its behavior and [schedule](#scheduling-the-dispatch-task) when it executes.
 
 ![Add and manage Dispatch Tasks via the Dispatch page.](./using-dispatch/images/01.png)
+
+Dispatch also provides a convenient UI for viewing and managing all instance [jobs scheduled using the `MessageListener` interface](#viewing-and-managing-scheduled-jobs).
+
+```note::
+   When deciding whether to use Dispatch or MessageListener to schedule instance jobs, consider the following Dispatch benefits.
+   Dispatch Tasks are more flexible than jobs scheduled using ``MessageListener``, since changes can be applied to Dispatch Tasks in runtime through the Dispatch UI. Changes to ``MessageListener`` jobs must be hardcoded and redeployed. 
+   The Dispatch UI also provides a more complete overview of each Dispatch Task's execution properties (e.g., cron expression, start/end date, cluster mode) and execution history. This information is not provided in the UI for ``MessageListener`` jobs.
+```
 
 ## Adding a New Dispatch Task
 
@@ -28,7 +34,7 @@ Follow these steps to add a new Dispatch Task to a Liferay instance:
 
 1. (Optional) Use the settings editor to define properties for the Dispatch Task that are injected into it at runtime.
 
-   These settings can be used to fine tune execution flow or even pass further to underlying job.<!--Could you clarify what you mean by "pass further to underlying job"?-->
+   These settings can be used to fine tune execution flow and more.
 
    All settings added in this way are soft-coded, so you can configure your Dispatch Tasks in runtime without having to edit and redeploy the Executor's code.
 

@@ -1,19 +1,19 @@
 # Creating a New Dispatch Task Executor
 
-Liferay Dispatch is a dynamic/versatile<!--w/c--> framework built on top of Liferay's Scheduler Engine, which you can use to add, execute, and schedule tasks across a Liferay instance. Each Dispatch Task is created using an implementation of the `DispatchTaskExecutor` interface and can be customized to execute any logic. While Liferay DXP provides multiple out-of-the-box executors, you can create your own. Once created and deployed, you can use it to add Dispatch Tasks to a Liferay instance.
+Liferay Dispatch is a flexible framework built on top of Liferay's Scheduler Engine that you can use to add, execute, and schedule tasks across a Liferay instance. Each Dispatch Task is created using an implementation of the `DispatchTaskExecutor` interface and can be customized to execute any logic. While Liferay DXP provides multiple out-of-the-box executors, you can create your own. Once created and deployed, you can use it to add Dispatch Tasks to a Liferay instance.
 
 Follow these steps to create your own implementation of the `DispatchTaskExecutor` interface:
 
 1. **OSGI Component**: Declare the module a Component within the OSGi framework using the `@Component` annotation.
 
-1. **Service**: Identify the module as a `DispatchTaskExecutor.class` service within the `@Component` declaration/annotation.<!--w/c-->
+1. **Service**: Identify the module as a `DispatchTaskExecutor.class` service within the `@Component` annotation.
 
-1. **OSGi Properties**: Add the following properties to the `@Component` declaration/annotation.<!--w/c-->
+1. **OSGi Properties**: Add the following properties to the `@Component` annotation.
 
-   * `dispatch.task.executor.name`: this property defines a language key value that is used to resolve Dispatch Task Executor type localized name in the Dispatch UI. <!--Could you clarify what you mean by `dispatch.task.executor.name` "is used to resolve Dispatch Task Executor type localized name in the Dispatch UI?"-->
+   * `dispatch.task.executor.name`: this property defines the string used for the executor's name in the Dispatch UI. language key value that is used to resolve Dispatch Task Executor type localized name in the Dispatch UI.
 
       ```note::
-         You must add a language key value for ``dispatch.task.executor.name`` to the module’s ``resources/content/Language.properties`` file.
+         If you want your Dispatch Task to use localized names, add a language key value for the ``dispatch.task.executor.name`` property to the module’s ``resources/content/Language.properties`` file.
       ```
 
    * `dispatch.task.executor.type`: this property defines a unique `type` value used to match the right Dispatch Task Executor and Dispatch Trigger.
@@ -40,8 +40,6 @@ Follow these steps to create your own implementation of the `DispatchTaskExecuto
       You can use the ``dispatchTrigger.getDispatchTaskSettings()`` method to fetch properties set in the Dispatch Task's Settings editor.
    ```
 
-1. Add a key value for the `dispatch.task.executor.name` property to the module’s `Language.properties` file.
-
 The following tutorial uses a sample module to demonstrate how to create and deploy a custom Dispatch Task Executor to a Liferay instance.
 
 ## Deploying the Sample Dispatch Task Executor
@@ -57,9 +55,9 @@ Follow these steps to download, build, and deploy the sample Dispatch Task Execu
 1. Download and unzip the example module.
 
    ```bash
-   curl https://learn.liferay.com/.../liferay-s7a3.zip -O
+   curl https://learn.liferay.com/docs/dxp/latest/en/developing-applications/core-frameworks/dispatch-framework/liferay-s7a3.zip -O
    ```
-   <!-- FIX CURL PATH ONCE YOU FIND THE LOCATION -->
+
    ```bash
    unzip liferay-s7a3.zip -d liferay-s7a3
    ```
@@ -103,7 +101,7 @@ Follow these steps to download, build, and deploy the sample Dispatch Task Execu
 @Component(
     immediate = true,
     property = {
-        "dispatch.task.executor.name=hello-world",
+        "dispatch.task.executor.name=s7a3-hello-world",
         "dispatch.task.executor.type=helloWorld"
     },
     service = DispatchTaskExecutor.class
