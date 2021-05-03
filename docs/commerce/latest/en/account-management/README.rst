@@ -11,4 +11,3 @@ Account Management
 -  :doc:`/account-management/creating-a-new-account-group`
 -  :doc:`/account-management/using-organizations-to-create-a-sales-network`
 -  :doc:`/account-management/adding-organizations-to-accounts`
--  :doc:`/account-management/commerce-roles-permissions-reference`
