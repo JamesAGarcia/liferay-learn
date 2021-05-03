@@ -18,11 +18,11 @@ Application permissions define what actions can be performed in an application.
 
 Order Management includes the following applications:
 
-* **Orders**: This application is used to view and manage orders across a Liferay instance.
+**Orders**: This application is used to view and manage orders across a Liferay instance.
 
-* **Shipments**: This application is used for viewing and managing Shipments generated for Orders across a Liferay instance.
+**Shipments**: This application is used for viewing and managing Shipments generated for Orders across a Liferay instance.
 
-* **Subscriptions**: This application is used for viewing and managing both active and inactive customer Subscriptions across a Liferay instance.
+**Subscriptions**: This application is used for viewing and managing both active and inactive customer Subscriptions across a Liferay instance.
 
 All Order Management applications have the following permissions:
 
@@ -32,7 +32,7 @@ All Order Management applications have the following permissions:
 | Configuration | Ability to view and set the application's configuration options |
 | Permissions | Ability to view and modify the application's permissions |
 | Preferences | Ability to view and set application preferences |
-| View | Ability to view ... | <!--finish-->
+| View | Ability to view the application |
 
 ## Related Resource Permissions
 
@@ -40,7 +40,7 @@ Resource permissions define what actions can be performed on resources displayed
 
 Order Management applications reference<!--w/c--> the following resources:
 
-* **Commerce Order** (listed under Orders): Orders are created when customers purchase Products in a Channel and are used to store and process order information. Each Order entity includes customer information (i.e., account, billing, shipping), as well as all other order details (e.g., included items, order total, date, notes, acceptance workflow status, etc.). See [Processing an Order](../../orders-and-fulfillment/orders/processing-an-order.md) for more information. <!--FINISH-->
+**Commerce Order** (listed under Orders): Orders are created when customers purchase Products in a Channel and are used to store and process order information. Each Order entity includes customer information (i.e., account, billing, shipping), as well as purchased items, order total, date, notes, acceptance workflow status, and more. See [Processing an Order](../../orders-and-fulfillment/orders/processing-an-order.md) for more information.
 
 | Permission | Description |
 |---|---|
@@ -48,14 +48,14 @@ Order Management applications reference<!--w/c--> the following resources:
 | Approve Open Orders | Ability to approve orders if workflow has been enabled |
 | Check Out Open Orders | Ability to complete the checkout process for new, incomplete orders |
 | Delete Orders | Ability to delete orders |
-| Manage Order Notes | Ability to add a note to an order | <!--ALL notes? Does this include restricted notes? I assume not, given the following permission.-->
-| Manage Order Restricted Notes | Ability to access restricted notes for an order |
+| Manage Order Notes | Ability to access and modify non-restricted order notes |
+| Manage Order Restricted Notes | Ability to access and modify restricted notes for an order |
 | Manage Orders | Ability to change order details (e.g., mailing and billing addresses) |
 | Permissions | Ability to view and manage permissions for each Commerce order |
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders, regardless of status |
 
-* **Commerce Warehouse** (listed under Shipments, [Warehouses](./inventory-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
+**Commerce Warehouse** (listed under Shipments, [Warehouses](./inventory-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
 | Permission | Description |
 |---|---|

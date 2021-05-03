@@ -18,15 +18,15 @@ Application permissions define what actions can be performed in an application.
 
 Pricing includes the following applications:
 
-* **Price Lists**: This application is used to create and manage Price List entities that store Product price entries.
+**Price Lists**: This application is used to create and manage Price List entities that store Product price entries.
 
-* **Discounts**: This application is used to create and manage Discount entities that modify prices.
+**Discounts**: This application is used to create and manage Discount entities that modify prices.
 
-* **Promotions**: This application is used to create and manage Promotions that store Product price entries that can be applied in place of Price List Entries. <!--Are these entities just a type of Price List?-->
+**Promotions**: This application is used to create and manage Promotions that store Product price entries that can be applied in place of Price List Entries. <!--Are these entities just a type of Price List?-->
 
-* **Product Groups**: This application is used to create and manage Product Group entities.
+**Product Groups**: This application is used to create and manage Product Group entities.
 
-* **Tax Categories**: This application is used to create and manage categories for applying tax rates to Channel Products and shipping costs. See [Creating Tax Categories](../../store-administration/configuring-taxes/creating-tax-categories.md) for more information.
+**Tax Categories**: This application is used to create and manage categories for applying tax rates to Channel Products and shipping costs. See [Creating Tax Categories](../../store-administration/configuring-taxes/creating-tax-categories.md) for more information.
 
 All Pricing applications have the following permissions:
 
@@ -36,7 +36,7 @@ All Pricing applications have the following permissions:
 | Configuration | Ability to view and set the application's configuration options |
 | Permissions | Ability to view and modify the application's permissions |
 | Preferences | Ability to view and set application preferences |
-| View | Ability to view ... | <!--finish-->
+| View | Ability to view the application |
 
 ## Related Resource Permissions
 
@@ -44,11 +44,11 @@ Resource permissions define what actions can be performed on resources displayed
 
 Pricing applications reference <!--w/c--> the following resources:
 
-* **Commerce Price List** (listed under Price Lists and Product Groups): Price Lists are entities that store price entries for Product SKUs. This includes both Base Price Lists and custom Price Lists. <!--does this also include promotions?--> Each list is linked to a single Catalog and has the following configuration options: currency, priority, schedule, eligibility, and price modifiers. See [Creating a Price List](../../managing-a-catalog/managing-price/creating-a-price-list.md) for more information.
+**Commerce Price List** (listed under Price Lists and Product Groups): Price Lists are entities that store price entries for Product SKUs. This includes both Base Price Lists and custom Price Lists. Each list is linked to a single Catalog and has the following configuration options: currency, priority, schedule, eligibility, and price modifiers. See [Creating a Price List](../../managing-a-catalog/managing-price/creating-a-price-list.md) for more information. <!--Does Commerce Price List include Promotions?-->
 
-* **Commerce Discount** (listed under Discounts and Product Groups): Discounts are entities used to modify prices. They are configured to target the price of Products, Shipments, Subtotals, Totals, or Product Groups. When applied, it modifies the best applicable price for a customer, whether unit or promo. See [Introduction to Discounts](../../promoting-products/introduction-to-discounts.md) for more information.
+**Commerce Discount** (listed under Discounts and Product Groups): Discounts are entities used to modify prices. They are configured to target the price of Products, Shipments, Subtotals, Totals, or Product Groups. When applied, it modifies the best applicable price for a customer, whether unit or promo. See [Introduction to Discounts](../../promoting-products/introduction-to-discounts.md) for more information.
 
-* **Commerce Product Group** (listed under Product Groups): Product Groups are entities for grouping related Products in order to apply Price Lists and Discounts to them.<!--accurate?--> See [Introduction to Product Groups](../../promoting-products/introduction-to-product-groups.md) for more information.
+**Commerce Product Group** (listed under Product Groups): Product Groups are entities for grouping related Products in order to apply Price Lists and Discounts to them. See [Introduction to Product Groups](../../promoting-products/introduction-to-product-groups.md) for more information.
 
 All resources connected to Pricing applications have the following permissions:
 

@@ -18,9 +18,9 @@ Application permissions define what actions can be performed in an application.
 
 Inventory Management includes the following applications:
 
-* **Inventory**: This application is used to create and manage inventory entries for Product SKUs. See [Inventory Management Reference Guide](../../managing-a-catalog/managing-inventory/inventory-management-reference-guide.md) for more information.
+**Inventory**: This application is used to create and manage inventory entries for Product SKUs. See [Inventory Management Reference Guide](../../managing-a-catalog/managing-inventory/inventory-management-reference-guide.md) for more information.
 
-* **Warehouses**: This application is used to create Warehouse entities that store Product inventory. See [Warehouse Reference Guide](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md) for more information.
+**Warehouses**: This application is used to create Warehouse entities that store Product inventory. See [Warehouse Reference Guide](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md) for more information.
 
 All Inventory Management applications have the following permissions:
 
@@ -30,7 +30,7 @@ All Inventory Management applications have the following permissions:
 | Configuration | Ability to view and set the application's configuration options |
 | Permissions | Ability to view and modify the application's permissions |
 | Preferences | Ability to view and set application preferences |
-| View | Ability to view ... | <!--finish-->
+| View | Ability to view the application |
 
 ## Related Resource Permissions
 
@@ -38,7 +38,7 @@ Resource permissions define what actions can be performed on resources displayed
 
 Inventory Management applications reference the following resources:
 
-* **Commerce Warehouse** (listed under Warehouses, [Shipments](./order-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
+**Commerce Warehouse** (listed under Warehouses, [Shipments](./order-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
 | Permission | Description |
 |---|---|

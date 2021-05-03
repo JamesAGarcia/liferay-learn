@@ -1,4 +1,4 @@
-# Settings Permissions Reference
+# Settings Permissions Reference Guide
 
 Liferay Commerce provides out-of-the-box permissions to control access to Settings applications in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
@@ -18,13 +18,13 @@ Application permissions define what actions can be performed in an application.
 
 Settings includes the following applications:
 
-* **Availability Estimates**: This application is used to create and manage availability estimates for when Products are available. See [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md) for more information.
+**Availability Estimates**: This application is used to create and manage availability estimates for when Products are available. See [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md) for more information.
 
-* **Countries**: This application is used to create and manage country entries, which are then used in other applications (e.g., Channels). See [Adding Regions](../../store-administration/adding-regions.md) for more information. <!--TASK: replace when general article on Countries is written.-->
+**Countries**: This application is used to create and manage country entries, which are then used in other applications (e.g., Channels). See [Adding Regions](../../store-administration/adding-regions.md) for more information. <!--TASK: replace when general article on Countries is written.-->
 
-* **Measurement Units**: This application is used to create and manage standard measurement units that are used for Product Specifications. See [Measurement Units](../../store-administration/configuring-shipping-methods/measurement-units.md) for more information.
+**Measurement Units**: This application is used to create and manage standard measurement units that are used for Product Specifications. See [Measurement Units](../../store-administration/configuring-shipping-methods/measurement-units.md) for more information.
 
-* **Health Check**: This application is used to check the health status of Commerce applications, as well as fix any existing issues. <!--TASK: Add link when general article on Health Check is written.-->
+**Health Check**: This application is used to check the health status of Commerce applications, as well as fix any existing issues. <!--TASK: Add link when general article on Health Check is written.-->
 
 All Settings applications have the following permissions:
 
@@ -34,7 +34,7 @@ All Settings applications have the following permissions:
 | Configuration | Ability to view and set the application's configuration options |
 | Permissions | Ability to view and modify the application's permissions |
 | Preferences | Ability to view and set application preferences |
-| View | Ability to view ... | <!--finish-->
+| View | Ability to view the application |
 
 ## Additional Information
 
