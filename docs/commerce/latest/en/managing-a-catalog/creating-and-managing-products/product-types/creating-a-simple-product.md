@@ -40,7 +40,7 @@ After the SKUs have been generated, set the base price and quantities in the inv
 1. Click _Publish_.
 1. Close the configuration
 
-To learn more about pricing, see: [Introduction to Product Pricing Methods](../../managing-price/introduction-to-product-pricing-methods.md)
+To learn more about pricing, see: [Introduction to Pricing](../../managing-prices/introduction-to-pricing.md)
 
 To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](../../managing-inventory/setting-inventory-by-warehouse.md).
 
@@ -91,7 +91,7 @@ To set product prices and quantities:
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 1. Click _Save_. (If Promo Price and Cost fields are left as 00, no discounts or promotions are applied at this point.)
-1. Click _Price List_ to apply this product to any existing [price lists](../../managing-price/adding-products-to-a-price-list.md).
+1. Click _Price List_ to apply this product to any existing [price lists](../../managing-prices/adding-products-to-a-price-list.md).
 
 Once you have set the product's price and SKUs, see the sections above on how to add Product Options, Specifications or upload Product Images.
 

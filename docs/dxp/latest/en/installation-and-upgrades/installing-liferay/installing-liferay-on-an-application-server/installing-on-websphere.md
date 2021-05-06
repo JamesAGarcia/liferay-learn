@@ -141,16 +141,13 @@ By this point, the following steps should be completed:
 
 ## Installing DXP Dependencies
 
-1. Unzip the Dependencies ZIP file and place its contents in the WebSphere application server's `[Install Location]/WebSphere/AppServer/lib/ext` folder. Add the appropriate JDBC connector JAR for the database being used to this location as well.
+1. Unzip the Dependencies ZIP file and place its contents in the WebSphere application server's `[Install Location]/WebSphere/AppServer/lib/ext` folder.
+1. The DXP 7.4+ WAR includes drivers for MariaDB, MySQL, and PostgreSQL. Earlier DXP WARs don't have them. If your DXP WAR doesn't have the driver you want, download your database vendor's JDBC JAR file to the `[Install Location]/WebSphere/AppServer/lib/ext` folder. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 1. Unzip the OSGi Dependencies ZIP file and place its contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't already exist). This is typically `[Install Location]/WebSphere/AppServer/profiles/your-profile/liferay/osgi`.
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's lib folder. You can download JDBC driver JARs for these databases:
-
-* [MariaDB](https://downloads.mariadb.org/)
-* [MySQL](http://dev.mysql.com/downloads/connector/j)
-* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
-
-Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, do not use it for production DXP instances.
+```note::
+   A Hypersonic database is bundled with Portal/DXP and is useful for testing purposes. **Do not** use HSQL for production instances.
+```
 
 ## Installing Elasticsearch Archives
 
@@ -170,11 +167,11 @@ When Liferay DXP is started, the archives are unpackaged and installed, and the 
 
 ### Installing the DXP portlet.jar
 
-DXP's `portlet.jar` (version 3) is backwards-compatible with version 2.0. It is included with the Dependencies ZIP that you unzipped above. WebSphere contains `portlet.jar` version 2.0 that must be overridden.
+DXP's `portlet.jar` (version 3) is backwards-compatible with version 2.0. The DXP 7.4 `.war` includes the `portlet.jar` and the Dependencies ZIP for earlier DXP versions include it too. WebSphere's `portlet.jar` version 2.0 must be overridden.
 
 1. In your `[Install Location]/WebSphere/AppServer/profiles/your-profile/` folder, create a folder called `app_shared_libraries`.
 
-1. Move DXP's `portlet.jar` from the `[Install Location]/WebSphere/AppServer/lib/ext` folder to the `app_shared_libraries` folder you created.
+1. Copy the DXP `portlet.jar` from your DXP WAR (7.4+) or from the `[Install Location]/WebSphere/AppServer/lib/ext` folder to the `app_shared_libraries` folder you created.
 
 1. Follow IBM's steps for [using a server-associated shared library](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver); make sure to choose *Classes loaded with local class loader first (parent_Last)* on step 4d.
 
@@ -215,6 +212,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 
 ![Figure 3: WebSphere JDBC providers](./installing-on-websphere/images/03.png)
 
+1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the `[Install Location]/WebSphere/AppServer/lib/ext` folder.
 1. Start WebSphere.
 1. Open the Administrative Console and log in.
 1. Click *Resources &rarr; JDBC Providers*.

@@ -8,7 +8,7 @@ Discounts are created in the _Discounts_ menu in the _Global Applications_ &rarr
 * Schedule a promotion for a period of time
 
 ```tip::
-   Discounts are not the same as a *Price List*. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_, `Creating a Price List <../managing-a-catalog/managing-price/creating-a-price-list.md>`_, and `Adding Tiered Pricing <../managing-a-catalog/managing-price/adding-tiered-pricing.md>`_.
+   Discounts are not the same as a *Price List*. For more information on Pricing see `Introduction to Pricing <../managing-a-catalog/managing-prices/introduction-to-pricing.md>`_, `Creating a Price List <../managing-a-catalog/managing-prices/creating-a-price-list.md>`_, and `Using Price Tiers <../managing-a-catalog/managing-prices/using-price-tiers.md>`_.
 ```
 
 ```note::

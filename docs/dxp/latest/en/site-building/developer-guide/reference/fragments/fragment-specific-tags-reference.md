@@ -4,11 +4,11 @@ Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags
 
 Page Fragments have access to these types of liferay-specific tags and attributes that add these features:
 
-* Editable Text
-* Editable Images
-* Editable Links
-* Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)
-* Embedded Widgets
+- Editable Text
+- Editable Images
+- Editable Links
+- Editable HTML (Liferay Portal CE 7.3 GA3+ and DXP 7.3+)
+- Embedded Widgets
 
 ```note::
   When you start typing the name of a tag, the `HTML editor <../../developing-page-fragments/using-the-fragments-editor.md>`_ provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -99,7 +99,7 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 </lfr-editable>
 ```
 
-After you add the `lfr-editable` tag with the type `image` to a Fragment, when you add that Fragment to a page, you can then click on the editable image to select an image or configure content mapping for the image.
+After you add the `lfr-editable` tag with the type `image` to a Fragment, when you add that Fragment to a page, you can then click on the editable image and configure the image source and other properties from the Content Page editor sidebar.
 
 ![You have several options for defining an image on a Content Page.](./fragment-specific-tags-reference/images/02.png)
 
@@ -138,7 +138,7 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 </lfr-editable>
 ```
 
-You can edit the link text, target URL, and basic link styling---primary button, secondary button, link.
+You can edit the type of link, target URL, and link mapping from the Content Page editor sidebar.
 
 ![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-reference/images/03.png)
 
@@ -162,8 +162,6 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
 </lfr-editable>
 ```
 
-<!-- Image not in repo. ![You have several options for defining an HTML element on a Content Page.](./fragment-specific-tags-reference/images/04.png) -->
-
 For more information on editable HTML, see [Editable HTML](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md#editing-an-html-element).
 
 ## Including Widgets Within A Fragment
@@ -179,24 +177,24 @@ To include a widget, you must know its registered name. For example, the Site Na
 
 These are the widgets that can be embedded and their accompanying tags:
 
-| Widget Name    | Tag |
-| -------- | --- |
-|DDL Display	|`<lfr-widget-dynamic-data-list>`|
-|Form           |`<lfr-widget-form>`|
-|Asset Publisher|`<lfr-widget-asset-list>`|
-|Breadcrumb	    |`<lfr-widget-breadcrumb>`|
-|Categories Navigation |`<lfr-widget-categories-nav>`|
-|Flash	|`<lfr-widget-flash>`|
-|Media Gallery	|`<lfr-widget-media-gallery>`|
-|Navigation Menu	|`<lfr-widget-nav>`|
-|Polls Display	|`<lfr-widget-polls>`|
-|Related Assets	|`<lfr-widget-related-assets>`|
-|Site Map	|`<lfr-widget-site-map>`|
-|Tag Cloud	|`<lfr-widget-tag-cloud>`|
-|Tags Navigation	|`<lfr-widget-tags-nav>`|
-|Web Content Display	|`<lfr-widget-web-content>`|
-|RSS Publisher (Deprecated)	|`<lfr-widget-rss>`|
-|Iframe	|`<lfr-widget-iframe>`|
+| Widget Name                | Tag                              |
+|----------------------------|----------------------------------|
+| DDL Display                | `<lfr-widget-dynamic-data-list>` |
+| Form                       | `<lfr-widget-form>`              |
+| Asset Publisher            | `<lfr-widget-asset-list>`        |
+| Breadcrumb                 | `<lfr-widget-breadcrumb>`        |
+| Categories Navigation      | `<lfr-widget-categories-nav>`    |
+| Flash                      | `<lfr-widget-flash>`             |
+| Media Gallery              | `<lfr-widget-media-gallery>`     |
+| Navigation Menu            | `<lfr-widget-nav>`               |
+| Polls Display              | `<lfr-widget-polls>`             |
+| Related Assets             | `<lfr-widget-related-assets>`    |
+| Site Map                   | `<lfr-widget-site-map>`          |
+| Tag Cloud                  | `<lfr-widget-tag-cloud>`         |
+| Tags Navigation            | `<lfr-widget-tags-nav>`          |
+| Web Content Display        | `<lfr-widget-web-content>`       |
+| RSS Publisher (Deprecated) | `<lfr-widget-rss>`               |
+| Iframe                     | `<lfr-widget-iframe>`            |
 
 ### Enabling Embedding for Your Widget
 
@@ -214,5 +212,11 @@ When you deploy your widget, it's available to add. The name you specify in the 
 ```
 
 ```note::
-    According to the W3C HTML standards, custom elements can't be self closing. Therefore, even though you can't add anything between the opening and closing ``<lfr-widget...>`` tags, you can't use the self closing notation for the tag.
+    According to the W3C HTML standards, custom elements can't be self-closing. Therefore, even though you can't add anything between the opening and closing ``<lfr-widget...>`` tags, you can't use the self-closing notation for the tag.
 ```
+
+## Related Information
+
+- [Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)
+- [Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
+- [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)

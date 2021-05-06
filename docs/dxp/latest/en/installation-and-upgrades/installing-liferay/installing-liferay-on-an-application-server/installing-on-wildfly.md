@@ -27,7 +27,7 @@ Installing Liferay DXP on WildFly requires the following steps:
 ## Installing Dependencies
 
 1. Create the folder `$WILDFLY_HOME/modules/com/liferay/portal/main` if it does not already exist and extract the Dependencies ZIP JARs here.
-1. Download a database driver `.jar` file and copy it into the same folder. For a list of supported databases, see Liferay's [Support Matrix](https://help.liferay.com/hc/en-us/articles/360049238151).
+1. The Portal/DXP 7.4+ WAR includes drivers for MariaDB, MySQL, and PostgreSQL. Earlier WARs don't have them. If your WAR doesn't have the driver you want, download your database vendor's JDBC JAR file to the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 1. Create the file `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and all of its required resources and dependencies:
 
     ```xml
@@ -59,12 +59,16 @@ Installing Liferay DXP on WildFly requires the following steps:
 
 1. Create an `osgi` folder in your [Liferay Home](../../reference/liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
-    The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
+   The `osgi` folder provides the necessary modules for the OSGi runtime.
+
+```note::
+   A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
+```
 
 **Checkpoint:**
 
-1. The contents of the Dependencies zip have been placed in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder:
-1. Your database vendor's JDBC driver has been placed in `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and listed as a dependency.
+1. The contents of the Dependencies zip have been placed in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder.
+1. Your database vendor's JDBC driver is installed.
 1. The `module.xml` has listed all JARs in the `<resource-root>` elements.
 1. The OSGi dependencies have been unzipped in the `osgi` folder located inside the `${Liferay.home}` folder.
 
@@ -232,6 +236,8 @@ The prescribed script modifications are now complete for the DXP installation on
 The easiest way to handle database configuration is to let DXP manage the data source. Use [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) to configure DXP's built-in data source. If using the built-in data source, skip this section.
 
 If using WildFly to manage the data source, follow these steps:
+
+1. Get the JDBC JAR from your Portal/DXP WAR (7.4+) or from the database vendor and copy it to the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder.
 
 1. Add the data source inside the `$WILDFLY_HOME/standalone/configuration/standalone.xml` file's `<datasources>` element:
 

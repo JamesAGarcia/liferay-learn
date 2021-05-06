@@ -38,14 +38,11 @@ DXP depends on many JARs included in DXP Tomcat bundle. Some of the bundle's JAR
 
 1. Unzip the Dependencies ZIP file contents in the `$TOMCAT_HOME/lib/ext` folder (create this folder if it doesn't exist).
 1. Unzip the OSGi Dependencies ZIP file contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
+1. The DXP 7.4+ WAR includes drivers for MariaDB, MySQL, and PostgreSQL. Earlier DXP WARs don't have them. If your DXP WAR doesn't have the driver you want, download your database vendor's JDBC JAR file to the `$TOMCAT_HOME/lib/ext` folder. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. You can download JDBC driver JARs for these databases:
-
-* [MariaDB](https://downloads.mariadb.org/)
-* [MySQL](http://dev.mysql.com/downloads/connector/j)
-* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
-
-A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
+```note::
+   A Hypersonic database is bundled with Portal/DXP and is useful for testing purposes. **Do not** use HSQL for production instances.
+```
 
 ## Configuring Tomcat
 
@@ -226,6 +223,8 @@ Otherwise, you can configure the data source in Tomcat.
 ### Configuring the Tomcat Data Source
 
 1. Make sure the database server is installed and working. If it's installed on a different machine, verify that DXP machine can access it.
+
+1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the `$TOMCAT_HOME/lib/ext` folder.
 
 1. Open `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` and add data source as a `Resource` in the web application `Context`:
 

@@ -100,7 +100,7 @@ To set product prices and quantities for a Grouped product:
         ![Grouped Product Pricing](./creating-a-grouped-product/images/08.png)
 
 1. Click _Save_. (If Promo Price and Cost fields are left as 0.00, no discounts or promotions are applied at this point.)
-1. Click _Price List_ to apply this product to any existing [Price Lists](../../managing-price/adding-products-to-a-price-list.md).
+1. Click _Price List_ to apply this product to any existing [Price Lists](../../managing-prices/adding-products-to-a-price-list.md).
 
 ## Additional Information
 

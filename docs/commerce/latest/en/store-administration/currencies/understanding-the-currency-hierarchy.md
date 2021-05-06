@@ -2,7 +2,7 @@
 
 With Liferay Commerce, you can use different currencies across Catalogs, Price Lists, and Channels. Each currency has its own role in the Commerce currency hierarchy.
 
-The [Catalog's](../../managing-a-catalog/catalogs/creating-a-new-catalog.md) currency sets the initial currency for its Base Price List, which determines each product's base price. You can then use custom [Price Lists](../../managing-a-catalog/managing-price/creating-a-price-list.md) with alternate currencies to override the Base Price List for specific Channels, Accounts, and Account Groups.
+The [Catalog's](../../managing-a-catalog/catalogs/creating-a-new-catalog.md) currency sets the initial currency for its Base Price List, which determines each product's base price. You can then use custom [Price Lists](../../managing-a-catalog/managing-prices/creating-a-price-list.md) with alternate currencies to override the Base Price List for specific Channels, Accounts, and Account Groups.
 
 When products are added to a [Channel](../../starting-a-store/channels/managing-channels.md), their prices are converted to the Channel's currency using an [Exchange Rate Provider](./managing-exchange-rates.md). The converted price is then stored in the Channel and used for its display and order prices.
 

@@ -32,3 +32,4 @@ Building a Responsive Site
 
 -  :doc:`/site-building/optimizing-sites/building-a-responsive-site/building-a-responsive-site`
 -  :doc:`/site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules`
+-  :doc:`/site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment`

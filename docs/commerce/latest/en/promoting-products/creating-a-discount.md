@@ -141,5 +141,5 @@ In this example, a Discount Rule has been applied to this particular Discount. C
 
 * [Introduction to Discounts](./introduction-to-discounts.md)
 * [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
-* [Creating a Price List](../managing-a-catalog/managing-price/creating-a-price-list.md)
-* [Adding Tiered Pricing](../managing-a-catalog/managing-price/adding-tiered-pricing.md)
+* [Creating a Price List](../managing-a-catalog/managing-prices/creating-a-price-list.md)
+* [Using Price Tiers](../managing-a-catalog/managing-prices/using-price-tiers.md)

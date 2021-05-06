@@ -42,7 +42,7 @@ You can also use the screen layout controls to target a specific screen layout. 
    The Fragments and Widgets and Page Design options in the Content Page sidebar are only available in the Desktop layout.
 ```
 
-In the Tablet and Phone layouts, you can further adjust the size of the screen using the resize handlebar.
+In the Tablet and Phone layouts, you can further adjust the screen size using the resize handlebar.
 
 ![Resize the content preview in the Tablet or Phone layouts](building-content-pages/images/15.gif)
 
@@ -52,33 +52,24 @@ Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md), 
 
 1. Under the Site Menu, go to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Add Page* button (![Add Page](../../../images/icon-plus.png)) at the level where you want to add the new page, and select *Add Page*.
+1. Click the *Add Page* button (![Add Page](../../../images/icon-plus.png)) at the level where you want to add the new Page, and select *Add Page*.
 
     ![Begin by adding your new Content Page.](building-content-pages/images/01.png)
 
 1. Select the *Blank* template or one of the existing templates.
 
-1. In the Add Page dialog, type your page's *Name*.
+1. In the Add Page dialog, type your Page's *Name*.
 
 1. Alternatively, click the Actions Menu (![Actions](../../../images/icon-actions.png)) of an existing Content Page and select *Edit*.
 
     ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](building-content-pages/images/02.png)
-
-    When you enter the Site Builder view, you can add or edit your content in two ways:
-
-    - *Page Design*: If you have permission to update the page and the page content, this mode is available.
-    - *Content Editing*: If you only have permission to update the page but not the page content, you can use this mode.
-
-    The editing options available in the Content Page sidebar depend on the editing mode you choose.
-
-    ![Choose between Page Design or Content Editing editing modes.](building-content-pages/images/18.png)
 
 1. From the Content Page sidebar, select the *Fragments and Widgets* button (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the Fragments and Widgets for your content. You can browse for the component or use the *Search* field to find a specific Fragment or Widget.
 
     ![Add Fragments and Widgets from the Content Page sidebar](building-content-pages/images/03.png)
 
     ```note::
-       New Content Pages start empty and in a *Draft* status. The page is not visible until it is published.
+       New Content Pages start empty and in a *Draft* status. The Page is not visible until it is published.
     ```
 
 1. Configure the look and content preferences of the Fragments and Widgets using the following configuration options:
@@ -191,6 +182,10 @@ You can adjust the module's width to customize the layout:
 
    ![You can adjust the spacing of modules in a Layout.](./building-content-pages/images/16.gif)
 
+   ```tip::
+      You can use the Grid Fragment to customize the content layout for the different screen sizes in desktop and mobile devices. For more information, see `Building Responsive Layouts with the Grid Fragment <../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md>`_
+   ```
+
 ### Copying a Fragment
 
 To save time, you can duplicate a Fragment (Component, Section, Row, etc.):
@@ -198,7 +193,7 @@ To save time, you can duplicate a Fragment (Component, Section, Row, etc.):
 1. Click the Fragment you want to copy.
 1. Click the Options Menu (![Image Properties](../../../images/icon-app-options.png)) for the container and select *Duplicate*.
 
-    ![You can duplicate Fragments on the page.](./building-content-pages/images/10.png)
+    ![You can duplicate Fragments on the Page.](./building-content-pages/images/10.png)
 
 ```note::
   When you duplicate a Fragment, you also duplicate the mappings and customizations.
@@ -257,15 +252,15 @@ To map your elements to existing content,
 
 Content Pages, like Widget Pages, are built by dragging and dropping elements onto the page and then configuring the way those elements appear. There are three kinds of elements: 
 
-**Sections** are fragments that define a space to place other elements. A section fills the entire width of the page. Sections can be thought of as *complete* Fragments that serve a purpose by themselves. A large banner image with a text overlay is an example of something you might build as a section.
+**Sections** are fragments that define a space to place other elements. A section fills the entire width of the Page. Sections can be thought of as *complete* Fragments that serve a purpose by themselves. A large banner image with a text overlay is an example of something you might build as a section.
 
 ![A Section named Banner being displayed while editing a Content Page.](./building-content-pages/images/20.png)
 
-**Layouts** are special Sections that define spaces where you can add fragments or widgets. Each layout you add fills the width of the page. You can add any number of layouts to the page.
+**Layouts** are special Sections that define spaces where you can add fragments or widgets. Each layout you add fills the width of the Page. You can add any number of layouts to the Page.
 
 ![A 3 Column and 1 Column layout stacked on top of each other.](./building-content-pages/images/21.png)
 
-**Components** are small design elements or pieces that add functionality to the page. A component might be an image with formatting or a block of text with styling pre-applied. Components must be added to the page inside a Layout. If you add a component outside an existing Layout, a one-column layout is added automatically to contain the Component. While Sections should be complete by themselves, Components work together to build pages piece by piece. 
+**Components** are small design elements that add functionality to the Page. A component might be an image with formatting or a block of text with styling pre-applied. Components must be added to the Page inside a Layout. If you add a component outside an existing Layout, a one-column layout is added automatically to contain the Component. While Sections should be complete by themselves, Components work together to build pages piece by piece. 
 
 ![Here are several of Liferay's out of the box components arranged in the layout you saw previously.](./building-content-pages/images/22.png)
 
@@ -362,5 +357,5 @@ Next you'll learn about the Content Page Editing Interface.
 
 * [Developing a Page Fragment](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)
 * [Using Master Pages](../defining-headers-and-footers/master-page-templates.md)
-* [Changing Content Pages Look and Feel](./editing-content-pages.md#look-and-feel)
+* [Editing Content Pages](./editing-content-pages.md)
 * [Content Page Personalization guide](../../personalizing-site-experience/personalizing-site-experience.md)

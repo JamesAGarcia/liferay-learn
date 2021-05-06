@@ -5,7 +5,6 @@ Customizing the Core
    :maxdepth: 3
 
    customizing-the-core/customizing-the-liferay-core.md
-   customizing-the-core/using-ext-plugins.md
    customizing-the-core/using-hooks.md
 
 .. include:: /liferay-internals/customizing-the-core/README.rst

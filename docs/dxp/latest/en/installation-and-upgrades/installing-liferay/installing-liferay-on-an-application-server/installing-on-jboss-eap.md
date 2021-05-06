@@ -23,7 +23,7 @@ Installing DXP on JBoss EAP takes the following steps:
 ## Installing Dependencies
 
 1. Create the folder `$JBOSS_HOME/modules/com/liferay/portal/main` if it doesn't exist and extract the JARs from the dependencies ZIP into this folder.
-1. Copy your database vendor's JDBC .jar file to the same location. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+1. The Portal/DXP 7.4+ WAR includes drivers for MariaDB, MySQL, and PostgreSQL. Earlier DXP WARs don't have them. If your WAR doesn't have the driver you want, download your database vendor's JDBC JAR file to the `$JBOSS_HOME/modules/com/liferay/portal/main` folder. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 1. Create the file `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder. In the file, declare the portal module and all of its required resources and dependencies:
 
     ```xml
@@ -55,7 +55,11 @@ Installing DXP on JBoss EAP takes the following steps:
 
 1. Create an `osgi` folder in the [Liferay Home](../../reference/liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
-   The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
+    The `osgi` folder provides the necessary modules for the OSGi runtime.
+
+```note::
+   A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
+```
 
 **Checkpoint:**
 
@@ -227,6 +231,8 @@ The prescribed script modifications are now complete for the DXP installation on
 The easiest way to handle database configuration is to let DXP manage the data source. Administrators can use [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) to configure DXP's built-in data source. If using the built-in data source, skip this section.
 
 If using JBoss to manage the data source, follow these steps:
+
+1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the `$JBOSS_HOME/modules/com/liferay/portal/main` folder.
 
 1. Add the data source inside the `$JBOSS_HOME/standalone/configuration/standalone.xml` file's the `<datasources>` element.
 

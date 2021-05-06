@@ -4,7 +4,7 @@ DXP runs in the application server's JVM. System properties can be passed direct
 
 Your application server's prescribed script is the safest place to add/modify system properties. It can be used to centralize the system properties. Passing all properties in as JVM arguments eliminates timing issues by setting all properties at application server startup. The application server, DXP, and all other web applications can use the properties immediately.
 
-DXP uses the [`portal-impl.jar/system.properties`](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/system.properties.html) file, however, as a convenience to set required properties. The `system.properties` file can be extended or overridden using a `system-ext.properties` file. System properties files are loaded by the [Portal application class loader](../../liferay-internals/customizing-the-core/reference/portal-application-classloaders.md) after application server startup. Here are some functionalities that DXP configures using system properties:
+DXP uses the [`portal-impl.jar/system.properties`](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/system.properties.html) file, however, as a convenience to set required properties. The `system.properties` file can be extended or overridden using a `system-ext.properties` file. System properties files are loaded by the Portal application class loader after application server startup. Here are some functionalities that DXP configures using system properties:
 
 * File encoding
 * Logging

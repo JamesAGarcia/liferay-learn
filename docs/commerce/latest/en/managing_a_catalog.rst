@@ -7,7 +7,7 @@ Managing a Catalog
    managing-a-catalog/catalogs.rst
    managing-a-catalog/creating_and_managing_products.rst
    managing-a-catalog/managing_inventory.rst
-   managing-a-catalog/managing_price.rst
+   managing-a-catalog/managing_prices.rst
 
 .. raw:: html
    :file: landingpage_template.html

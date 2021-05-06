@@ -112,10 +112,11 @@ DXP depends on libraries (Dependencies ZIP) and OSGi modules (OSGi Dependencies 
 
 1. Unzip the Dependencies ZIP file into the WebLogic domain's `lib` folder.
 1. Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
+1. The DXP 7.4+ WAR includes drivers for MariaDB, MySQL, and PostgreSQL. Earlier DXP WARs don't have them. If your DXP WAR doesn't have the driver you want, download your database vendor's JDBC JAR file to the domain's `lib` folder. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the domain's `lib` folder.
-
-Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+```note::
+   A Hypersonic database is bundled with Portal/DXP and is useful for testing purposes. **Do not** use HSQL for production instances.
+```
 
 ## Install Elasticsearch Archives
 
@@ -143,6 +144,7 @@ To configure DXP's built-in data source when you run DXP for the first time, use
 
 Otherwise, you can configure the data source in WebLogic:
 
+1. Get the JDBC JAR from your DXP WAR (7.4+) or from the database vendor, and copy it to the domain's `lib` folder.
 1. Log in to the AdminServer console.
 1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
 1. To create a new data source, click *New*.
