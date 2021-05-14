@@ -1,12 +1,12 @@
-# Inventory Management Permissions Reference Guide
+# Inventory Management Permissions Reference
 
 Liferay Commerce provides out-of-the-box permissions to control access to Inventory Management applications and resources in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-![Control access to Inventory Management applications and resources.](./inventory-management-permissions-reference-guide/images/01.png)
+![Control access to Inventory Management applications and resources.](./inventory-management-permissions-reference/images/01.png)
 
 You can manage Inventory Management permissions for user roles under *Commerce* &rarr; *Store Management* in the Define Permissions tab. Assign permissions individually, or check *Action* to assign all permissions for an application or resource.
 
-![Manage Inventory Management permissions for user roles in the Define Permissions tab.](./inventory-management-permissions-reference-guide/images/02.png)
+![Manage Inventory Management permissions for user roles in the Define Permissions tab.](./inventory-management-permissions-reference/images/02.png)
 
 ```note::
    The following article does not document permissions for related widgets.
@@ -38,7 +38,7 @@ Resource permissions define what actions can be performed on resources displayed
 
 Inventory Management applications reference the following resources:
 
-**Commerce Warehouse** (listed under Warehouses, [Shipments](./order-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
+**Commerce Warehouse** (listed under Warehouses, [Shipments](./order-management-permissions-reference.md), and [Products](./product-management-permissions-reference.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
 | Permission | Description |
 |---|---|

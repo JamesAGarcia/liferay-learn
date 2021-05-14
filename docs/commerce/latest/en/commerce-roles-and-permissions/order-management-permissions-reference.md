@@ -1,12 +1,12 @@
-# Order Management Permissions Reference Guide
+# Order Management Permissions Reference
 
 Liferay Commerce provides out-of-the-box permissions to control access to Order Management applications and resources in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-![Control access to Order Management applications and resources.](./order-management-permissions-reference-guide/images/01.png)
+![Control access to Order Management applications and resources.](./order-management-permissions-reference/images/01.png)
 
 You can manage Order Management permissions for user roles under *Commerce* &rarr; *Order Management* in the Define Permissions tab. Assign permissions individually, or check *Action* to assign all permissions for an application or resource.
 
-![Manage Order Management permissions for user roles in the Define Permissions tab.](./order-management-permissions-reference-guide/images/02.png)
+![Manage Order Management permissions for user roles in the Define Permissions tab.](./order-management-permissions-reference/images/02.png)
 
 ```note::
    The following article does not document permissions for related widgets.
@@ -38,7 +38,7 @@ All Order Management applications have the following permissions:
 
 Resource permissions define what actions can be performed on resources displayed or managed within an application. Resources are any user-facing object, such as Catalogs, Price Lists, Orders, and Warehouses.
 
-Order Management applications reference<!--w/c--> the following resources:
+Order Management applications reference the following resources:
 
 **Commerce Order** (listed under Orders): Orders are created when customers purchase Products in a Channel and are used to store and process order information. Each Order entity includes customer information (i.e., account, billing, shipping), as well as purchased items, order total, date, notes, acceptance workflow status, and more. See [Processing an Order](../../orders-and-fulfillment/orders/processing-an-order.md) for more information.
 
@@ -55,7 +55,7 @@ Order Management applications reference<!--w/c--> the following resources:
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders, regardless of status |
 
-**Commerce Warehouse** (listed under Shipments, [Warehouses](./inventory-management-permissions-reference-guide.md), and [Products](./product-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
+**Commerce Warehouse** (listed under Shipments, [Warehouses](./inventory-management-permissions-reference.md), and [Products](./product-management-permissions-reference.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
 | Permission | Description |
 |---|---|

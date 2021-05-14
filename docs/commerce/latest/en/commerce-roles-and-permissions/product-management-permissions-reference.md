@@ -1,12 +1,12 @@
-# Product Management Permissions Reference Guide
+# Product Management Permissions Reference
 
 Liferay Commerce provides out-of-the-box permissions to control access to Product Management applications and resources in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-![Control access to Product Management applications and resources.](./product-management-permissions-reference-guide/images/01.png)
+![Control access to Product Management applications and resources.](./product-management-permissions-reference/images/01.png)
 
 You can manage Product Management permissions for user roles under *Commerce* &rarr; *Pricing* in the Define Permissions tab. Assign permissions individually, or check *Action* to assign all permissions for an application or resource.
 
-![Manage Product Management permissions for user roles in the Define Permissions tab.](./product-management-permissions-reference-guide/images/02.png)
+![Manage Product Management permissions for user roles in the Define Permissions tab.](./product-management-permissions-reference/images/02.png)
 
 ```note::
    The following article does not document permissions for related widgets.
@@ -24,11 +24,11 @@ Product Management includes the following applications:
   
 **Options**: This application is used to create and manage templates for Product Options.
 
-**Specifications**: This application is used to create labels and groups for categorizing Product Specifications. <!--in the permissions UI, this is called "Product Specification Labels," which seems like a misnomer, since it gives users access to both the "Specification Labels" and "Specification Groups" tabs-->
+**Specifications**: This application is used to create labels and groups for categorizing Product Specifications.
 
 **BOM Admin**: This application is used to create and annotate Bill of Materials diagrams. See [Managing BOMs](../../managing-a-catalog/creating-and-managing-products/products/managing-boms.md) for more information.
 
-**Application Admin**: This application is used to create and manage Model entries. <!--Should anything else be noted? There is no existing documentation-->
+**Application Admin**: This application is used to create and manage Model entries.
 
 All Product Management applications have the following permissions:
 
@@ -50,13 +50,13 @@ Product Management applications are connected to the following resources:
 
 **Commerce Products** (listed under Products, Options, and Product Specification Labels): Products are entities stored in a Catalog and sold in a Channel. Each Product can have multiple SKUs, associated media (images and attachments),  . They can also be linked to Specifications, Categories, Options, Inventory, price entries, and more. See [Products Overview](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md) for more information.
 
-**Commerce Product Option Category** (listed under Catalogs): <!--What does this refer to? There is no existing documentation that refers to "Options Categories."-->
-
 **Commerce Product Option** (listed under Catalogs): Product Options are entities used to add custom fields to Products. Each Option has a field type that determines its behavior. Depending on its type, the Option can be used to receive customer input, generate SKUs for product variants, and more. See [Customizing Products with Product Options](../../managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options.md) for more information.
 
-**Commerce Product Specification** (listed under Catalogs): Product Specifications are entities for storing information about Product attributes. See [Specifications](../../managing-a-catalog/creating-and-managing-products/products/specifications.md) for more information. <!--Is this referring to Labels and Groups in the Specification application, or the use of those labels and groups for a Product? I'm confused why this is listed under Catalogs and not Specifications. -->
+**Commerce Product Option Category** (listed under Catalogs): Product Option Categories are Specification Groups used to categorize Specifications.
 
-**Commerce Warehouse** (listed under Products, [Shipments](./order-management-permissions-reference-guide.md)) and [Warehouses](./inventory-management-permissions-reference-guide.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
+**Commerce Product Specification** (listed under Catalogs): Product Specifications are entities for storing information about Product attributes. They are the specifications defined for an individual Product. See [Specifications](../../managing-a-catalog/creating-and-managing-products/products/specifications.md) for more information.
+
+**Commerce Warehouse** (listed under Products, [Shipments](./order-management-permissions-reference.md)) and [Warehouses](./inventory-management-permissions-reference.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
 **Commerce BOM Folder** (listed under BOM Admin): BOM folders are entities for storing BOM Definitions. Each folder has its own associated image and can be linked to Models defined in the Application Admin.
 
