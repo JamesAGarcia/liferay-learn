@@ -1,8 +1,10 @@
 # Commerce Roles
 
-User roles are used to group together the permissions necessary for accessing and using Liferay applications and resources. Each role can be scoped to an instance, Site, Organization, Asset Library, or Account. See [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) for more details.
+User roles group together necessary permissions for accessing and using Liferay applications and resources. Each role can be scoped to an instance, Site, Organization, Asset Library, or Account. This scope determines which permissions can be assigned to the role. Each permission also has its own scope, which determines the context in which the applications and resources can be accessed and used. See [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) for more details.
 
 Commerce includes four out-of-the-box Commerce roles: Account Administrator, Account Member, Buyer, and Order Manager. While these roles may satisfy your business/Commerce needs, other common roles include: Catalog Manager, Inventory Manager, Shipments Manager, Instance Order Manager, and Discount Manager.
+
+Each Commerce role groups together , to address needs in specific use cases.
 
 ```note::
    For Liferay 7.3.x and earlier Commerce versions, Sales Agent is also included as an out-of-the-box role.
@@ -91,7 +93,7 @@ Users assigned this role can view, create, and check out orders.
 
 > Custom role
 
-Catalog Managers can access, create, edit, and manage Products within a specific Catalog. This role is useful in multiple Catalog scenarios, where different vendors or company teams manage different Products in separate Catalogs. Note that Catalog Managers cannot manage inventory.
+The Catalog Manager role allows users to access, create, edit, and manage Products within a specific Catalog. This role is useful in multiple Catalog scenarios, where different vendors or company teams manage different Products in separate Catalogs. Note that Catalog Managers cannot manage inventory. For this responsibility, see [Inventory Manager](#inventory-manager)
 
 | Permissions | Description |
 | --- | --- |

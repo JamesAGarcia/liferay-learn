@@ -36,6 +36,26 @@ All Settings applications have the following permissions:
 | Preferences | Ability to view and set application preferences |
 | View | Ability to view the application |
 
+## Related Resource Permissions
+
+Resource permissions define what actions can be performed on resources displayed or managed within an application. Resources are any user-facing object, such as Catalogs, Price Lists, Orders, and Warehouses.
+
+Settings applications are connected to the following resources:
+
+**Commerce Availability** (listed under Availability Estimates): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+| Permission | Description |
+|---|---|
+| Manage Availability Estimates | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
+**Commerce Health** (listed under Health Check): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+| Permission | Description |
+|---|---|
+| Manage Health Status | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
 ## Additional Information
 
 * [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md)

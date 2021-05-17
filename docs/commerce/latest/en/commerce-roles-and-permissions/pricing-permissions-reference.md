@@ -46,18 +46,56 @@ Pricing applications reference the following resources:
 
 **Commerce Price List** (listed under Price Lists and Product Groups): Price Lists are entities that store price entries for Product SKUs. This includes Base Price Lists and custom Price Lists, as well as Base Promotion Lists and custom Promotion Lists. Each list is linked to a single Catalog and has the following configuration options: currency, priority, schedule, eligibility, and price modifiers. See [Creating a Price List](../../managing-a-catalog/managing-price/creating-a-price-list.md) for more information.
 
+**Commerce Price Lists**: <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
 **Commerce Discount** (listed under Discounts and Product Groups): Discounts are entities used to modify prices. They are configured to target the price of Products, Shipments, Subtotals, Totals, or Product Groups. When applied, it modifies the best applicable price for a customer, whether unit or promo. See [Introduction to Discounts](../../promoting-products/introduction-to-discounts.md) for more information.
+
+**Commerce Discounts** (listed under Discounts): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
 
 **Commerce Product Group** (listed under Product Groups): Product Groups are entities for grouping related Products in order to apply Price Lists and Discounts to them. See [Introduction to Product Groups](../../promoting-products/introduction-to-product-groups.md) for more information.
 
-All resources connected to Pricing applications have the following permissions:
+**Commerce Pricing** (listed under Product Groups and [Products](./product-management-permissions-reference.md)): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+**Commerce Taxes** (listed under Tax Categories):
+<!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+All resources connected to Pricing applications (except Commerce Price Lists, Commerce Discounts, Commerce Pricing, and Commerce Taxes) have the following permissions:
 
 | Permission | Description |
-|---|---|
+| --- | --- |
 | Delete | Ability to delete a resource |
 | Permissions | Ability to view and modify a resource's permissions  |
 | Update | Ability to modify a resource |
 | View | Grants ability to view a resource |
+
+*Commerce Price Lists* has the following permissions:
+
+| Permission | Description |
+| --- | --- |
+| Add Commerce Price List | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
+*Commerce Discounts* has the following permissions:
+
+| Permission | Description |
+| --- | --- |
+| Add Discount | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+| View Discounts | <!--FINISH--> |
+
+*Commerce Pricing* has the following permissions:
+
+| Permission | Description |
+| --- | --- |
+| Add Commerce Pricing Class | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
+*Commerce Taxes* has the following permissions:
+
+| Permission | Description |
+| --- | --- |
+| Manage Tax Categories | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
 
 ## Additional Information
 

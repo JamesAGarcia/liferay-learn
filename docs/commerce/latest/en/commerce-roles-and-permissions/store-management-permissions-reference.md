@@ -40,11 +40,15 @@ Store Management applications are connected to the following resources:
 
 **Commerce Channel** (listed under Channels): Channels are entities used to display Products and receive customer orders via a connected Site. Each Channel has its own workflow for orders, payment setting, shipping settings, tax calculations, and notifications. See [Managing Channels](../../starting-a-store/channels/managing-channels.md) and [Channels Reference Guide](../../starting-a-store/channels/channels-reference-guide.md) for more information.
 
+**Commerce Channels** (listed under Channels): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
 **Commerce Notification Template** (listed under Channels): Notification Templates are custom templates used to create notifications for specific Channel events.
 
 **Commerce Notification** (listed under Channels): Notifications are instances of a Notification Template created by an event trigger. They are displayed within the Channels application.
 
-Both the *Channel* and *Notification Template* resources have the following permissions:
+**Commerce Currencies** (listed under Currencies): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+Both the *Commerce Channel* and *Commerce Notification Template* resources have the following permissions:
 
 | Permission | Description |
 |---|---|
@@ -53,7 +57,7 @@ Both the *Channel* and *Notification Template* resources have the following perm
 | Update | Grants ability to update a resource |
 | View | Grants ability to view a resource |
 
-*Notification* resources have the following unique permissions:
+*Commerce Notification* resources have the following permissions:
 
 | Permission | Description |
 |---|---|
@@ -63,6 +67,21 @@ Both the *Channel* and *Notification Template* resources have the following perm
 | Resend Notification Queue Entry | Ability to resend a Notification |
 | View Notification Queue Entries | Ability to view Notifications within the queue |
 | View Notification Templates | Ability to view existing Notification Templates |
+
+*Commerce Channels* has the following permissions:
+
+| Permission | Description |
+|---|---|
+| Add Commerce Channel | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+| View Commerce Channels | <!--FINISH--> |
+
+*Commerce Currencies* has the following permissions:
+
+| Permission | Description |
+|---|---|
+| Manage Currencies | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
 
 ## Additional Information
 

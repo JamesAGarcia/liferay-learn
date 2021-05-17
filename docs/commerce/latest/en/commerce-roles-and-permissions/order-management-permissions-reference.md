@@ -48,12 +48,26 @@ Order Management applications reference the following resources:
 | Approve Open Orders | Ability to approve orders if workflow has been enabled |
 | Check Out Open Orders | Ability to complete the checkout process for new, incomplete orders |
 | Delete Orders | Ability to delete orders |
+| Manage All Accounts | <!--FINISH--> |
 | Manage Order Notes | Ability to access and modify non-restricted order notes |
+| Manage Order Prices | <!--FINISH--> |
 | Manage Order Restricted Notes | Ability to access and modify restricted notes for an order |
 | Manage Orders | Ability to change order details (e.g., mailing and billing addresses) |
 | Permissions | Ability to view and manage permissions for each Commerce order |
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders, regardless of status |
+
+<!--Manage All Accounts and Manage Order Prices are new to 7.4; previously listed under Control Panel > General Permissions-->
+
+**Commerce Shipments** (listed under Shipments): <!--FINISH-->
+
+| Permission | Description |
+| --- | --- |
+| Manage All Accounts |  |
+| Manage Shipments |  |
+| Permissions |  |
+
+<!-- Commerce Shipments new to 7.4; previously listed under Control Panel > General Permissions -->
 
 **Commerce Warehouse** (listed under Shipments, [Warehouses](./inventory-management-permissions-reference.md), and [Products](./product-management-permissions-reference.md)): Warehouses are entities for storing Product inventory. Each Warehouse is connected to Channels and represents a physical location, with an address and geolocation. See [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) for more information.
 
@@ -63,6 +77,15 @@ Order Management applications reference the following resources:
 | Permissions | Ability to view and modify permissions for any Warehouse |
 | Update | Ability to edit and modify any Warehouse |
 | View | Ability to view all Warehouses |
+
+**Commerce Subscription** (listed under Subscriptions): <!--FINISH-->
+
+| Permission | Description |
+| --- | --- |
+| Manage Subscriptions |  |
+| Permissions |  |
+
+<!-- Commerce Subscriptions new to 7.4; previously listed under Control Panel > General Permissions -->
 
 ## Additional Information
 

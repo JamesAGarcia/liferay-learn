@@ -47,6 +47,14 @@ Inventory Management applications reference the following resources:
 | Update | Ability to edit and modify any Warehouse |
 | View | Ability to view all Warehouses |
 
+**Commerce Inventories** (listed under Warehouses): <!-- FINISH -->
+
+| Permission | Description |
+|---|---|
+| Add Warehouse | <!-- FINISH --> |
+| Manage Inventory | <!-- FINISH --> |
+| Permissions | <!-- FINISH --> |
+
 ## Additional Information
 
 * [Introduction to Managing Inventory](../../managing-a-catalog/managing-inventory/introduction-to-managing-inventory.md)
