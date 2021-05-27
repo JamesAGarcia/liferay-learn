@@ -17,7 +17,9 @@
         * [Export API Packages](#export-api-packages)
     * [build.gradle](#buildgradle)
     * [Packages](#packages)
-        * [Implementation PackageNames](#implementation-package-names)
+        * [Implementation Package Names](#implementation-package-names)
+        * [Portlet Package Names](#portlet-package-names)
+        * [Fragment Collection Contributor Package Names](#fragment-collection-contributor-package-names)
     * [Classes](#classes)
         * [Class Names](#class-names)
         * [Component Annotations](#component-annotations)
@@ -245,15 +247,11 @@ dependencies {
 
 ## Packages
 
-Start package names with this pattern:
+Follow the Source Formatter rules for package names found in [Java Package Formatting](https://github.com/liferay/liferay-portal/blob/master/modules/util/source-formatter/documentation/package.markdown).
 
-```
-com.acme.[ID]
-```
+### Package Names for Extensions or Implementations
 
-### Implementation Package Names
-
-An implementation package should resemble the interface package but be *internal*. The table below shows the class packages and names for an interface and an implementation of that interface--the similarities are in bold.
+An extension or implementation package should resemble the base class or interface package but be *internal*. The table below shows the class package and class name for an interface and an implementation of that interface--the similarities are in bold.
 
 | Class Type | Fully Qualified Class Name |
 | :--------- | :------------------------- |
@@ -267,6 +265,15 @@ Portlets use this package name pattern:
 ```java
 package com.acme.xxxx.web.internal; 
 ````
+
+### Fragment Collection Contributor Package Names
+
+If your class implements `FragmentCollectionContributor` (directly or indirectly, by extending `BaseFragmentCollectionContributor`), append your class prefix (`XXXX`, `XXXXAble`, or similar) to your package name. Here are some examples, with the class prefixes and corresponding appended package parts in **bold**.
+
+| Class | Package |
+| :------------ | :------ |
+| **L3M9**FragmentCollectionContributor | com.acme.l3m9.internal.fragment.contributor.**l3m9** |
+| **CookieBanner**FragmentCollectionContributor | com.liferay.fragment.collection.contributor.**cookie.banner** |
 
 ## Classes
 

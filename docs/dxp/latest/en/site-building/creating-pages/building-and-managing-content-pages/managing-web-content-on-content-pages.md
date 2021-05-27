@@ -2,7 +2,7 @@
 
 > Available: Liferay DXP 7.3+
 
-From the [Contents panel](./editing-content-pages.md#contents) on a Content Page, you can manage and edit web content that's used on the page ([mapped](./building-content-pages.md#mapping-content)) or displayed in a widget. To Manage the web content that's used on a Content Page, follow these steps:
+From the [Contents panel](./content-page-editor-user-interface.md#contents) on a Content Page, you can manage and edit web content that's used on the page ([mapped](./configuring-elements-on-content-pages.md#mapping-content)) or displayed in a widget. To Manage the web content that's used on a Content Page, follow these steps:
 
 1. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) in the sidebar to open the Contents panel. Content used on the page is listed here, along with how many pages it's used on. Hover over the content in the list to highlight the widget(s), mapped content fields, and Fragments that display the content on the page.
 
@@ -21,3 +21,9 @@ From the [Contents panel](./editing-content-pages.md#contents) on a Content Page
 ```note::
   To edit inline content, you must have the "Edit Inline Content" permission assigned to your Role. However, if you don't have permission to edit the page, you can still edit content (web content, blog, etc.) that you have permission to edit that's displayed through one of these methods: mapped content, web content display, or an Asset Publisher (with manual selection).
 ```
+
+## Additional Information
+
+- [Content Pages Overview](./content-pages-overview.md)
+- [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
+- [Configuring Elements on Content Pages](./configuring-elements-on-content-pages.md)

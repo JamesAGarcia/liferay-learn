@@ -32,7 +32,7 @@ The Enriched Profiles panel presents the total number of individuals that have b
 
 ![The Enriched Profiles panel presents the total number of individuals who have been enriched.](./individuals-dashboard/images/02.png)
 
-An individual is considered enriched any time an attribute is associated with that individual; for example, when you [sync contact data from DXP](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property), or if additional contact data is added (e.g. [adding Salesforce contact data](../../connecting-data-sources/adding-a-salesforce-data-source.md)).
+An individual is considered enriched any time an attribute is associated with that individual; for example, when you [sync contact data from DXP](../../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property), or if additional contact data is added (e.g. [adding Salesforce contact data](../../connecting-data-sources/adding-a-salesforce-data-source.md) or [adding CSV contact data](../../connecting-data-sources/adding-a-csv-data-source.md)).
 
 ## Active Individuals
 
@@ -51,6 +51,8 @@ The Interests panel presents the top 5 most popular topics.
 Theses topics are derived from the title, description, and keyword tags of your pages' HTML.
 
 To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page. 
+
+To learn more about interests see [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.html#understanding-interests).
 
 ## Breakdown
 

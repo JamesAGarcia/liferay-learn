@@ -6,22 +6,6 @@
 		data: {
 			cards: [
 				{
-					sectionName: 'Background Tasks',
-					sectionURL: 'core-frameworks/background-tasks.html',
-				},
-				{
-					sectionName: 'Locks',
-					sectionURL: 'core-frameworks/locks.html',
-				},
-				{
-					sectionName: 'Message Bus',
-					sectionURL: 'core-frameworks/message-bus.html',
-				},
-				{
-					sectionName: 'Scheduler',
-					sectionURL: 'core-frameworks/scheduler.html',
-				},
-				{
 					sectionName: 'Dispatch Framework',
 					sectionURL: 'core-frameworks/dispatch_framework.html',
 					showAll: false,
@@ -41,8 +25,15 @@
 					]
 				},
 				{
-					sectionName: 'Template Engine',
-					sectionURL: 'core-frameworks/template-engine.html',
+					sectionName: 'Message Bus',
+					sectionURL: 'core-frameworks/message_bus.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Listening for Messages',
+							url: 'core-frameworks/message-bus/listening-for-messages.html'
+						},
+					]
 				},
 				{
 					sectionName: 'Reference',

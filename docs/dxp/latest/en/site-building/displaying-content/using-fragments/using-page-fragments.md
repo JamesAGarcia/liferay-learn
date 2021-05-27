@@ -1,6 +1,6 @@
 # Using Page Fragments
 
-Page Fragments are chunks of HTML, CSS, and JavaScript that when combined together, build [Content Pages](../../creating-pages/building-and-managing-content-pages/content-pages-overview.md). Each Page Fragment adds functionality to the page. Several default Page Fragments ship with Liferay DXP, and you can use them to build basic page elements such as carousels and cards.
+Page *Fragments* are extensible, reusable, drag-and-drop elements that are the primary building blocks for [Content Pages](../../creating-pages/building-and-managing-content-pages/content-pages-overview.md). Each Fragment is built using CSS, HTML, and JavaScript. Together, Fragments define your page's design and provide functionality along with widgets. You can [create your own Fragment](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) or use a number of Fragments that are available out-of-the-box.
 
 ![You can quickly build a page with Fragments.](./using-page-fragments/images/01.png)
 
@@ -10,6 +10,12 @@ You can [embed Liferay widgets](../../developer-guide/reference/fragments/fragme
 
 ![You can provide your own content in Fragments.](./using-page-fragments/images/02.png)
 
-Page Fragments are organized into Collections. Collections group related Fragments together so you can manage them easily. Fragments are accessible through these Collections when [building a Content Page](../../creating-pages/building-and-managing-content-pages/building-content-pages.md). You can include resources in Page Fragment Collections and reference them from your Page Fragment's code without worrying about their availability. This is helpful when moving Page Fragments. See [Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
+Page Fragments are organized into Collections. Collections group related Fragments together so you can manage them easily. Fragments are accessible through these Collections when [building a Content Page](../../creating-pages/building-and-managing-content-pages/adding-elements-to-content-pages.md). You can include resources in Page Fragment Collections and reference them from your Page Fragment's code without worrying about their availability. This is helpful when moving Page Fragments. See [Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
 
 ![Collections provide an easy way to organize, manage, and share Fragments.](./using-page-fragments/images/03.png)
+
+## Additional Information
+
+- [Content Pages Overview](../../creating-pages/building-and-managing-content-pages/content-pages-overview.md)
+- [Page Fragments User Interface Reference](../../creating-pages/building-and-managing-content-pages/page-fragments-user-interface-reference.md)
+- [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)

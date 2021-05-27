@@ -1,20 +1,40 @@
 # Overriding OSGi Services
 
-Liferay's OSGi container is a dynamic environment in which services can be added, removed, or overridden as needed. This framework registers Liferay components with the OSGi service registry, each with their own availability, ranking, and attributes. Together, these details determine whether components referring to a service bind to it or not.
+Liferay's OSGi container is a dynamic environment in which services can be added, removed, or overridden as needed. This framework registers Liferay components with the OSGi service registry, each with their own availability, ranking, and attributes. Together, these details determine how components bind to the services they reference.
 
-To override an OSGi service, follow these steps:
+To override an OSGi service, you'll follow these steps:
 
-1. Identify the service you want to override and gather its essential service and reference details.
+1. Identify the service you want to override, as well as any components that reference it.
 
-1. Use these details to create a custom service that fulfills the existing service's requirements.
+1. Gather the following service details.
 
-1. Reconfigure existing Liferay components to use your custom service (if needed).
+   * **Service Type**: the interface implemented by the service you're overriding
 
-The following tutorial uses [sample modules](./liferay-s1j6.zip) to demonstrate how to override an OSGi service. These modules include an api for defining a new OSGi service type, an initial implementation of that type, and a generic portlet that uses the initial implementation. Also included are a second implementation for overriding the initial one and a config file for reconfiguring the portlet to use the new implementation.
+   * **Service's Class Name**: the existing service's full name
+
+1. If applicable, gather the following details for components that reference the service.
+
+   * **Component Name**: the full name of a component that references the service you're overriding
+
+   * **Reference Name**: the field name that references to the target service
+
+   * **Reference Policy**: whether the reference is `static` or `dynamic`
+
+   * **Reference Policy-Option**: whether the `policy-option` is `greedy` or `reluctant`
+
+   * **Cardinality**: the number of service instances to which the reference can and must bind
+
+   Together, a service's [Reference Policy](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html), [Reference Policy Option](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html), and [Cardinality](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) determine a component's conditions for adopting new services.
+
+1. Create a new service that uses the same interface implemented by the service you're overriding.
+
+1. Give your service a higher ranking than the service it's overriding.
+
+1. (Optional) If necessary, reference and invoke the service you're overriding in your service.
+
+The [sample modules](./liferay-s1j6.zip) demonstrate how to override an OSGi service. These modules include an API for defining a new OSGi service type, an initial implementation of that type, and a generic portlet that references the initial implementation. Also included are alternate implementations of the API to demonstrate how to override the initial implementation.
 
 ## Deploy Sample Modules for Overriding
-
-Follow these steps to download, build, and deploy `s1j6-api`, `s1j6-able-impl`, and `s1j6-web`:
 
 1. Start a new [Liferay Docker container](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/docker-container-basics.md).
 
@@ -43,9 +63,9 @@ Follow these steps to download, build, and deploy `s1j6-api`, `s1j6-able-impl`, 
    Log messages indicate when Liferay begins processing and successfully starts each module. These logs also provide each service's bundle id.
 
    ```
-   STARTED com.acme.s1j6.api_1.0.0 [1357]
-   STARTED com.acme.s1j6.able.impl_1.0.0 [1358]
-   STARTED com.acme.s1j6.web_1.0.0 [1359]
+   STARTED com.acme.s1j6.api_1.0.0 [1356]
+   STARTED com.acme.s1j6.able.impl_1.0.0 [1357]
+   STARTED com.acme.s1j6.web_1.0.0 [1358]
    ```
 
 1. Confirm the modules have successfully deployed via the Gogo Shell.
@@ -57,35 +77,49 @@ Follow these steps to download, build, and deploy `s1j6-api`, `s1j6-able-impl`, 
    If successful, the output reads as follows:
 
    ```
-   1357|Active     |   15|Acme S1J6 API (1.0.0)|1.0.0
-   1358|Active     |   15|Acme S1J6 Able Implementation (1.0.0)|1.0.0
-   1359|Active     |   15|Acme S1J6 Web (1.0.0)|1.0.0
+   1356|Active     |   15|Acme S1J6 API (1.0.0)|1.0.0
+   1357|Active     |   15|Acme S1J6 Able Implementation (1.0.0)|1.0.0
+   1358|Active     |   15|Acme S1J6 Web (1.0.0)|1.0.0
    true
    ```
 
-The provided `api` defines an OSGi service type that is then implemented by the `able.impl` module, which in turn is used by the provided `portlet`. Now that everything's deployed, for the purposes of learning how to do this, you can go through the process of discovering the details of a service you want to override. 
+The provided `api` defines an OSGi service type that is implemented by the `able.impl` module, which in turn is used by the provided `portlet`. Now that everything's deployed, you can experiment with how overrides work.
 
 ## Gathering OSGi Service and Reference Details
 
-Once you've identified the service you want to override, use Gogo Shell commands to gather the following details:
+Once you've identified the service you want to override, use the `scr:info` Gogo Shell command to gather its essential service and reference details. In this example, we want to override the `able.impl` service.
 
-* **Service Type**: Your custom OSGi service must implement the service type as the component you want to override.
+To gather its service details, run the following command:
 
-* **Service's Class Name**: You can invoke the existing service with your custom service using its full class name.
+```shell
+scr:info com.acme.s1j6.able.internal.S1J6AbleImpl
+```
 
-* **Reference Configuration Details**: A service's reference configuration details determine its conditions for adopting another service and whether it needs reconfiguration to use new services or not. Collect the following details for service reconfiguration, if necessary:
+```
+Component Description: com.acme.s1j6.able.internal.S1J6AbleImpl
+===============================================================
+Class:         com.acme.s1j6.able.internal.S1J6AbleImpl
+Bundle:        1357 (com.acme.s1j6.able.impl:1.0.0)
+[...]
 
-  * **Component Name**: the full name of the component referencing the service you're overriding
+Component Configuration Id: 8337
+--------------------------------
+State:        ACTIVE
+Service:      17776 [com.acme.s1j6.S1J6]
+    Used by bundle 1358 (com.acme.s1j6.web:1.0.0)
+Config Props: (2 entries)
+  component.id = 8337
+  component.name = com.acme.s1j6.able.internal.S1J6AbleImpl
+References:   (total 0)
+```
 
-  * **Reference Name**: the `Reference` value
+This abbreviated output lists the following service details for `S1J6AbleImpl`:
 
-  * **Reference Policy**: whether the reference is `static` or `dynamic`
+* **Service Type**: `S1J6AbleImpl` implements the `S1J6` interface,`com.acme.s1j6.S1J6`.
 
-  * **Reference Policy Option**: whether the reference is `greedy` or `reluctant`
+* **Service's Class Name**: The service's full name is `com.acme.s1j6.able.internal.S1J6AbleImpl`.
 
-  * **Cardinality**: the number of service instances to which the reference can and must bind
-
-Run the `scr:info` Gogo Shell command for the sample `portlet` to gather details for overriding `able.impl`.
+It also indicates that the service is used by a component within the `com.acme.s1j6.web:1.0.0` bundle. To view the component's reference configuration details, run the `scr:info` command with the component's full name:
 
 ```shell
 scr:info com.acme.s1j6.web.internal.portlet.S1J6Portlet
@@ -95,149 +129,135 @@ scr:info com.acme.s1j6.web.internal.portlet.S1J6Portlet
 Component Description: com.acme.s1j6.web.internal.portlet.S1J6Portlet
 =====================================================================
 Class:         com.acme.s1j6.web.internal.portlet.S1J6Portlet
-...
+Bundle:        1358 (com.acme.s1j6.web:1.0.0)
+[...]
 
-Component Configuration Id: 8131
+Component Configuration Id: 8338
 --------------------------------
-...
+[...]
 References:   (total 1)
   - _s1J6: com.acme.s1j6.S1J6 SATISFIED 1..1 static
     target=(*) scope=bundle (1 binding):
-    * Bound to [4516] from bundle 1358 (com.acme.s1j6.able.impl:1.0.0)
+    * Bound to [17776] from bundle 1357 (com.acme.s1j6.able.impl:1.0.0)
 ```
 
-In the above output, `S1J6Portlet` has an `_s1J6` field that's bound to a component of the `S1J6` service type in the `com.acme.s1j6.able.impl` bundle because of its `@Reference`. Searching this bundle's id in the Gogo Shell by running `bundle 1358` reveals the full service class name of the component used by the portlet: `com.acme.s1j6.able.internal.S1J6AbleImpl`.
+This abbreviated output lists the following reference configuration details:
 
-Finally, the full reference configuration details for `S1J6Portlet` are as follows:
+**Reference Name**: The name of the field that references the `S1J6AbleImpl` service is `_s1J6`.
 
-* **Component Name**: `com.acme.s1j6.web.internal.portlet.S1J6Portlet`
+**Reference Policy**: The component's reference policy is `static` (default).
 
-* **Reference Name**: `_s1J6`
+**Reference Policy-Option**: Since no `policy-option` is explicitly defined, it uses the default configuration, `reluctant`.
 
-* **Reference Policy**: `static` (default)
+**Cardinality**: Its Cardinality is both mandatory and unary (i.e., `1..1`).
 
-* **Reference Policy Option**: `reluctant` (default)
-
-* **Cardinality**: mandatory and unary (i.e., `1..1`)
-
-Together, these details indicate the portlet requires reconfiguration to use a new `impl` in place of `S1J6AbleImpl`.
-
-After gathering the requisite service and reference details, you can use them to override an existing service.
+While some reference configurations automatically bind to a new or higher ranking service, some require a server restart. Since `S1J6Portlet`'s reference configuration is static, reluctant, mandatory, and unary, a server restart is required before it binds to a new, higher ranking service. See [OSGi documentation](http://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.component.html#service.component-policy.option.action) for more information about how different reference configurations affect a component's behavior when new or higher ranking services become available.
 
 ## Creating an OSGi Service with the Gathered Details
 
-1. Implement the same service type as the target OSGi service.
+Once you've gathered the requisite service and reference details, you can use them to create a custom service for overriding and invoking the target service.
 
-2. Add the `@Component` annotation and `service` attribute to make your class a Declarative Service (DS) component, which registers your class as an OSGi service available in the OSGi service registry.
+1. Declare the service a component within the OSGi framework using the `@Component` annotation.
 
-3. Include the `service.ranking:Integer` component `property` to rank your service higher than existing services.
+1. Implement the same interface as the target OSGi service and identify its `service` type within the `@Component` annotation.
 
-4. Override the service type's methods.
+1. Override the interface's methods.
 
-5. (Optional) Reference the existing service's `component.name` to invoke it.
+1. Include the `service.ranking:Integer` property within the `@Component` annotation. Ensure its ranking is higher than the existing service.
 
-When ready, deploy the custom service to your Liferay instance to register it with Liferay's OSGi runtime framework.
+1. (Optional) Reference the existing service's `component.name` to invoke it.
 
 The sample `S1J6BakerImpl` module is provided to override `S1J6AbleImpl`.
 
-```java
-@Component(property = "service.ranking:Integer=100", service = S1J6.class)
-public class S1J6BakerImpl implements S1J6 {
-
-    @Override
-    public String doSomething() {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append(
-            "S1J6BakerImpl, which delegates to " +
-                _defaultService.doSomething());
-
-        return sb.toString();
-    }
-
-    @Reference(
-        target = "(component.name=com.acme.s1j6.able.internal.S1J6AbleImpl)",
-        unbind = "-"
-    )
-    private S1J6 _defaultService;
-
-} 
+```literalinclude:: overriding-osgi-services/resources/liferay-s1j6.zip/s1j6-baker-impl/src/main/java/com/acme/s1j6/baker/internal/S1J6BakerImpl.java
+   :language: java
+   :lines: 8-22
 ```
 
-Here, `S1J6BakerImpl` implements the same service type as `S1J6AbleImpl` (i.e., `S1J6`) and includes the necessary `@Component` annotation, `service` attribute, and `service.ranking` property. It also references the existing service (i.e., `component.name=com.acme.s1j6.able.internal.S1J6AbleImpl`) and delegates to it as part of overriding the interface's method.
+Here, `S1J6BakerImpl` implements the same service type as `S1J6AbleImpl` (i.e., `com.acme.s1j6.S1J6`) and includes the necessary `@Component` annotation, `service` attribute, and `service.ranking` property. It also references the existing service (i.e., `component.name=com.acme.s1j6.able.internal.S1J6AbleImpl`) and delegates to it as part of overriding the interface's method. The sample modules also include two other S1J6 implementations for overriding `S1J6AbleImpl` and then `S1J6BakerImpl`.
 
-However, getting components to adopt your custom service immediately can require reconfiguring their references.
+In total, the included implementations have the following rankings:
 
-## Reconfiguring Other Components to Use Your New Service
+* `S1J6AbleImpl`: No ranking (defaults to 0)
+* `S1J6BakerImpl`: 100
+* `S1J6CharlieImpl`: 101
+* `S1J6DogImpl`: 101
 
-Together, a service's [Reference Policy](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html) (i.e., `static` or `dynamic`), [Reference Policy Option](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html) (i.e., `reluctant` or `greedy`) and [Cardinality](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.component.html#service.component-reference.cardinality) (i.e., unary or multiple, and optional or mandatory) determine a component's conditions for adopting new services. See the above links for detailed explanations of each category.
-
-In cases where the reference's policy option is `greedy`, the reference does not need to be reconfigured to adopt your new service, provided its ranking is higher than the service you want to override.
-
-However, if the policy is `static` and its policy option is `reluctant`, the referencing service requires reconfiguration, unless you want to restart your server.
-
-Follow these steps:
-
-1. Create a system configuration file named after the referencing component. Follow the name convention `[component].config`. <!--Link to Understanding System Configuration Files once ported-->
-
-1. Add configuration information to the file using the following format:
-
-   ```
-   [reference].target=[filter]\=[target]
-   ```
-
-   Replace `[reference]` with the reference's name (e.g., _`s1J6`).
-
-   Replace `[filter]` with the desired filter (e.g., `component.name`).
-
-   Replace `[target]` with the target component you want your service to use (e.g., `com.acme.s1j6.baker.internal.S1J6BakerImpl`).
-
-1. Optionally, append a `cardinality.minimum` entry to the reference name to determine the number of services the reference can use. Ensure it follows this format:
-
-   ```
-   [reference].cardinality.minimum=[int]
-   ```
-
-Once your configuration file is prepared, deploy it to your Liferay instance to ensure your new service is used in place of the old.
-
-The root folder of the sample project includes a configuration file for reconfiguring the `portlet` service to use `baker.impl` in place of `able.impl`. The file's name is `com.acme.s1j6.web.internal.portlet.S1J6Portlet.config`, and it contains the following configuration:
-
-```
-_s1J6.target="(component.name\=com.acme.s1j6.baker.internal.S1J6BakerImpl)" 
-```
+When deployed, the highest ranking service takes priority and is bound to `S1J6Portlet` after a Liferay server restart. If more than one service has the same ranking, the first service registered takes priority. Lower ranking services are ignored.
 
 ## Deploy the Overriding Module and Config File
 
-Follow these steps to deploy the second `impl` and system `config` file to override :
+Follow these steps to deploy `S1J6BakerImpl`, `S1J6CharlieImpl`, and `S1J6DogImpl`:
 
 1. Open the `s1j6-baker-impl` folder in your console.
 
-1. Run the following `gradlew` command to build and deploy a JAR file for the module to your most latest Docker container:
+1. Run the following `gradlew` command to build and deploy a JAR file for the module to the Docker container:
 
    ```bash
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Deploy the system configuration file to ensure the deployed portlet uses the `baker.impl` component to override and delegate to `able.impl`.
+   Log messages indicate when Liferay begins processing and successfully starts the module along with its bundle ID.
 
-   ```bash
-   docker cp com.acme.s1j6.web.internal.portlet.S1J6Portlet.config $(docker ps -lq):/opt/liferay/osgi/configs
+   ```
+   STARTED com.acme.s1j6.baker_1.0.0 [1359]
    ```
 
-1. Confirm both `baker.impl` and the `config` file have successfully deployed to your instance via the Gogo Shell.
+1. Since `S1J6Portlet`'s reference configuration is static, reluctant, mandatory, and unary, restart the Liferay server to ensure `S1J6Portlet` binds to `S1J6BakerImpl`.
+
+1. Confirm `S1J6BakerImpl` has successfully deployed and bound to your instance via the Gogo Shell.
 
    ```shell
    scr:info com.acme.s1j6.web.internal.portlet.S1J6Portlet
    ```
 
-   If successful, the output should indicate `S1J6Portlet` is now bound to a component in the `com.acme.s1j6.baker.impl` bundle.
+   If successful, `S1J6Portlet` is bound to `S1J6BakerImpl`, since it outranks `S1J6AbleImpl`.
 
    ```
    References:   (total 1)
-   - _s1J6: com.acme.s1j6.S1J6 SATISFIED 1..1 static
-      target=(*) scope=bundle (1 binding):
-      * Bound to [4518] from bundle 1360 (com.acme.s1j6.baker.impl:1.0.0)
+     - _s1J6: com.acme.s1j6.S1J6 SATISFIED 1..1 static
+       target=(*) scope=bundle (1 binding):
+       * Bound to [3248] from bundle 1359 (com.acme.s1j6.baker.impl:1.0.0)
    ```
+
+1. Deploy `S1J6CharlieImpl` and `S1J6DogImpl` at the same time to the Docker container.
+
+   ```
+   STARTED com.acme.s1j6.charlie_1.0.0 [1360]
+   STARTED com.acme.s1j6.dog_1.0.0 [1361]
+   ```
+
+1. Restart the Liferay server.
+
+1. Confirm both `S1J6CharlieImpl` and `S1J6DogImpl` have successfully deployed to your instance via the Gogo Shell.
+
+   ```shell
+   lb -s | grep -i "s1j6"
+   ```
+
+   ```
+   1356|Active     |   15|com.acme.s1j6.api (1.0.0)|1.0.0
+   1357|Active     |   15|com.acme.s1j6.able.impl (1.0.0)|1.0.0
+   1358|Active     |   15|com.acme.s1j6.web (1.0.0)|1.0.0
+   1359|Active     |   15|com.acme.s1j6.baker.impl (1.0.0)|1.0.0
+   1360|Active     |   15|com.acme.s1j6.charlie.impl (1.0.0)|1.0.0
+   1361|Active     |   15|com.acme.s1j6.dog.impl (1.0.0)|1.0.0
+   ```
+
+1. Verify which service is bound to `S1J6Portlet`.
+
+   ```shell
+   scr:info com.acme.s1j6.web.internal.portlet.S1J6Portlet
+   ```
+
+   ```
+   References:   (total 1)
+     - _s1J6: com.acme.s1j6.S1J6 SATISFIED 1..1 static
+       target=(*) scope=bundle (1 binding):
+       * Bound to [3249] from bundle 1360 (com.acme.s1j6.charlie.impl:1.0.0)
+   ```
+
+   Since both `S1J6CharlieImpl` and `S1J6DogImpl` have the same ranking, the service that's registered first takes priority and is bound to `S1J6Portlet`.
 
 ## Additional Information
 

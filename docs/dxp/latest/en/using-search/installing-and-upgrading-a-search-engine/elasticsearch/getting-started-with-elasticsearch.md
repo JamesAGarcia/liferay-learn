@@ -1,7 +1,6 @@
 # Getting Started with Elasticsearch
 
-> Latest Supported Elasticsearch Version: 7.9 \
-> Available: Liferay DXP/CE 7.3 and  Liferay DXP 7.2 SP1+
+> **Compatibility:** See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for details on the compatible Elasticsearch versions, available Liferay connectors, and required Liferay patch levels.
 
 A typical Liferay system's search infrastructure comprises
 
@@ -36,7 +35,7 @@ The [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/artic
 Elasticsearch can be installed using an Elasticsearch archive or Docker image. It can be configured on a cluster of servers too. Here are some different Elasticsearch hosting examples:
 
 * [Installing Elasticsearch from an archive](./installing-elasticsearch.md)
-* [Installing Elasticsearch using Docker](./exercise-installing-elasticsearch.md)
+* [Installing Elasticsearch using Docker](./exercise-run-liferay-and-elasticsearch-using-docker.md)
 
 Also the [Liferay clustering example](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md) demonstrates using a Liferay cluster with Elasticsearch.
 
@@ -50,4 +49,4 @@ In production, you should secure Liferay's communication with Elasticsearch. [Se
 
 ## What's Next 
 
-[Installing Elasticsearch](./installing-elasticsearch.md) explains each manual installation and configuration step. These steps are helpful to understand, even if you're running on Docker. If you'd rather start with running Elasticsearch and Liferay on Docker, visit [Exercise Installing Elasticsearch](./exercise-installing-elasticsearch.md).
+[Installing Elasticsearch](./installing-elasticsearch.md) explains each manual installation and configuration step. These steps are helpful to understand, even if you're running on Docker. If you'd rather start with running Elasticsearch and Liferay on Docker, visit [Exercise: Run Liferay and Elasticsearch Using Docker](./exercise-run-liferay-and-elasticsearch-using-docker.md).

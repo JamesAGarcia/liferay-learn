@@ -23,6 +23,7 @@ Experience Personalization
 --------------------------
 
 -  :doc:`/site-building/personalizing-site-experience/experience-personalization/content-page-personalization`
+-  :doc:`/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences`
 -  :doc:`/site-building/personalizing-site-experience/experience-personalization/personalizing-collections`
 -  :doc:`/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations`
 -  :doc:`/site-building/personalizing-site-experience/experience-personalization/configuring-content-recommendations`

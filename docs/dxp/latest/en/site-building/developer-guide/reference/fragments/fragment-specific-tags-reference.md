@@ -113,7 +113,7 @@ Most images can be handled like this, but to add an editable background image yo
 </div>
 ```
 
-Content mapping connects editable fields in your Fragment with fields from an Asset type like Web Content or Blogs. For example, you can map an image field to display a preview image for a Web Content Article. For more information on mapping fields, see [Building Content Pages](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md#mapping-content).
+Content mapping connects editable fields in your Fragment with fields from an Asset type like Web Content or Blogs. For example, you can map an image field to display a preview image for a Web Content Article. For more information on mapping fields, see [Configuring Elements on Content Pages](../../../creating-pages/building-and-managing-content-pages/configuring-elements-on-content-pages.md#mapping-content).
 
 ## Creating Editable Links
 
@@ -142,7 +142,7 @@ You can edit the type of link, target URL, and link mapping from the Content Pag
 
 ![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-reference/images/03.png)
 
-For more information on editable links, see [Editable Links](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md#editing-a-hyperlink).
+For more information on editable links, see [Editable Links](../../../creating-pages/building-and-managing-content-pages/configuring-elements-on-content-pages.md#editing-hyperlinks).
 
 ## Creating Editable HTML
 
@@ -161,8 +161,6 @@ For Liferay Portal CE 7.3 GA2 and below, use this syntax:
   <h1>Placeholder</h1>
 </lfr-editable>
 ```
-
-For more information on editable HTML, see [Editable HTML](../../../creating-pages/building-and-managing-content-pages/building-content-pages.md#editing-an-html-element).
 
 ## Including Widgets Within A Fragment
 

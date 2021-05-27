@@ -72,7 +72,7 @@ First, deploy an example to see how Fragment configuration options work:
 
 1. Go to the Home Page and click the (![Edit icon](../../../images/icon-edit-pencil.png)) icon to edit the Content Page.
 
-1. Expand the *Configurable Marketing Collection* heading in the [Fragments panel](../../creating-pages/building-and-managing-content-pages/editing-content-pages.md#fragments) and drag the *Configurable Marketing Card* Fragment onto the page.
+1. Expand the *Configurable Marketing Collection* heading in the [Fragments panel](../../creating-pages/building-and-managing-content-pages/content-page-editor-user-interface-reference.md#fragments-and-widgets) and drag the *Configurable Marketing Card* Fragment onto the page.
 
 1. Select the Configurable Marketing Card. Open the Fragment Configuration Menu by clicking the (![Gear icon](../../../images/icon-control-menu-gear.png)) icon in the context menu that appears. From here, you can choose a configuration option for the text style to change the text from dark to light.
 

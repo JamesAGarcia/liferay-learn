@@ -1,0 +1,3 @@
+Bundle-Name: Acme S1J6 Dog Implementation
+Bundle-SymbolicName: com.acme.s1j6.dog.impl
+Bundle-Version: 1.0.0

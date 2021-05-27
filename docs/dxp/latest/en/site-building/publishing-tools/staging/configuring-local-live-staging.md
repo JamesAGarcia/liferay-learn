@@ -13,7 +13,7 @@ Follow these steps to set up Local Live Staging for your DXP instance:
 
 1. Go to *Product Menu* &rarr; *Publishing* &rarr; *Staging*.
 
-   ![Go to Staging in the Product menu.](./configuring-local-live-staging/images/01.jpg)
+   ![Go to Staging in the Product menu.](./configuring-local-live-staging/images/01.png)
 
 1. Select *Local Live*, which reveals additional fields for *Page Versioning* and *Staged Content*.
 

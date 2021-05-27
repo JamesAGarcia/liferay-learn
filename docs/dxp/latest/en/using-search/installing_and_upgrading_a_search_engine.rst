@@ -17,10 +17,10 @@ Elasticsearch
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch`
--  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/exercise-installing-elasticsearch`
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/troubleshooting-elasticsearch-installation`
--  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/exercise-installing-elasticsearch`
+-  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker`
 -  :doc:`/using-search/installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch`
 
 Solr

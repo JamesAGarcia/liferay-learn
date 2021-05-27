@@ -61,7 +61,7 @@ Users must enable the Punch Out Access Token for the buyer's procurement system 
 1. Click _Auto Login Punch Out Access Token_ in the left menu.
 1. Check the _Enabled_ checkbox.
 
-    ![Enable the Auto Login Access Token.](./liferay-commerce-connector-to-punchout2go/images/03.jpg)
+    ![Enable the Auto Login Access Token.](./liferay-commerce-connector-to-punchout2go/images/03.png)
 
 1. Click the _Update_ button.
 
@@ -78,7 +78,7 @@ Once the Punch Out Access Token has been enabled, users can configure the Punch 
     * **Access Token Duration**:
     * **Access Token Size**:
 
-    ![Enable the Auto Login Access Token.](./liferay-commerce-connector-to-punchout2go/images/04.jpg)
+    ![Enable the Auto Login Access Token.](./liferay-commerce-connector-to-punchout2go/images/04.png)
 
 1. Click _Save_ when finished.
 
@@ -112,7 +112,7 @@ The Role has been created with the required minimum permissions. Assign this Rol
 
 The checkout process with the Connector to PunchOut2Go active occurs in the same way. When users click _Submit_ they are redirected to the appropriate procurement system.
 
-![Punch out redirects once an order has been submitted.](./liferay-commerce-connector-to-punchout2go/images/06.jpg)
+![Punch out redirects once an order has been submitted.](./liferay-commerce-connector-to-punchout2go/images/06.png)
 
 ## Additional Information
 

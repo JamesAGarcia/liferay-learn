@@ -19,9 +19,9 @@ You can enable Page versioning for your Private and Public Pages during initial 
 
 When you enable *Page versioning* for a Page set, you can create and manage two types of variations in each Widget Page's Staging bar:
 
-* **Site Pages Variation**: You can use these variations of your Site's Page sets to modify multiple Pages while keeping them together as a set. You can create Site Page Variations on Widget Pages and Content Pages.
+- **Site Pages Variation**: You can use these variations of your Site's Page sets to modify multiple Pages while keeping them together as a set on Widget Pages and Content Pages.
 
-* **Page Variations**: Single Page variations that exist within Page set variations. You can create Page Variations on Widgets Pages only. To create different versions of a Content Page, use [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md).
+- **Page Variations**: Single Page variations that exist within Page set variations. You can create Page Variations on Widgets Pages only. To create different versions of a Content Page, use [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md).
 
    ```tip::
       Page variations in Content Pages use `Experiences <../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md>`_ and do not require the Staging tool. 

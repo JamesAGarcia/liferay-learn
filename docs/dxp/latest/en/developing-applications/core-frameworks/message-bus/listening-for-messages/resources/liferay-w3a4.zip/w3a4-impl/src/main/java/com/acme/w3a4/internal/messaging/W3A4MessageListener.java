@@ -19,9 +19,7 @@ public class W3A4MessageListener implements MessageListener {
 		if (_log.isInfoEnabled()) {
 			Object payload = message.getPayload();
 
-			_log.info(
-				"Received message payload " + payload.toString() +
-					" at destination " + message.getDestinationName());
+			_log.info("Received message payload " + payload.toString());
 		}
 	}
 

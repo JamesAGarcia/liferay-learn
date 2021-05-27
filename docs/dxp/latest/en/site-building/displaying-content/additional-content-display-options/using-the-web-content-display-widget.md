@@ -6,7 +6,7 @@ Content Article is displayed, content updates appear immediately, unless you con
 ## Adding Web Content Display to a Page
 
 1. Under the Site Menu, go to *Site Builder* &rarr; *Pages*.
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) button next to the page you want to edit and select *Edit* (alternatively, [create a new Content Page](../../../site-building/creating-pages/building-and-managing-content-pages/building-content-pages.md).)
+1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) button next to the page you want to edit and select *Edit* (alternatively, [create a new Content Page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md).)
 1. From the Content Page sidebar, select the *Fragments and Widgets* button.
 1. Select the *Fragments* tab and drag-and-drop the *Web Content Display* widget onto the page.
 
@@ -91,6 +91,6 @@ If you [enable the OpenOffice or LibreOffice integration](../../../content-autho
 ## Related Information
 
 - [Adding a Basic Web Content Article](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
-- [Building Content Pages](../../../site-building/creating-pages/building-and-managing-content-pages/building-content-pages.md)
+- [Content Pages Overview](../../../site-building/creating-pages/building-and-managing-content-pages/content-pages-overview.md)
 - [Displaying Content on Display Pages Templates](../using-display-page-templates/displaying-content-with-display-page-templates.md)
 - [Displaying Assets](../using-the-asset-publisher-widget/displaying-assets-intro.md)

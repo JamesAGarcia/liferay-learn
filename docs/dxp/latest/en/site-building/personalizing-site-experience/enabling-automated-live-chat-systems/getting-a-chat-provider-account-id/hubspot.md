@@ -1,8 +1,8 @@
 # Hubspot
 
-[Hubspot](https://www.hubspot.com/) is a CRM platform that includes Live Chat functionality. Enabling integration with Hubspot requires two tokens: the Chat Provider Token and the Hubspot API Token.
+[Hubspot](https://www.hubspot.com/) is a CRM platform that includes Live Chat functionality. Enabling integration with Hubspot requires a combination of two values that can be retrieved from your Hubspot account: your Hubspot User Account ID and the Hubspot API Token.
 
-## Locating the Chat Provider Token
+## Locating Your Hubspot User Account ID
 
 1. Log in to your [Hubspot Account](https://app.hubspot.com/login).
 
@@ -13,10 +13,6 @@
     ![Id token](./hubspot/images/01.png)
 
 ## Getting the Hubspot API Token
-
-Coming soon!
-
-<!-- @Fabio: Commented out until we know what a user is supposed to do with this API token.
 
 While logged in to your Hubspot account:
 
@@ -30,4 +26,8 @@ While logged in to your Hubspot account:
 
 1. Click *Show* to reveal your API token key.
 
-    ![Show Api Key](./hubspot/images/04.png) -->
+    ![Show Api Key](./hubspot/images/04.png)
+
+## Conclusion
+
+Once you have your User Account ID and your API token, combine them to use as your Chat Provider Account ID when [enabling live chat](../enabling-automated-live-chat-systems.md) with your Liferay instance. The Chat Provider Account ID follows this format: `[Hubspot Account ID]/[Hubspot API Token]`.

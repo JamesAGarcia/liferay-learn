@@ -22,7 +22,7 @@ To access your Personal Site pages, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu.
 
-1. Manage the pages as you would any other [Widget Page](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
+1. Manage the pages as you would any other [Widget Page](../creating-pages/using-widget-pages/adding-widgets-to-a-pag
 
     ```tip::
        You can switch between the Dashboard and Profile pages from the Pages page by switching between the Public Pages and Private Pages menus and selecting the *View* option from the page's Actions Menu.

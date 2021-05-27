@@ -32,14 +32,6 @@ Start with uploading documents using an example curl command and Java class.
     unzip liferay-g9i6.zip
     ```
 
-Here's the project's folder structure:
-
-```
-liferay-g9i6.zip/
-├── curl // curl command scripts
-└── java // Java classes
-```
-
 Use a curl script to upload a file to [Documents and Media](../sharing-documents-and-media.md). 
 
 1. On the command line, navigate to the `curl` folder.
@@ -159,7 +151,7 @@ The other example Java classes are similar to this one, but call different `Docu
    See `DocumentResource <https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java>`_ for service details.
 ```
 
-The following sections demonstrate calling other `Document` REST services using curl and Java.
+Below are examples of calling other `Document` REST services using cURL and Java.
 
 ## Listing Site Documents
 

@@ -10,7 +10,7 @@ The Widgets section functions just like the [*Add* menu on a Widget Page](../usi
 
 Follow these steps to add a widget to a Content Page:
 
-1. While [building the Content Page](./building-content-pages.md), open the [Widgets panel](./editing-content-pages.md#widgets) and browse the available widgets or search for widgets by name.
+1. While [adding elements to the Content Page](./adding-elements-to-content-pages.md), open the [Widgets panel](./content-page-editor-user-interface-reference.md) and browse the available widgets or search for widgets by name.
 1. Drag the widget to the column and row of the layout where you want to place it.
 
 A widget can be a wiki display or a dynamic publishing tool like the Asset Publisher. The content you display with widgets can be long-form text, an image gallery, or anything in between.
@@ -53,3 +53,9 @@ Although you can still access basic configuration options and permissions for wi
 * *Widget Look & Feel*: On Widget Pages you can access the Look and Feel menu through the  widget's Configuration Menu, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the Theme or by using Fragments.
 * *Configuration Templates*: Configuration Templates that save the widget's configuration settings to a template are only available on Widget Pages.
 * *Export/Import*: You can only export/import application data for widgets on Widget Pages.
+
+## Additional Information
+
+- [Content Pages Overview](./content-pages-overview.md)
+- [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
+- [Content Page Editor User Interface Reference](./content-page-editor-user-interface-reference.md)

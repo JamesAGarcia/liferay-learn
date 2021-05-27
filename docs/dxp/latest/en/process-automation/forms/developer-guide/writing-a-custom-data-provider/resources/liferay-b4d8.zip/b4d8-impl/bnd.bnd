@@ -1,0 +1,4 @@
+Bundle-Name: Acme B4D8 Implementation
+Bundle-SymbolicName: com.acme.b4d8.impl
+Bundle-Version: 1.0.0
+Web-ContextPath: /dynamic-data-mapping-data-provider-b4d8

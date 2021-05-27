@@ -4,7 +4,7 @@ Page Templates help you efficiently create pages based on predefined layouts and
 
 ![Basic Page Templates are available.](./creating-a-page-template/images/01.png)
 
-You may also create your own [Content Page](../building-and-managing-content-pages/building-content-pages.md) Templates and [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) Templates, as described below.
+You may also create your own [Content Page](../building-and-managing-content-pages/content-pages-overview.md) Templates and [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) Templates, as described below.
 
 ## Creating a New Page Template
 
@@ -24,7 +24,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
 1. Click *Save*.
 
-1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../building-and-managing-content-pages/building-content-pages.md) to configure your Content Page Template.
+1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../building-and-managing-content-pages/adding-elements-to-content-pages.md) to configure your Content Page Template.
 
 ## Sharing a New Page Template
 
@@ -62,3 +62,9 @@ You can share your Page Templates with other sites using the same process as you
 ```
 
 If staging has been enabled, changes to the Widget Page Template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of Widget Page Template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
+
+## Additional Information
+
+- [Adding a Page to a Site](./adding-a-page-to-a-site.md)
+- [Exporting and Importing Page Templates](./exporting-and-importing-page-templates.md)
+- [Using the Full Page Application Page Type](./using-the-full-page-application-page-type.md)

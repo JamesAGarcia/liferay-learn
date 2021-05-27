@@ -14,7 +14,7 @@ When you use structures, you enforce a format for your content, so writers know 
 
 Using structures, the magazine editor must no longer spend time updating every article to a particular format, and writers can save time formatting their content.
 
-You create a structure by adding elements such as text fields, text boxes, check boxes, select boxes, or multi-selection lists. You can also add specialized application fields to the structure, such as an Image Uploader, a Document control, or a Media control. You drag-and-drop the elements into the structure, choosing the elements and order that fit your business need. Additionally, you can group elements into repeatable blocks. Display Page creators can then map these fields to [editable page fragments](../../../../site-building/creating-pages/building-and-managing-content-pages/building-content-pages.md) to use custom styles and formatting.
+You create a structure by adding elements such as text fields, text boxes, check boxes, select boxes, or multi-selection lists. You can also add specialized application fields to the structure, such as an Image Uploader, a Document control, or a Media control. You drag-and-drop the elements into the structure, choosing the elements and order that fit your business need. Additionally, you can group elements into repeatable blocks. Display Page creators can then [map these fields](../../../site-building/creating-pages/building-and-managing-content-pages/configuring-elements-on-content-pages.md) to [editable Page Fragments](../../../site-building/displaying-content/using-fragments/using-page-fragments.md) to use custom styles and formatting.
 
 ## Related Information
 

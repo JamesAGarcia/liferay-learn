@@ -1,0 +1,3 @@
+Bundle-Name: Acme N8K5 Baker Implementation
+Bundle-SymbolicName: com.acme.n8k5.baker.impl
+Bundle-Version: 1.0.0

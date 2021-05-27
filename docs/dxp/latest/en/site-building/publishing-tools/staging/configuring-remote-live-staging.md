@@ -78,7 +78,7 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
 1. Go to *Product Menu* &rarr; *Publishing* &rarr; *Staging*.
 
-   ![Go to Staging in the Product menu.](./configuring-remote-live-staging/images/01.jpg)
+   ![Go to Staging in the Product menu.](./configuring-remote-live-staging/images/01.png)
 
 1. Select *Remote Live*, which reveals additional fields for *Remote Live Connection Settings*, *Page Versioning*, and *Staged Content*.
 

@@ -8,6 +8,7 @@ Search Pages and Widgets
    search-pages-and-widgets/search_results.rst
    search-pages-and-widgets/search_facets.rst
    search-pages-and-widgets/similar-results.md
+   search-pages-and-widgets/search-insights.md
 
 .. raw:: html
    :file: ../landingpage_template.html

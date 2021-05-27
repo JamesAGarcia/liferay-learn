@@ -1,4 +1,0 @@
-dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.portal.api"
-	compileOnly project(":s1j6-api")
-}

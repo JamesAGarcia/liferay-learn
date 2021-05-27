@@ -12,7 +12,7 @@ To upgrade an existing Elasticsearch server (or cluster) to Elasticsearch 7,
 
 1. [Back up the Liferay Company and System Indexes](./backing-up-elasticsearch.md).
 
-1. [Back up the application specific indexes for Search Tuning](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes) (Synonym Sets and Result Rankings).
+1. [Back up the application specific indexes for Search Tuning](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) (Synonym Sets and Result Rankings).
 
 1. [Install and configure Elasticsearch](../installing-elasticsearch.md).
 
@@ -30,7 +30,7 @@ To upgrade an existing Elasticsearch server (or cluster) to Elasticsearch 7,
 
 1. Configure the Connector to Elasticsearch 7 to connect to Elasticsearch.
 
-1. Re-index all search and spell check indexes.
+1. Restart Liferay, then re-index all search and spell check indexes.
 
 1. Restore Search Tuning indexes from the snapshot. If you were previously using these features, you may have data stored in these indexes.
 
@@ -40,7 +40,7 @@ To upgrade an existing Elasticsearch server (or cluster) to Elasticsearch 7,
 
 If you are using a rolling-restart eligible version (`6.8.x`), doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) guide.
 
-If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [re-index](#re-index) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes).
+If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [re-index](#restart-liferay-and-re-index) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage).
 
 ## Blacklisting Elasticsearch 6
 
@@ -67,9 +67,11 @@ This is only necessary if running Liferay 7.2.
 
 1. Deploy the file by copying it to your server's `deploy` folder. 
 
-## Re-index
+## Restart Liferay and Re-Index
 
-Once Liferay is connected with the Elasticsearch cluster, re-index the applicable indexes into the new Elasticsearch installation:
+Once Liferay is connected with the Elasticsearch cluster, restart Liferay and re-index the applicable indexes into the new Elasticsearch installation:
+
+1. Restart Liferay.
 
 1. Re-index the company, system, and spell check indexes. From the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. Click *Execute* for the *Reindex all search indexes* entry.
 

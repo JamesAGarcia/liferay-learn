@@ -4,7 +4,7 @@ By default, web content is displayed in the context of the application that's pu
 
 ![By default, web content is viewed in the context of the application that views it.](./displaying-content-with-display-page-templates/images/01.png)
 
-The default behavior may suit your needs. However, if you want a more personalized and focused experience, you can create a Display Page Template for your web content. Display Page Templates specify the layout and formatting for your web content and display it using a unique friendly URL. Display Page Templates are built using the same tools as a [Content Page](../../creating-pages/building-and-managing-content-pages/building-content-pages.md). You then add [Page Fragments](../using-fragments/using-page-fragments.md) to the Display Page Template and map them to the structure fields of the content (title, content, image, etc.) to create standardized formats for articles.
+The default behavior may suit your needs. However, if you want a more personalized and focused experience, you can create a Display Page Template for your web content. Display Page Templates specify the layout and formatting for your web content and display it using a unique friendly URL. Display Page Templates are built using the same tools as a [Content Page](../../creating-pages/building-and-managing-content-pages/content-page-editor-user-interface-reference.md). You then add [Page Fragments](../using-fragments/using-page-fragments.md) to the Display Page Template and map them to the structure fields of the content (title, content, image, etc.) to create standardized formats for articles.
 
 ![Display Pages can connect structure fields to fragment data.](./displaying-content-with-display-page-templates/images/02.png)
 

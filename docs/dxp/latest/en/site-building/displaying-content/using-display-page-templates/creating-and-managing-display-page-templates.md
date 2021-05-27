@@ -22,11 +22,11 @@ A Display Page Template specifies the layout and formatting for your content and
 
    ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/03.png)
 
-1. Begin editing your template using the same editing interface and page elements as [Content Pages](../../creating-pages/building-and-managing-content-pages/building-content-pages.md).
+1. Begin editing your template using the same editing interface and page elements as [Content Pages](../../creating-pages/building-and-managing-content-pages/content-page-editor-user-interface-reference.md).
 
    ![Build your template using Content Page elements.](./creating-and-managing-display-page-templates/images/04.png)
 
-1. Once you've added Page elements, you can [map](../../creating-pages/building-and-managing-content-pages/building-content-pages.md#mapping-content) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
+1. Once you've added Page elements, you can [map](../../creating-pages/building-and-managing-content-pages/configuring-elements-on-content-pages.md#mapping-content) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
    ![Map Page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png)
 
@@ -69,4 +69,4 @@ If you assign your content to a new Display Page Template, review that the conte
 - [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
 - [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
 - [Content Page Overview](./../../creating-pages/building-and-managing-content-pages/content-pages-overview.md)
-- [Building Content Pages](../../creating-pages/building-and-managing-content-pages/building-content-pages.md)
+- [Adding Elements to Content Pages](../../creating-pages/building-and-managing-content-pages/adding-elements-to-content-pages.md)
