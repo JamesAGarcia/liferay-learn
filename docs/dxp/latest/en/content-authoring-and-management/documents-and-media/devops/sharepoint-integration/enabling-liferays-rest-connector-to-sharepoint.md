@@ -4,7 +4,8 @@
 
 Liferay's REST Connector for SharePoint provides Documents and Media integration with SharePoint libraries. With it, you can create Documents and Media repositories for mounting a SharePoint library. You can then read/write SharePoint documents and folders, perform document check-in/check-out, download documents, and more. Each action performed in one context is propagated in the other.
 
-<!--IS THE FOLLOWING STILL TRUE? 
+## Integration Limitations
+
 This application uses SharePoint's API and has the following limitations:
 
 * Version history is lost when moving or renaming a file without first checking it out.
@@ -12,7 +13,7 @@ This application uses SharePoint's API and has the following limitations:
 * A file’s current name propagates to all previous versions.
 * The user who checks out a file is the only one who can see the version number of that file’s working copy.
 * Queries for suffixes or intermediate wildcards convert to queries for containment.
-* Comments, ratings, and using a SharePoint folder as a Documents and Media root folder are unsupported. -->
+* Comments, ratings, and using a SharePoint folder as a Documents and Media root folder are unsupported.
 
 For more information on how the REST connector works, see the [javadocs API reference](https://docs.liferay.com/dxp/apps/sharepoint-rest/latest/javadocs/).
 
@@ -37,10 +38,10 @@ Follow these steps to install the Liferay REST Connector for SharePoint.
 
 1. Restart the server to complete installation.
 
-Once the Connector is successfully deployed and installed, you can add SharePoint OAuth2 configuration entries to complete setup. <!--Q: What about SharePoint Search? e.g., "You can also add SharePoint Search entries to/for ______."-->
+Once the connector is successfully deployed and installed, you can add SharePoint OAuth2 configuration entries to complete setup. If desired, you can also define custom search sources to restrict and fine tune SharePoint search results.
 
 ```important::
-   Since the REST Connector uses Azure ACS with OAuth2 for SharePoint server authorization, ensure HTTPS support is enabled in your Server.
+   Since the REST connector uses Azure ACS with OAuth2 for SharePoint server authorization, ensure HTTPS support is enabled in your Server.
 ```
 
 ## Adding a SharePoint OAuth2 Configuration
@@ -69,9 +70,11 @@ Follow these steps to add a new SharePoint OAuth2 configuration via the Liferay 
 
 Once saved, the SharePoint configuration can be used to create repositories in Documents and Media that are mounted to SharePoint libraries.
 
-<!-- ## Adding a SharePoint Search Configuration
+## Adding a SharePoint Search Configuration
 
-Follow these steps to add a new SharePoint Search configuration entry via the Liferay Control Panel.
+With SharePoint, you can define custom source IDs to restrict and fine-tune search results. By default, the connector uses the Documents source ID.
+
+Follow these steps to create SharePoint Search configuration with an different source ID.
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *System Settings* &rarr; *Documents & Media* &rarr; *SharePoint Search*.
 
@@ -81,9 +84,9 @@ Follow these steps to add a new SharePoint Search configuration entry via the Li
 
    ![Click on Add to create a new SharePoint Search configuration entry.](./enabling-liferays-rest-connector-to-sharepoint/images/03.png)
 
-1. Enter a SharePoint Results SourceID for the new entry.
+1. Enter a custom SharePoint Results SourceID for the new entry.
 
-1. Click on *Save* when finished. -->
+1. Click *Save* when finished.
 
 ## Additional Information
 
