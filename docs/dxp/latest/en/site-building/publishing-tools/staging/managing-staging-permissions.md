@@ -64,4 +64,4 @@ You can also set permissions for individual variations so certain Users have acc
 
 * [Staging Overview](./staging-overview.md)
 * [Page Versioning](./page-versioning.md)
-* [Staging UI Reference](./staging-ui-reference.md)
+* [Site Staging UI Reference](./site-staging-ui-reference.md)

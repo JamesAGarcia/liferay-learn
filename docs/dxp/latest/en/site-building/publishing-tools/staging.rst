@@ -12,7 +12,7 @@ Staging
    staging/page-versioning.md
    staging/publishing-single-assets-and-widgets.md
    staging/managing-staging-permissions.md
-   staging/staging-ui-reference.md
+   staging/site-staging-ui-reference.md
 
 -  :doc:`/site-building/publishing-tools/staging/staging-overview`
 -  :doc:`/site-building/publishing-tools/staging/understanding-the-publishing-process`
@@ -22,4 +22,4 @@ Staging
 -  :doc:`/site-building/publishing-tools/staging/page-versioning`
 -  :doc:`/site-building/publishing-tools/staging/publishing-single-assets-and-widgets`
 -  :doc:`/site-building/publishing-tools/staging/managing-staging-permissions`
--  :doc:`/site-building/publishing-tools/staging/staging-ui-reference`
+-  :doc:`/site-building/publishing-tools/staging/site-staging-ui-reference`

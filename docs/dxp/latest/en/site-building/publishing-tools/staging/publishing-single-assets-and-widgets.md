@@ -33,4 +33,4 @@ After changing a widget, you can publish the widget by clicking on the *Actions*
 * [Staging Overview](./staging-overview.md)
 * [Managing Staging Permissions](./managing-staging-permissions.md)
 * [Page Versioning](./page-versioning.md)
-* [Staging UI Reference](./staging-ui-reference.md)
+* [Site Staging UI Reference](./site-staging-ui-reference.md)

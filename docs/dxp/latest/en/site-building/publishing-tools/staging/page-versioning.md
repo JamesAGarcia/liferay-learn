@@ -67,7 +67,7 @@ Follow these steps to create new variations of a Page or Page set:
 
 1. Click on *Add* to create your new variation.
 
-Once created, you can switch between each version of a Page or Page set via the drop-down menus in the Staging bar. The *Page Variations* drop-down menu is available for Widget Pages only. For Content Pages, you create different versions using [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md). For more information, see [Staging UI Reference](./staging-ui-reference.md).
+Once created, you can switch between each version of a Page or Page set via the drop-down menus in the Staging bar. The *Page Variations* drop-down menu is available for Widget Pages only. For Content Pages, you create different versions using [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md). For more information, see [Site Staging UI Reference](./site-staging-ui-reference.md).
 
 ![You can switch between each version of a Page or Page set via the drop-down menus in the Staging bar](./page-versioning/images/02.png)
 
@@ -98,4 +98,4 @@ You can also set permissions for each variation, so certain users have access to
 * [Staging Overview](./staging-overview.md)
 * [Configuring Local Live Staging](./configuring-local-live-staging.md)
 * [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
-* [Staging UI Reference](./staging-ui-reference.md)
+* [Site Staging UI Reference](./site-staging-ui-reference.md)

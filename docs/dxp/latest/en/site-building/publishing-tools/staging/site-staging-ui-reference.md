@@ -1,4 +1,4 @@
-# Staging UI Reference
+# Site Staging UI Reference
 
 After enabling Local or Remote Live Staging for your Site, most Page configuration options are only accessible in your Staging environment. This prevents Users from directly editing Live Pages.
 
@@ -12,7 +12,7 @@ Also, once staging is enabled, you can access additional options in your Staging
 
 When Staging is enabled for a Site, you can access additional options via the Staging bar on each of your Site's Pages. In this bar you can toggle between Staging and Live environments, as well as click on *Publish to Live* for your staged Pages.
 
-![When Staging is enabled for a Site, you can access the Staging bar on each of your Site's Pages](./staging-ui-reference/images/02.png)
+![When Staging is enabled for a Site, you can access the Staging bar on each of your Site's Pages](./site-staging-ui-reference/images/02.png)
 
 ```tip::
    There are differences in the way you work with Widget Pages and Content Pages in a staged Site. To simplify your workflow with Staging, use either Widget Pages or Content Pages.
@@ -31,19 +31,19 @@ The following table and pictures describe the staging bar options and editing to
 
 - Staging Bar and Editing Tools in Widget Pages:
 
-   ![Staging bar and editing tools working with Widget Pages](./staging-ui-reference/images/18.png)
+   ![Staging bar and editing tools working with Widget Pages](./site-staging-ui-reference/images/18.png)
 
 - Staging Bar and Editing Tools in Content Pages:
 
-   ![Staging bar working with Content Pages](./staging-ui-reference/images/19.png)
+   ![Staging bar working with Content Pages](./site-staging-ui-reference/images/19.png)
 
-   ![Editing tools working with Widget Pages](./staging-ui-reference/images/20.png)
+   ![Editing tools working with Widget Pages](./site-staging-ui-reference/images/20.png)
 
 ## Publish to Live
 
 When you click on *Publish to Live*, a modal window appears with additional options for configuring your publish process. You can publish using *Simple* or *Advanced* settings.
 
-![Click on Publish to Live to access the publishing modal window.](./staging-ui-reference/images/03.png)
+![Click on Publish to Live to access the publishing modal window.](./site-staging-ui-reference/images/03.png)
 
 ## Simple Publishing
 
@@ -59,13 +59,13 @@ When you click on *Publish to Live*, a modal window appears with additional opti
 
 When ready, click on *Publish to Live* to initiate publishing.
 
-![Click on Publish to Live to initiate publishing.](./staging-ui-reference/images/04.png)
+![Click on Publish to Live to initiate publishing.](./site-staging-ui-reference/images/04.png)
 
 ## Advanced Publishing
 
 With Advanced publishing, you can access information and settings that you can use to customize your publish process. In the *Custom* tab, you can specify content, dates, Pages, and more. Alternatively, you click on the *Publish Template* tab to select a pre-configured template for your publish process. To access advanced settings, click on *Switch to Advanced Publish Process* in the modal window.
 
-![Use advanced setting to customize your publishing process.](./staging-ui-reference/images/05.png)
+![Use advanced setting to customize your publishing process.](./site-staging-ui-reference/images/05.png)
 
 Custom advanced settings are divided into the following sections:
 
@@ -73,21 +73,21 @@ Custom advanced settings are divided into the following sections:
 
 **Date**: Select whether to publish your changes immediately, or *schedule* your changes to be published at a later date and time. You can also determine whether and how frequently the publish process is repeated.
 
-![Select when to publish your changes.](./staging-ui-reference/images/06.png)
+![Select when to publish your changes.](./site-staging-ui-reference/images/06.png)
 
 **Deletions**: Select whether you want to *Delete Application Data Before Importing*, and whether you want to *Replicate Individual Deletions*.
 
-![Select whether you want to Delete Application Data Before Importing and whether you want to Replicate Individual Deletions.](./staging-ui-reference/images/07.png)
+![Select whether you want to Delete Application Data Before Importing and whether you want to Replicate Individual Deletions.](./site-staging-ui-reference/images/07.png)
 
 **Pages**: Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages. You can also select whether to *Delete Missing Pages*, which deletes all Pages from the Live Site that are not present on the Staging Site. If you choose a Page to be published from the Pages menu, the widgets and their references are always published.
 
-![Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages.](./staging-ui-reference/images/08.png)
+![Select which Page set variation and individual Pages you want to publish, as well as the look and feel of your selected Pages.](./site-staging-ui-reference/images/08.png)
 
 If you want to publish pages with a custom theme, you must check the Theme Settings option under the *Look and Feel* heading for your staging configuration. Otherwise, the default theme is applied.
 
 **Content**: Select the content you want to include in your publish process. Using the radio buttons, you can publish *all* content of the selected types, or specify a date and time parameter to limit the content published. You can also use this option to check the content that changed in Staging and is awaiting publication.
 
-![Select the content you want to include in your publish process.](./staging-ui-reference/images/09.png)
+![Select the content you want to include in your publish process.](./site-staging-ui-reference/images/09.png)
 
 | Option | Description |
 | --- | --- |
@@ -104,11 +104,11 @@ You can also click on *Change* for each content type to manage items and other s
 
 **Permissions**: Select whether to include permissions for the Pages and widgets when your changes are published.
 
-![Select whether to include permissions for the Pages and widgets when your changes are published.](./staging-ui-reference/images/10.png)
+![Select whether to include permissions for the Pages and widgets when your changes are published.](./site-staging-ui-reference/images/10.png)
 
 Instead of manually configuring advanced options every time you publish a Page or content, you can save your staging configuration as a [*publish template*](#publish-templates) for future use. To view and select a saved template for your publish process, click on the *Publish Templates* tab.
 
-![To view and select a saved template for your publish process, click on the Publish Templates tab.](./staging-ui-reference/images/11.png)
+![To view and select a saved template for your publish process, click on the Publish Templates tab.](./site-staging-ui-reference/images/11.png)
 
 When ready, click on *Publish to Live* to initiate publishing.
 
@@ -118,15 +118,15 @@ Once you've enabled Staging, the options available from the *Publishing* tab are
 
 You can also access new options in the Staging Page: view publishing *processes*, create and manage *publish templates*, and modify or disable Staging for your Site.
 
-![You can also access new options in the Staging Page.](./staging-ui-reference/images/13.png)
+![You can also access new options in the Staging Page.](./site-staging-ui-reference/images/13.png)
 
 ### Previous and Future Publishing Processes
 
-When you publish with Staging, it's captured as a *process* and stored for future reference. To view and manage these processes, go to *Product Menu* &rarr; *Publishing* &rarr; *Staging*.
+When you publish with Staging, it's captured as a *process* and stored for future reference. To view and manage these processes, go to *Site Menu* &rarr; *Publishing* &rarr; *Staging*.
 
 In the *Processes* tab is a list of staging processes that have been completed. From here, you can *relaunch*, *clear* or view a *summary* of any previous publications by clicking on a process's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ).
 
-![View and manage previous publishing processes from the Staging Page.](./staging-ui-reference/images/14.png)
+![View and manage previous publishing processes from the Staging Page.](./site-staging-ui-reference/images/14.png)
 
 You can also click on the *Add* (![Add button](../../../images/icon-add.png)) button to create a new publish process using a custom configuration or pre-defined publishing template.
 
@@ -136,11 +136,11 @@ In the *Scheduled* tab, you can view all scheduled publishing processes.
 
 If you regularly create similar staging configurations, you can create your own *publish templates* to save time. To create a template, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Publish Templates*.
 
-![Click on the Actions button in the Application bar of the Staging Page.](./staging-ui-reference/images/15.png)
+![Click on the Actions button in the Application bar of the Staging Page.](./site-staging-ui-reference/images/15.png)
 
 From here, you can create and manage templates for frequent publishing configurations. You can then use a template by clicking on its *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) and selecting *Publish*.
 
-![Create and manage templates for frequent publishing configurations.](./staging-ui-reference/images/16.png)
+![Create and manage templates for frequent publishing configurations.](./site-staging-ui-reference/images/16.png)
 
 You can also use a template when publishing a Page or content using the *Publish to Live* button in the Staging bar. See [Advanced Publishing](#advanced-publishing) for more information.
 
@@ -148,7 +148,7 @@ You can also use a template when publishing a Page or content using the *Publish
 
 After setting up Staging, you can access the Staging Configuration Page by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* Page. Then, select *Staging Configuration*.
 
-![Click on the Actions button in the Application bar of the Staging Page to access Staging Configuration.](./staging-ui-reference/images/17.png)
+![Click on the Actions button in the Application bar of the Staging Page to access Staging Configuration.](./site-staging-ui-reference/images/17.png)
 
 From here, you can disable Staging for your Site, or modify your [Page versioning](page-versioning.md) settings. However, *Staged Content* options cannot be modified after the initial setup.
 
