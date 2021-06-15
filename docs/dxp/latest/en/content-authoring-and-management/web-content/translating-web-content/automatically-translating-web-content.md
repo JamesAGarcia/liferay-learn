@@ -40,6 +40,5 @@ Follow these steps to automatically translate all or only individual Web Content
 
 ## Additional Information
 
-* []()
-* []()
-* []()
+* [Manually Translating Web Content](./manually-translating-web-content.md)
+* [Exporting and Importing Translations](./exporting-and-importing-translations.md)
