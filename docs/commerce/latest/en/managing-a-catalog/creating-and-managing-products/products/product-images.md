@@ -27,7 +27,7 @@ The new product image has been added to the product. Note that under _Options_, 
 Multiple product images can be associated with a single product. In order to add multiple images to a product, first review the following:
 
 * [Product Options](./customizing-your-product-with-product-options.md) have been created for this product.
-* [Multiple SKUs](./adding-skus-to-your-products.md) have been generated for this product.
+* [Multiple SKUs](./adding-skus-to-products.md) have been generated for this product.
 
 Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
 
@@ -86,7 +86,7 @@ To view the image in the catalog, go to the store site and then search for the p
 Multiple product images can be associated with a single product. In order to add multiple images to a product, first review the following:
 
 * [Product Options](./customizing-your-product-with-product-options.md) have been created for this product.
-* [Multiple SKUs](./adding-skus-to-your-products.md) have been generated for this product.
+* [Multiple SKUs](./adding-skus-to-products.md) have been generated for this product.
 
 Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
 

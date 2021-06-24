@@ -6,7 +6,7 @@ Products
 
    products/products-overview.md
    products/customizing-your-product-with-product-options.md
-   products/adding-skus-to-your-products.md
+   products/adding-skus-to-products.md
    products/product-images.md
    products/specifications.md
    products/product-attachments.md
@@ -22,7 +22,7 @@ Products
 
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/products-overview`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options`
--  :doc:`/managing-a-catalog/creating-and-managing-products/products/adding-skus-to-your-products`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/products/adding-skus-to-products`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/product-images`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/specifications`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/product-attachments`

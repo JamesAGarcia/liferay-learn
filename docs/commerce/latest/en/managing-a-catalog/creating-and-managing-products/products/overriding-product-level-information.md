@@ -99,4 +99,4 @@ The SKU is now available on a subscription basis.
 ## Additional Information
 
 * [Specifications](./specifications.md)
-* [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
+* [Adding SKUs to Products](./adding-skus-to-products.md)

@@ -65,7 +65,7 @@ Product Options provide a convenient way to add custom fields to your Products. 
 
 ## SKUs
 
-SKUs represent variants of a Product. See [Adding SKUs to Your Products](./adding-skus-to-your-products.md) to learn more.
+SKUs represent variants of a Product. See [Adding SKUs to Products](./adding-skus-to-products.md) to learn more.
 
 By default, a Product's SKUs inherit the specifications and configurations of their parent Product. However, you can override some of these configurations on an individual basis. See [Overriding Product Level Information](./overriding-product-level-information.md) to learn more.
 

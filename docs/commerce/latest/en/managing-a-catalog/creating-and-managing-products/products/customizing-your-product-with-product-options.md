@@ -30,7 +30,9 @@ Follow these steps to create an Option Template:
 
 1. Determine whether the Option is *Required*. When enabled, customers must use the field before adding the product to the cart.
 
-1. Determine whether the Option is an *SKU Contributor*. When enabled, the Option's values are used to generate individual [SKUs](./adding-skus-to-your-products.md), and customers are required to select a value when adding the Product to their cart.
+1. Determine whether the Option is an *SKU Contributor*.
+
+   When enabled, the Option's values are used to create [SKUs](./adding-skus-to-products.md) for Product variants. Customers are required to select from available option values.
 
    ```note::
       SKU Contributor can only be enabled with the *Single Selection* and *Select from List* field types.
@@ -80,7 +82,9 @@ Follow these steps to apply an Option to a Product:
 
    ![Select on the desired Option template.](./customizing-your-product-with-product-options/images/04.png)
 
-The Option is immediately applied to the Product, and customers can now view and use the Option field in the Product's display page. If desired, you can add multiple Options to the same Product.
+The Option is immediately applied to the Product, and customers can access the Option field via the Product Details widget.
+
+If desired, you can add multiple Options to the same Product. See [Adding SKUs to Products](./adding-skus-to-products.md) for more information.
 
 ```important::
    If SKU Contributor is enabled, you'll need to manually generate SKUs for the Option's values after they're created. To do this, go to the Product's *SKUs* tab, click on the *Add* button, and select *Generate All SKU Combinations*. Unique SKUs are immediately generated for each value. If the SKUs are not generated, the Option's field will not display its values.
@@ -148,7 +152,7 @@ The Option Template has been added and can be applied to all products.
 
 When _Use in Faceted Navigation_ is switched to _Active_, users have the ability to filter search results based on the specified option.
 
-A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
+A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-products.md). If enabled, the option must have a SKU in order to be sold.
 
 ```warning::
    You cannot use a Boolean option as a SKU contributor. Attempting to use a Boolean option as a SKU contributor shows the following warning message: ``SKU Contributor cannot be set as true for the selected Field Type.``

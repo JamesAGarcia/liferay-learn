@@ -47,7 +47,7 @@ The selected Product entries are immediately associated with the Grouped Product
 
 ![View associated Product entries in the Grouped tab, and determine their quantity and priority.](./creating-a-grouped-product/images/02.png)
 
-Once you've created the Grouped Product and associated other Products with it, set a base price for the default [SKU](./../products/adding-skus-to-your-products.md) to make it available for purchase. This price is used in place of each Product's individual price.
+Once you've created the Grouped Product and associated other Products with it, set a base price for the default [SKU](./../products/adding-skus-to-products.md) to make it available for purchase. This price is used in place of each Product's individual price.
 
 ## Commerce 2.1 and Below
 
