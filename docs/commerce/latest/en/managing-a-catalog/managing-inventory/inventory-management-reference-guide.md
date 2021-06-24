@@ -83,7 +83,7 @@ Inventory Management is located in the _Control Panel_. To access Inventory Mana
 
 ## Additional Information
 
-* [Adding SKUs to Your Products](../creating-and-managing-products/products/adding-skus-to-your-products.md)
+* [Adding SKUs to Products](../creating-and-managing-products/products/adding-skus-to-products.md)
 * [Low Stock Action](./low-stock-action.md)
-* [Adding a New Warehouse](./adding-a-new-warehouse.md)
+* [Setting Up Commerce Warehouses](./setting-up-commerce-warehouses.md)
 * [Warehouse Reference Guide](./warehouse-reference-guide.md)

@@ -20,7 +20,7 @@ Each warehouse now has the correct quantity available for sale.
 
 ## Transferring Stock Between Warehouses
 
-If a store has more than one [warehouse](./adding-a-new-warehouse.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected in _Inventory_ administration.
+If a store has more than one [warehouse](./setting-up-commerce-warehouses.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected in _Inventory_ administration.
 
 To transfer stock between warehouses:
 
@@ -64,7 +64,7 @@ Each warehouse now has the correct quantity available for sale.
 
 ### Transferring Stock Between Warehouses
 
-If a store has more than one [warehouse](./adding-a-new-warehouse.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected in _Inventory_ administration.
+If a store has more than one [warehouse](./setting-up-commerce-warehouses.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected in _Inventory_ administration.
 
 To transfer stock between warehouses:
 
@@ -88,5 +88,5 @@ Inventory counts for each warehouse are now updated.
 
 ## Additional Information
 
-* [Adding A New Warehouse](./adding-a-new-warehouse.md)
+* [Setting Up Commerce Warehouses](./setting-up-commerce-warehouses.md)
 * [Inventory Management Reference Guide](./inventory-management-reference-guide.md)

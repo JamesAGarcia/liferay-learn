@@ -36,7 +36,7 @@ Minium's catalog includes a range of sample products organized into several pre-
 
 > Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../managing-a-catalog/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md).
 
-Sample products also come with pre-set [Options](../managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options.md), [Specifications](../managing-a-catalog/creating-and-managing-products/products/specifications.md), and Images.
+Sample products also come with pre-set [Options](../managing-a-catalog/creating-and-managing-products/products/using-product-options.md), [Specifications](../managing-a-catalog/creating-and-managing-products/products/specifications.md), and Images.
 
 ![Product Specifications](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/05.png)
 
@@ -54,7 +54,7 @@ Minium applies a number of other site configurations that are not set out-of-the
 
 | Feature | Details |
 | --- | --- |
-| [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
+| [Warehouses](../managing-a-catalog/managing-inventory/setting-up-commerce-warehouses.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../starting-a-store/sites-and-site-types.md) | B2B |
 | [Shipping Method Options](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
 | Channels | Minium Portal |

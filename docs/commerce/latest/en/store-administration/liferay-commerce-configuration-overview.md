@@ -13,7 +13,7 @@ Navigate to the _Global Applications_ menu &rarr; _Commerce_. Administrators can
 * Product Groups
 * [Catalogs](../managing-a-catalog/catalogs/creating-a-new-catalog.md)
 * [Products](../managing-a-catalog/creating-and-managing-products/products/products-overview.md)
-* [Options](../managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options.md)
+* [Options](../managing-a-catalog/creating-and-managing-products/products/using-product-options.md)
 * [Orders](../orders-and-fulfillment/orders/orders-menu-reference-guide.md)
 * [Shipments](../orders-and-fulfillment/shipments/introduction-to-shipments.md)
 * [Bill of Materials](../managing-a-catalog/creating-and-managing-products/products/managing-boms.md)

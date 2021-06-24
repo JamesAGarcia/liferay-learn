@@ -2,7 +2,7 @@ Managing Inventory
 ==================
 
 -  :doc:`/managing-a-catalog/managing-inventory/introduction-to-managing-inventory`
--  :doc:`/managing-a-catalog/managing-inventory/adding-a-new-warehouse`
+-  :doc:`/managing-a-catalog/managing-inventory/setting-up-commerce-warehouses`
 -  :doc:`/managing-a-catalog/managing-inventory/setting-inventory-by-warehouse`
 -  :doc:`/managing-a-catalog/managing-inventory/low-stock-action`
 -  :doc:`/managing-a-catalog/managing-inventory/availability-estimates`

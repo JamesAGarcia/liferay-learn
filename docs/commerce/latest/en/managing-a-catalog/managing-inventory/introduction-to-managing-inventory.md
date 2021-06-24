@@ -16,7 +16,7 @@ See [Using Inventory Management](./using-the-inventory-management-system.md) for
 
 Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment. Products inventory quantities are managed on a per warehouse basis.
 
-See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](./adding-a-new-warehouse.md) article for more information about how to manage warehouses.
+See [Setting Up Commerce Warehouses](./setting-up-commerce-warehouses.md) and [Warehouse Reference Guide](./warehouse-reference-guide.md) for more information on managing warehouses.
 
 In order for a store to accept orders for a product, the related channel must have a warehouse associated with it. See the [Introduction to Channels](../../starting-a-store/channels/introduction-to-channels.md) article on how channels work.
 
