@@ -17,7 +17,7 @@ The initial product entry has been created. Continue on to learn about further c
 
 ## Apply Product Options
 
-[Product Options](../products/customizing-your-product-with-product-options.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to add various options to the product.
+[Product Options](../products/using-product-options.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to add various options to the product.
 
 ## Generate SKUs
 

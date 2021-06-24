@@ -54,7 +54,7 @@ In the Product Detail's tab, you can configure the Product's SEO settings, appli
 
 ## Options
 
-Product Options provide a convenient way to add custom fields to your Products. They can be used to create Product variants based on attributes (e.g., size, quantity, color, material), bundles, and more. See [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md) to learn more.
+Product Options provide a convenient way to add custom fields to your Products. They can be used to create Product variants based on attributes (e.g., size, quantity, color, material), bundles, and more. See [Using Product Options](./using-product-options.md) to learn more.
 
 ![Create Product Options.](./product-configuration-reference/images/02.png)
 

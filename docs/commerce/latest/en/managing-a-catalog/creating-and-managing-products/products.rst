@@ -5,7 +5,7 @@ Products
    :maxdepth: 1
 
    products/products-overview.md
-   products/customizing-your-product-with-product-options.md
+   products/using-product-options.md
    products/adding-skus-to-products.md
    products/product-images.md
    products/specifications.md
@@ -21,7 +21,7 @@ Products
    products/product-configuration-reference.md
 
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/products-overview`
--  :doc:`/managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/products/using-product-options`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/adding-skus-to-products`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/product-images`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/specifications`

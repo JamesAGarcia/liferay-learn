@@ -1,6 +1,6 @@
 # Creating Product Bundles
 
-With Liferay Commerce, you can create *Product bundles* using [Product Options](./customizing-your-product-with-product-options.md). Bundles are combinations of goods or services that customers can purchase together as a single package.
+With Liferay Commerce, you can create *Product bundles* using [Product Options](./using-product-options.md). Bundles are combinations of goods or services that customers can purchase together as a single package.
 
 For example, consider a computer hardware distributor. Customers can select a specific computer model with a standard case, energy supply, motherboard, and OS system, but they must choose between other hardware components (e.g., CPU, GPU, RAM, storage). Each Product variant has its own price based on the selected components. The total cost is calculated by adding the price of the selected value to the Product's base price.
 
@@ -17,7 +17,7 @@ Follow these steps to create a Product bundle:
    A new Option template is created and applied to your Product using the default Option settings.
 
    ```tip::
-      Alternatively, you can create an Option Template via the *Options* page in the Commerce tab of the Global Menu. This method is best for commonly used types of bundles. See `Customizing Your Product with Product Options <./customizing-your-product-with-product-options.md>`_ for more information.
+      Alternatively, you can create an Option Template via the *Options* page in the Commerce tab of the Global Menu. This method is best for commonly used types of bundles. See `Using Product Options <./using-product-options.md>`_ for more information.
    ```
 
    ![Go to the Product's Options tab, and create a new Option for your bundle.](./creating-product-bundles/images/01.png)
@@ -78,4 +78,4 @@ Follow these steps to create a Product bundle:
 
 ## Additional Information
 
-* [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md)
+* [Using Product Options](./using-product-options.md)

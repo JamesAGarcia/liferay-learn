@@ -35,7 +35,7 @@ For more information about each field, see the [Virtual Product Reference](./vir
 
 ## Apply Product Options
 
-You can apply [Product Options](../products/customizing-your-product-with-product-options.md) templates to the virtual product. For example, an e-book might have alternate front covers depending on different markets.
+You can apply [Product Options](../products/using-product-options.md) templates to the virtual product. For example, an e-book might have alternate front covers depending on different markets.
 
 Click the _Options_ sub-tab to continue.
 

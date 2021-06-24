@@ -5,7 +5,7 @@ Managing Inventory
    :maxdepth: 1
 
    managing-inventory/introduction-to-managing-inventory.md
-   managing-inventory/adding-a-new-warehouse.md
+   managing-inventory/setting-up-commerce-warehouses.md
    managing-inventory/setting-inventory-by-warehouse.md
    managing-inventory/low-stock-action.md
    managing-inventory/availability-estimates.md

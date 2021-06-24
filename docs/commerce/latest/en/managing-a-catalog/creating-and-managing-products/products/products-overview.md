@@ -16,7 +16,7 @@ Create friendly URLs for Products and add meta data for search engine optimizati
 
 ![Use Product Options to add custom fields to Products](./products-overview/images/02.png)
 
-Use Product [Options](./customizing-your-product-with-product-options.md) to quickly add custom fields to your Products. These fields can be used to gather customer input (e.g., date, custom message) and provide customers with a choice between Product variants (e.g., Product bundles, color options).
+Use Product [Options](./using-product-options.md) to quickly add custom fields to your Products. These fields can be used to gather customer input (e.g., date, custom message) and provide customers with a choice between Product variants (e.g., Product bundles, color options).
 
 ## Media
 
