@@ -30,7 +30,7 @@ Follow these steps to add a new Warehouse:
 
 1. Enter the Warehouse's *Geolocation* (required for activation).
 
-   Alternatively, you can use Bing Geocoder to automatically generate a Warehouse's geolocation. See [below](#using-bing-geocoder-to-set-a-warehouses-geolocation) for more information.
+   Alternatively, you can use Bing Geocoder to automatically generate a Warehouse's geolocation. Using this feature requires the Warehouse has an address. See [below](#using-bing-geocoder-to-set-a-warehouses-geolocation) for more information.
 
 1. Click *Save*.
 
@@ -50,7 +50,7 @@ Then, follow these steps to configure the Bing Geocoder for your instance:
 
 1. Click *Save*.
 
-Once the Geocoder is configured, you can generate Warehouse geolocations from the Warehouses page. Simply click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired Warehouse, and select *Geolocate*.
+Once the Geocoder is configured, you can generate Warehouse geolocations for any Warehouse with a set address. Simply navigate to the Warehouses page, click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired Warehouse, and select *Geolocate*. The Geocoder converts the address into latitude and longitude coordinates.
 
 ![Select Geolocate](./setting-up-commerce-warehouses/images/03.png)
 
