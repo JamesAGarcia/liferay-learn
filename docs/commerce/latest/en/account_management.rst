@@ -2,7 +2,7 @@ Account Management
 ==================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    account-management/introduction-to-accounts.md
    account-management/creating-a-new-account.md
@@ -14,7 +14,9 @@ Account Management
    account-management/creating-a-new-account-group.md
    account-management/using-organizations-to-create-a-sales-network.md
    account-management/adding-organizations-to-accounts.md
-   account-management/commerce-roles-permissions-reference.md
 
-.. include:: /account-management/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
+   :file: account-management/landing.html

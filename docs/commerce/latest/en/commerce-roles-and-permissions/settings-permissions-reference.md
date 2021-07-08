@@ -1,0 +1,62 @@
+# Settings Permissions Reference
+
+Liferay Commerce provides out-of-the-box permissions to control access to Settings applications in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
+
+![Control access to Settings applications.](./settings-permissions-reference/images/01.png)
+
+You can manage Settings permissions for user roles under *Commerce* &rarr; *Order Management* in the Define Permissions tab. Assign permissions individually, or check *Action* to assign all permissions for an application or resource.
+
+![Manage Settings permissions for user roles in the Define Permissions tab.](./settings-permissions-reference/images/02.png)
+
+```note::
+   The following article does not document permissions for related widgets.
+```
+
+## Standard Application Permissions
+
+Application permissions define what actions can be performed in an application.
+
+Settings includes the following applications:
+
+**Availability Estimates**: This application is used to create and manage availability estimates for when Products are available. See [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md) for more information.
+
+**Countries**: This application is used to create and manage country entries, which are then used in other applications (e.g., Channels). See [Adding Regions](../../store-administration/adding-regions.md) for more information. <!--TASK: replace when general article on Countries is written.-->
+
+**Measurement Units**: This application is used to create and manage standard measurement units that are used for Product Specifications. See [Measurement Units](../../store-administration/configuring-shipping-methods/measurement-units.md) for more information.
+
+**Health Check**: This application is used to check the health status of Commerce applications, as well as fix any existing issues. <!--TASK: Add link when general article on Health Check is written.-->
+
+All Settings applications have the following permissions:
+
+| Permission | Description |
+| --- | --- |
+| Access in Control Panel | Ability to access the application in the Global Menu |
+| Configuration | Ability to view and set the application's configuration options |
+| Permissions | Ability to view and modify the application's permissions |
+| Preferences | Ability to view and set application preferences |
+| View | Ability to view the application |
+
+## Related Resource Permissions
+
+Resource permissions define what actions can be performed on resources displayed or managed within an application. Resources are any user-facing object, such as Catalogs, Price Lists, Orders, and Warehouses.
+
+Settings applications are connected to the following resources:
+
+**Commerce Availability** (listed under Availability Estimates): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+| Permission | Description |
+|---|---|
+| Manage Availability Estimates | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
+**Commerce Health** (listed under Health Check): <!--FINISH; 7.4, previously listed under Control Panel > General Permissions-->
+
+| Permission | Description |
+|---|---|
+| Manage Health Status | <!--FINISH--> |
+| Permissions | <!--FINISH--> |
+
+## Additional Information
+
+* [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md)
+* [Measurement Units](../../store-administration/configuring-shipping-methods/measurement-units.md)
